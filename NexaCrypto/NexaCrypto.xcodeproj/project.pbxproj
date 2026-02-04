@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33AE9AA62F32F9A200632DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9A9A2F32F9A200632DB6 /* Assets.xcassets */; };
+		33AE9AA82F32F9A200632DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9A9D2F32F9A200632DB6 /* LaunchScreen.storyboard */; };
+		33AE9AA92F32F9A200632DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AA02F32F9A200632DB6 /* Main.storyboard */; };
+		33AE9AAA2F32F9A200632DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9A992F32F9A200632DB6 /* AppDelegate.m */; };
+		33AE9AAB2F32F9A200632DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9A9E2F32F9A200632DB6 /* main.m */; };
+		33AE9AAC2F32F9A200632DB6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AA22F32F9A200632DB6 /* SceneDelegate.m */; };
+		33AE9AAD2F32F9A200632DB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AA42F32F9A200632DB6 /* ViewController.m */; };
+		33AE9AB52F3315E500632DB6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AB42F3315E500632DB6 /* DemoViewController.xib */; };
+		33AE9AB62F3315E500632DB6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AB32F3315E500632DB6 /* DemoViewController.m */; };
+		33AE9AB82F3315F000632DB6 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AB72F3315F000632DB6 /* DemoView.xib */; };
+		33AE9ABB2F33164100632DB6 /* CSMTCCobaltGrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ABA2F33164100632DB6 /* CSMTCCobaltGrainViewController.m */; };
+		33AE9ABE2F33165900632DB6 /* CSMTCSlateRidgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ABD2F33165900632DB6 /* CSMTCSlateRidgeViewController.m */; };
+		33AE9AC12F33166B00632DB6 /* CSMTCMicaShoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AC02F33166B00632DB6 /* CSMTCMicaShoreViewController.m */; };
+		33AE9AC42F33168B00632DB6 /* CSMTCTourmalineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AC32F33168B00632DB6 /* CSMTCTourmalineViewController.m */; };
+		33AE9AC72F3316A500632DB6 /* CSMTCCoralSpireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AC62F3316A500632DB6 /* CSMTCCoralSpireViewController.m */; };
+		33AE9ACA2F3316C600632DB6 /* CSMTCBerylValeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AC92F3316C600632DB6 /* CSMTCBerylValeViewController.m */; };
+		33AE9ACF2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ACE2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m */; };
+		33AE9AD22F33262500632DB6 /* CSMTCSelectHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AD12F33262500632DB6 /* CSMTCSelectHeaderView.m */; };
+		33AE9AD72F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AD42F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m */; };
+		33AE9ADC2F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AD92F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m */; };
+		33AE9AE12F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ADE2F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m */; };
+		33AE9AE42F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AE32F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m */; };
+		33AE9AE92F333C1900632DB6 /* CSMTCMicaShoreTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AE62F333C1900632DB6 /* CSMTCMicaShoreTableCell.m */; };
+		33AE9AEE2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AEB2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m */; };
+		33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */; };
+		33AE9AF82F33489400632DB6 /* CSMTCSlateRidgeReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33AE9A662F32F97B00632DB6 /* NexaCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexaCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AE9A982F32F9A200632DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33AE9A992F32F9A200632DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33AE9A9A2F32F9A200632DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33AE9A9B2F32F9A200632DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AE9A9C2F32F9A200632DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33AE9A9E2F32F9A200632DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33AE9A9F2F32F9A200632DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33AE9AA12F32F9A200632DB6 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		33AE9AA22F32F9A200632DB6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		33AE9AA32F32F9A200632DB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		33AE9AA42F32F9A200632DB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		33AE9AB22F3315E500632DB6 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		33AE9AB32F3315E500632DB6 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		33AE9AB42F3315E500632DB6 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		33AE9AB72F3315F000632DB6 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
+		33AE9AB92F33164100632DB6 /* CSMTCCobaltGrainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCobaltGrainViewController.h; sourceTree = "<group>"; };
+		33AE9ABA2F33164100632DB6 /* CSMTCCobaltGrainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCobaltGrainViewController.m; sourceTree = "<group>"; };
+		33AE9ABC2F33165900632DB6 /* CSMTCSlateRidgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateRidgeViewController.h; sourceTree = "<group>"; };
+		33AE9ABD2F33165900632DB6 /* CSMTCSlateRidgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateRidgeViewController.m; sourceTree = "<group>"; };
+		33AE9ABF2F33166B00632DB6 /* CSMTCMicaShoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCMicaShoreViewController.h; sourceTree = "<group>"; };
+		33AE9AC02F33166B00632DB6 /* CSMTCMicaShoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCMicaShoreViewController.m; sourceTree = "<group>"; };
+		33AE9AC22F33168B00632DB6 /* CSMTCTourmalineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCTourmalineViewController.h; sourceTree = "<group>"; };
+		33AE9AC32F33168B00632DB6 /* CSMTCTourmalineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCTourmalineViewController.m; sourceTree = "<group>"; };
+		33AE9AC52F3316A500632DB6 /* CSMTCCoralSpireViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCoralSpireViewController.h; sourceTree = "<group>"; };
+		33AE9AC62F3316A500632DB6 /* CSMTCCoralSpireViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCoralSpireViewController.m; sourceTree = "<group>"; };
+		33AE9AC82F3316C600632DB6 /* CSMTCBerylValeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCBerylValeViewController.h; sourceTree = "<group>"; };
+		33AE9AC92F3316C600632DB6 /* CSMTCBerylValeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCBerylValeViewController.m; sourceTree = "<group>"; };
+		33AE9ACD2F331F3D00632DB6 /* CSMTCSearchNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSearchNavigationBar.h; sourceTree = "<group>"; };
+		33AE9ACE2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSearchNavigationBar.m; sourceTree = "<group>"; };
+		33AE9AD02F33262500632DB6 /* CSMTCSelectHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSelectHeaderView.h; sourceTree = "<group>"; };
+		33AE9AD12F33262500632DB6 /* CSMTCSelectHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSelectHeaderView.m; sourceTree = "<group>"; };
+		33AE9AD32F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSelectHeaderCollectionCell.h; sourceTree = "<group>"; };
+		33AE9AD42F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSelectHeaderCollectionCell.m; sourceTree = "<group>"; };
+		33AE9AD82F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCobaltGrainCollectionCell.h; sourceTree = "<group>"; };
+		33AE9AD92F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCobaltGrainCollectionCell.m; sourceTree = "<group>"; };
+		33AE9ADD2F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCobaltGrainTableCell.h; sourceTree = "<group>"; };
+		33AE9ADE2F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCobaltGrainTableCell.m; sourceTree = "<group>"; };
+		33AE9AE22F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCobaltGrainHeaderView.h; sourceTree = "<group>"; };
+		33AE9AE32F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCobaltGrainHeaderView.m; sourceTree = "<group>"; };
+		33AE9AE52F333C1900632DB6 /* CSMTCMicaShoreTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCMicaShoreTableCell.h; sourceTree = "<group>"; };
+		33AE9AE62F333C1900632DB6 /* CSMTCMicaShoreTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCMicaShoreTableCell.m; sourceTree = "<group>"; };
+		33AE9AEA2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateRidgeCollectionCell.h; sourceTree = "<group>"; };
+		33AE9AEB2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateRidgeCollectionCell.m; sourceTree = "<group>"; };
+		33AE9AEF2F33412800632DB6 /* CSMTCSlateExploreCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateExploreCollectionCell.h; sourceTree = "<group>"; };
+		33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateExploreCollectionCell.m; sourceTree = "<group>"; };
+		33AE9AF42F33489400632DB6 /* CSMTCSlateRidgeReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateRidgeReusableView.h; sourceTree = "<group>"; };
+		33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateRidgeReusableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33AE9A632F32F97B00632DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33AE9A5D2F32F97B00632DB6 = {
+			isa = PBXGroup;
+			children = (
+				33AE9AA52F32F9A200632DB6 /* NexaCrypto */,
+				33AE9A672F32F97B00632DB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33AE9A672F32F97B00632DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33AE9A662F32F97B00632DB6 /* NexaCrypto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33AE9AA52F32F9A200632DB6 /* NexaCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				33AE9AB12F3315D400632DB6 /* O */,
+				33AE9AB02F3315D000632DB6 /* C */,
+				33AE9AAF2F3315CA00632DB6 /* V */,
+				33AE9AAE2F3315C500632DB6 /* M */,
+				33AE9A982F32F9A200632DB6 /* AppDelegate.h */,
+				33AE9A992F32F9A200632DB6 /* AppDelegate.m */,
+				33AE9A9A2F32F9A200632DB6 /* Assets.xcassets */,
+				33AE9A9B2F32F9A200632DB6 /* Info.plist */,
+				33AE9A9D2F32F9A200632DB6 /* LaunchScreen.storyboard */,
+				33AE9A9E2F32F9A200632DB6 /* main.m */,
+				33AE9AA02F32F9A200632DB6 /* Main.storyboard */,
+				33AE9AA12F32F9A200632DB6 /* SceneDelegate.h */,
+				33AE9AA22F32F9A200632DB6 /* SceneDelegate.m */,
+				33AE9AA32F32F9A200632DB6 /* ViewController.h */,
+				33AE9AA42F32F9A200632DB6 /* ViewController.m */,
+			);
+			path = NexaCrypto;
+			sourceTree = "<group>";
+		};
+		33AE9AAE2F3315C500632DB6 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		33AE9AAF2F3315CA00632DB6 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				33AE9ACD2F331F3D00632DB6 /* CSMTCSearchNavigationBar.h */,
+				33AE9ACE2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m */,
+				33AE9AD02F33262500632DB6 /* CSMTCSelectHeaderView.h */,
+				33AE9AD12F33262500632DB6 /* CSMTCSelectHeaderView.m */,
+				33AE9AD32F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.h */,
+				33AE9AD42F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m */,
+				33AE9AD82F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.h */,
+				33AE9AD92F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m */,
+				33AE9ADD2F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.h */,
+				33AE9ADE2F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m */,
+				33AE9AE22F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.h */,
+				33AE9AE32F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m */,
+				33AE9AE52F333C1900632DB6 /* CSMTCMicaShoreTableCell.h */,
+				33AE9AE62F333C1900632DB6 /* CSMTCMicaShoreTableCell.m */,
+				33AE9AEA2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.h */,
+				33AE9AEB2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m */,
+				33AE9AEF2F33412800632DB6 /* CSMTCSlateExploreCollectionCell.h */,
+				33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */,
+				33AE9AF42F33489400632DB6 /* CSMTCSlateRidgeReusableView.h */,
+				33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		33AE9AB02F3315D000632DB6 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				33AE9AB92F33164100632DB6 /* CSMTCCobaltGrainViewController.h */,
+				33AE9ABA2F33164100632DB6 /* CSMTCCobaltGrainViewController.m */,
+				33AE9ABC2F33165900632DB6 /* CSMTCSlateRidgeViewController.h */,
+				33AE9ABD2F33165900632DB6 /* CSMTCSlateRidgeViewController.m */,
+				33AE9ABF2F33166B00632DB6 /* CSMTCMicaShoreViewController.h */,
+				33AE9AC02F33166B00632DB6 /* CSMTCMicaShoreViewController.m */,
+				33AE9AC22F33168B00632DB6 /* CSMTCTourmalineViewController.h */,
+				33AE9AC32F33168B00632DB6 /* CSMTCTourmalineViewController.m */,
+				33AE9AC52F3316A500632DB6 /* CSMTCCoralSpireViewController.h */,
+				33AE9AC62F3316A500632DB6 /* CSMTCCoralSpireViewController.m */,
+				33AE9AC82F3316C600632DB6 /* CSMTCBerylValeViewController.h */,
+				33AE9AC92F3316C600632DB6 /* CSMTCBerylValeViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		33AE9AB12F3315D400632DB6 /* O */ = {
+			isa = PBXGroup;
+			children = (
+				33AE9AB22F3315E500632DB6 /* DemoViewController.h */,
+				33AE9AB32F3315E500632DB6 /* DemoViewController.m */,
+				33AE9AB42F3315E500632DB6 /* DemoViewController.xib */,
+				33AE9AB72F3315F000632DB6 /* DemoView.xib */,
+			);
+			path = O;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33AE9A652F32F97B00632DB6 /* NexaCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33AE9A7E2F32F97C00632DB6 /* Build configuration list for PBXNativeTarget "NexaCrypto" */;
+			buildPhases = (
+				33AE9A622F32F97B00632DB6 /* Sources */,
+				33AE9A632F32F97B00632DB6 /* Frameworks */,
+				33AE9A642F32F97B00632DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NexaCrypto;
+			packageProductDependencies = (
+			);
+			productName = NexaCrypto;
+			productReference = 33AE9A662F32F97B00632DB6 /* NexaCrypto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33AE9A5E2F32F97B00632DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					33AE9A652F32F97B00632DB6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 33AE9A612F32F97B00632DB6 /* Build configuration list for PBXProject "NexaCrypto" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33AE9A5D2F32F97B00632DB6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 33AE9A672F32F97B00632DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33AE9A652F32F97B00632DB6 /* NexaCrypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33AE9A642F32F97B00632DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AE9AA62F32F9A200632DB6 /* Assets.xcassets in Resources */,
+				33AE9AB82F3315F000632DB6 /* DemoView.xib in Resources */,
+				33AE9AA82F32F9A200632DB6 /* LaunchScreen.storyboard in Resources */,
+				33AE9AA92F32F9A200632DB6 /* Main.storyboard in Resources */,
+				33AE9AB52F3315E500632DB6 /* DemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33AE9A622F32F97B00632DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AE9AC42F33168B00632DB6 /* CSMTCTourmalineViewController.m in Sources */,
+				33AE9AD22F33262500632DB6 /* CSMTCSelectHeaderView.m in Sources */,
+				33AE9AAA2F32F9A200632DB6 /* AppDelegate.m in Sources */,
+				33AE9ACF2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m in Sources */,
+				33AE9ABB2F33164100632DB6 /* CSMTCCobaltGrainViewController.m in Sources */,
+				33AE9ABE2F33165900632DB6 /* CSMTCSlateRidgeViewController.m in Sources */,
+				33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */,
+				33AE9AE42F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m in Sources */,
+				33AE9AE92F333C1900632DB6 /* CSMTCMicaShoreTableCell.m in Sources */,
+				33AE9ACA2F3316C600632DB6 /* CSMTCBerylValeViewController.m in Sources */,
+				33AE9AEE2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m in Sources */,
+				33AE9ADC2F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m in Sources */,
+				33AE9AC72F3316A500632DB6 /* CSMTCCoralSpireViewController.m in Sources */,
+				33AE9AAB2F32F9A200632DB6 /* main.m in Sources */,
+				33AE9AAC2F32F9A200632DB6 /* SceneDelegate.m in Sources */,
+				33AE9AB62F3315E500632DB6 /* DemoViewController.m in Sources */,
+				33AE9AD72F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m in Sources */,
+				33AE9AC12F33166B00632DB6 /* CSMTCMicaShoreViewController.m in Sources */,
+				33AE9AE12F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m in Sources */,
+				33AE9AAD2F32F9A200632DB6 /* ViewController.m in Sources */,
+				33AE9AF82F33489400632DB6 /* CSMTCSlateRidgeReusableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33AE9A9D2F32F9A200632DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33AE9A9C2F32F9A200632DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33AE9AA02F32F9A200632DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33AE9A9F2F32F9A200632DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33AE9A7F2F32F97C00632DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NexaCrypto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NexaCrypto.NexaCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33AE9A802F32F97C00632DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NexaCrypto/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NexaCrypto.NexaCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33AE9A812F32F97C00632DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33AE9A822F32F97C00632DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33AE9A612F32F97B00632DB6 /* Build configuration list for PBXProject "NexaCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AE9A812F32F97C00632DB6 /* Debug */,
+				33AE9A822F32F97C00632DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33AE9A7E2F32F97C00632DB6 /* Build configuration list for PBXNativeTarget "NexaCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AE9A7F2F32F97C00632DB6 /* Debug */,
+				33AE9A802F32F97C00632DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33AE9A5E2F32F97B00632DB6 /* Project object */;
+}
