@@ -8,7 +8,7 @@
 #import "CSMTCTourmalineTableView.h"
 #import "CSMTCTourmalineTableViewCell.h"
 #import "CSMTCNexaCryptoModel.h"
-@interface CSMTCTourmalineTableView () <UITableViewDelegate, UITableViewDataSource>
+@interface CSMTCTourmalineTableView () <UITableViewDelegate, UITableViewDataSource, CSMTCTourmalineTableViewCellDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *array;
@@ -131,7 +131,15 @@
     CSMTCTourmalineTableViewCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCTourmalineTableViewCell"];
     CSMTCTourmalineModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_quickRidgeTrailPathHavenClimbReach:CSMTC_model];
+    CSMTC_cell.delegate = self;
     return CSMTC_cell;
+}
+
+- (void)CSMTC_tameValeTrackHollowClimbFoldBluff:(NSString *)CSMTC_wideDellTrail CSMTC_keenCoveTrail:(NSString *)CSMTC_keenCoveTrail {
+    
+    if ([self.delegate respondsToSelector:@selector(CSMTC_livelyHavenPathFoldTrailKnollRise:CSMTC_keenCoveTrail:)]) {
+        [self.delegate CSMTC_livelyHavenPathFoldTrailKnollRise:CSMTC_wideDellTrail CSMTC_keenCoveTrail:CSMTC_keenCoveTrail];
+    }
 }
 
 

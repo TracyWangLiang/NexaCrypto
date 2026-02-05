@@ -11,7 +11,6 @@
 
 @property (nonatomic, strong) UIImageView *mellowImageView;
 @property (nonatomic, strong) UILabel *descriptionLabel;
-@property (nonatomic, strong) UIButton *chatButton;
 @property (nonatomic, strong) UILabel *trendingLabel;
 
 @end

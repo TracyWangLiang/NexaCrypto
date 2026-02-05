@@ -127,7 +127,8 @@
     /// nameLabel
     [NSLayoutConstraint activateConstraints:@[
         [self.nameLabel.leadingAnchor constraintEqualToAnchor:self.iconImageView.trailingAnchor constant:8],
-        [self.nameLabel.topAnchor constraintEqualToAnchor:self.iconImageView.topAnchor constant:-3]
+        [self.nameLabel.topAnchor constraintEqualToAnchor:self.iconImageView.topAnchor constant:-3],
+        [self.nameLabel.widthAnchor constraintLessThanOrEqualToConstant:150]
     ]];
 
     /// symbolLabel
@@ -139,15 +140,16 @@
     /// priceLabel
     [NSLayoutConstraint activateConstraints:@[
         [self.priceLabel.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor],
-        [self.priceLabel.leadingAnchor constraintEqualToAnchor:self.nameLabel.trailingAnchor constant:85]
+        [self.priceLabel.trailingAnchor constraintEqualToAnchor:self.changeContainer.leadingAnchor constant:-20]
     ]];
 
     /// changeContainer
     [NSLayoutConstraint activateConstraints:@[
-        [self.changeContainer.leadingAnchor constraintEqualToAnchor:self.priceLabel.trailingAnchor constant:20],
+//        [self.changeContainer.leadingAnchor constraintEqualToAnchor:self.priceLabel.trailingAnchor constant:20],
         [self.changeContainer.trailingAnchor constraintEqualToAnchor:cv.trailingAnchor constant:-12],
         [self.changeContainer.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor],
-        [self.changeContainer.heightAnchor constraintEqualToConstant:28]
+        [self.changeContainer.heightAnchor constraintEqualToConstant:28],
+        [self.changeContainer.widthAnchor constraintEqualToConstant:75]
     ]];
 
     /// changeIcon
@@ -164,6 +166,27 @@
         [self.changeLabel.trailingAnchor constraintEqualToAnchor:self.changeContainer.trailingAnchor constant:-9],
         [self.changeLabel.centerYAnchor constraintEqualToAnchor:self.changeContainer.centerYAnchor]
     ]];
+}
+
+- (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model CSMTC_clearKnollClimb:(NSString *)CSMTC_clearKnollClimb {
+    self.rankLabel.text = CSMTC_clearKnollClimb;
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
+    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
+        self.iconImageView.image = image;
+    }];
+    self.nameLabel.text = CSMTC_model.CSMTC_name;
+    self.symbolLabel.text = CSMTC_model.CSMTC_symbol;
+    self.priceLabel.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.changeLabel.text = [NSString stringWithFormat:@"%@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]];
+    
+    if ([CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h]) {
+        self.changeIcon.highlighted = YES;
+        self.changeContainer.backgroundColor = [UIColor colorWithRed:253/255.0 green:49/255.0 blue:118/255.0 alpha:1];
+    } else {
+        self.changeIcon.highlighted = NO;
+        self.changeContainer.backgroundColor = [UIColor colorWithRed:0/255.0 green:183/255.0 blue:214/255.0 alpha:1];
+    }
+    
 }
 
 @end

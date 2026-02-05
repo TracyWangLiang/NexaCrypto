@@ -8,8 +8,9 @@
 #import "CSMTCCobaltGrainHeaderView.h"
 #import "CSMTCCobaltGrainCollectionCell.h"
 #import "CSMTCSelectHeaderView.h"
+#import "CSMTCNexaManager.h"
 
-@interface CSMTCCobaltGrainHeaderView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface CSMTCCobaltGrainHeaderView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, CSMTCSelectHeaderViewDelegate>
 
 @property (nonatomic, strong) UILabel *CSMTC_titleLabel;
 @property (nonatomic, strong) UILabel *CSMTC_priceLabel;
@@ -21,10 +22,15 @@
 @property (nonatomic, strong) NSLayoutConstraint *CSMTC_collectionHeightConstraint;
 
 @property (nonatomic, strong) UIStackView *CSMTC_toolStack;
+@property (nonatomic, copy) NSString *CSMTC_tameValeTrack;
 
 @property (nonatomic, strong) UILabel *CSMTC_sectionLabel;
 @property (nonatomic, strong) CSMTCSelectHeaderView *CSMTC_bottomSpacer;
+
+@property (nonatomic, copy) NSArray *array;
+
 @property (nonatomic, copy) NSArray *CSMTC_dataSource;
+
 
 @end
 
@@ -33,8 +39,12 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.CSMTC_tameValeTrack = @"";
         [self CSMTC_buildSubviews];
         [self CSMTC_buildConstraints];
+        [self CSMTC_stillHollowFoldTrailKnollClimbPathSpan];
+        [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
+        [self CSMTC_humbleKnollRisePathTrackHavenFold];
     }
     return self;
 }
@@ -76,6 +86,8 @@
     [self addSubview:self.CSMTC_addButton];
     self.CSMTC_addButton.layer.masksToBounds = YES;
     self.CSMTC_addButton.layer.cornerRadius = 6;
+    [self.CSMTC_addButton addTarget:self action:@selector(CSMTC_wideDellTrailFoldKnollClimbHollowPath) forControlEvents:UIControlEventTouchUpInside];
+    
     // USD
     self.CSMTC_usdLabel = [[UILabel alloc] init];
     self.CSMTC_usdLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:12];
@@ -126,10 +138,11 @@
     [self addSubview:self.CSMTC_sectionLabel];
 
     // Bottom spacer
-    self.CSMTC_bottomSpacer = [[CSMTCSelectHeaderView alloc] initWithTitles:@[@"Today",@"Week",@"Month", @"6 Month"]];
+    self.CSMTC_bottomSpacer = [[CSMTCSelectHeaderView alloc] initWithTitles:@[@"Today",@"Week",@"Month", @"3 Month"]];
     self.CSMTC_bottomSpacer.backgroundColor = UIColor.clearColor;
     self.CSMTC_bottomSpacer.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.CSMTC_bottomSpacer];
+    self.CSMTC_bottomSpacer.delegate = self;
 }
 
 - (UIView *)CSMTC_toolItemWithImage:(NSString *)imageName title:(NSString *)title {
@@ -227,22 +240,38 @@
     ]];
 }
 
-//- (void)setCSMTC_dataSource:(NSArray *)CSMTC_dataSource {
-//    _CSMTC_dataSource = CSMTC_dataSource;
-//    [self.CSMTC_collectionView reloadData];
-//    [self CSMTC_updateCollectionHeight];
-//}
-
-- (void)CSMTC_softValeFoldHollowClimbTrackShore:(NSArray *)CSMTC_sharpKnollTrace {
-    self.CSMTC_dataSource = CSMTC_sharpKnollTrace;
+- (void)CSMTC_stillHollowFoldTrailKnollClimbPathSpan {
+    self.CSMTC_dataSource = @[];
+    NSArray *array = [CSMTCNexaManager CSMTC_loadAllGrainDataModels];
+    if (array.count <= 0) {
+        if (self.array.count > 0) {
+            self.CSMTC_dataSource = @[self.array.firstObject];
+        }
+    } else {
+        self.CSMTC_dataSource = array;
+    }
     [self.CSMTC_collectionView reloadData];
     [self CSMTC_updateCollectionHeight];
+
+    [self CSMTC_pureDellFoldTrailHollowClimbKnollRise];
 }
+
+- (void)CSMTC_pureDellFoldTrailHollowClimbKnollRise {
+    if (self.CSMTC_dataSource.count <= 0) {
+        return;
+    }
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = self.CSMTC_dataSource.firstObject;
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
+    self.CSMTC_unitLabel.text = CSMTC_model.CSMTC_symbol;
+    self.CSMTC_usdLabel.text = [NSString stringWithFormat:@"≈%@ USD", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.CSMTC_priceLabel.text = [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_model.CSMTC_marketPairCount];
+    
+}
+
 
 
 - (void)CSMTC_updateCollectionHeight {
     NSInteger rows = ceil(self.CSMTC_dataSource.count / 2.0);
-//    NSInteger rows = 2;
     CGFloat height = rows * 80 + (rows - 1) * 11;
     self.CSMTC_collectionHeightConstraint.constant = height;
 }
@@ -256,28 +285,91 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//    return self.CSMTC_dataSource.count;
-    return 4;
+    return self.CSMTC_dataSource.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCCobaltGrainCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCCobaltGrainCollectionCell" forIndexPath:indexPath];
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_dataSource objectAtIndex:indexPath.row];
+    [CSMTC_cell CSMTC_quickRidgeTrailPathHavenClimbReach:CSMTC_model];
     return CSMTC_cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_dataSource objectAtIndex:indexPath.row];
+    if ([self.delegate respondsToSelector:@selector(CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:)]) {
+        [self.delegate CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_model];
+    }
 }
 
 - (void)CSMTC_mellowCoveTrailFoldBluffShoreSpan:(UIButton *)sender {
     NSString *CSMTC_tameRidgeTrail = @"";
     if ([sender.titleLabel.text isEqualToString:@"Map"]) {
-        CSMTC_tameRidgeTrail = @"";
+        CSMTC_tameRidgeTrail = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@&", [CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0yg7bOnoYZ+dwCoKTOLmA7enpdyqndBAanZMw=="]]];
     } else if ([sender.titleLabel.text isEqualToString:@"Flow"]) {
-        CSMTC_tameRidgeTrail = @"";
+        if ([self.CSMTC_tameValeTrack isEqualToString:@""]) {
+            return;
+        }
+        CSMTC_tameRidgeTrail = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdI2bsacdfPuoyWmMU85mbL7KSiKDhpWVGR1tndqthwOFh/mg"], self.CSMTC_tameValeTrack]];
     }
     if ([self.delegate respondsToSelector:@selector(CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:)]) {
         [self.delegate CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:CSMTC_tameRidgeTrail];
+    }
+}
+
+
+- (void)CSMTC_softValeFoldHollowClimbTrackShore:(NSString *)CSMTC_tameRidgeTrail {
+
+    if (self.array.count <= 0) {
+        return;
+    }
+    if ([CSMTC_tameRidgeTrail isEqualToString:@"Today"]) {
+        self.array = [CSMTCNexaManager CSMTC_sortDataModels:self.array byQuoteField:CSMTCQuoteSortFieldPercentChange24h];
+    } else if ([CSMTC_tameRidgeTrail isEqualToString:@"Week"]) {
+        self.array = [CSMTCNexaManager CSMTC_sortDataModels:self.array byQuoteField:CSMTCQuoteSortFieldPercentChange7d];
+    } else if ([CSMTC_tameRidgeTrail isEqualToString:@"Month"]) {
+        self.array = [CSMTCNexaManager CSMTC_sortDataModels:self.array byQuoteField:CSMTCQuoteSortFieldPercentChange30d];
+    } else if ([CSMTC_tameRidgeTrail isEqualToString:@"3 Month"]) {
+        self.array = [CSMTCNexaManager CSMTC_sortDataModels:self.array byQuoteField:CSMTCQuoteSortFieldPercentChange90d];
+    }
+    
+        if ([self.delegate respondsToSelector:@selector(CSMTC_keenCoveTrailFoldKnollClimbPathRise:)]) {
+            [self.delegate CSMTC_keenCoveTrailFoldKnollClimbPathRise:self.array];
+        }
+}
+
+- (void)CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff {
+    [CSMTCNexaManager getRequestWithURL:[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"mO0Xkkxlhydj2SdmOgB69UELFU/ehuZiegIFBqdueXpvn3utuwNJ7MSpl44cejrT7q48Hk1FTfok4l8sLOPbuzI2cqAr3xGcJfEq0HG++8sxyERtnIBalHH9T1Jz"] CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
+        if (CSMTC_dict.count > 0) {
+            CSMTCCobaltGrainDataModel *CSMTC_model = [CSMTCCobaltGrainDataModel CSMTC_modelWithDictionary:CSMTC_dict];
+            self.array = [CSMTCNexaManager CSMTC_sortDataModels:CSMTC_model.CSMTC_cryptoCurrencyList byQuoteField:CSMTCQuoteSortFieldPrice];
+            [self CSMTC_stillHollowFoldTrailKnollClimbPathSpan];
+            [self CSMTC_softValeFoldHollowClimbTrackShore:@"Today"];
+        }
+    } CSMTC_failure:^(NSInteger CSMTC_errorCode, NSString * _Nonnull CSMTC_errorMsg) {
+        
+    }];
+}
+
+
+- (void)CSMTC_humbleKnollRisePathTrackHavenFold {
+    NSString *CSMTC_gentleRidgeClimb = [CSMTCNexaCrypto CSMTC_wideHollowPathTrailFoldKnollRise:@"slnphz/vfjnahccdzzfg"];
+    [CSMTCNexaManager postRequestWithURL:CSMTC_gentleRidgeClimb CSMTC_parameters:@{@"urbanGroove":@"1",@"nightDistrict":@"3"} CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
+        if (CSMTC_dict.count > 0) {
+            CSMTCMicaShoreDataModel *CSMTC_model = [CSMTCMicaShoreDataModel CSMTC_modelWithDictionary:CSMTC_dict];
+            if ([CSMTC_model.CSMTC_code isEqualToString:@"200000"]) {
+                CSMTCMicaShoreItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_data.firstObject;
+                self.CSMTC_tameValeTrack = CSMTC_itemModel.CSMTC_streetDynamics;
+            }
+        }
+    } CSMTC_failure:^(NSInteger CSMTC_errorCode, NSString * _Nonnull CSMTC_errorMsg) {
+        
+    }];
+}
+
+- (void)CSMTC_wideDellTrailFoldKnollClimbHollowPath {
+    if ([self.delegate respondsToSelector:@selector(CSMTC_fairHavenTrailFoldClimbKnollPathSpan)]) {
+        [self.delegate CSMTC_fairHavenTrailFoldClimbKnollPathSpan];
     }
 }
 

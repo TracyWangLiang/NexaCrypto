@@ -38,6 +38,7 @@
         self.CSMTC_quickDellFold = 0;
         [self setupViews];
         [self setupConstraints];
+
     }
     return self;
 }
@@ -122,6 +123,7 @@
     self.titleLabel.text = CSMTC_model.CSMTC_firmHavenTrail;
     [self updateCollectionHeight];
     [self.collectionView reloadData];
+    [self CSMTC_braveGlenClimbFoldTrackHollowSpan];
 }
 
 - (void)updateCollectionHeight {
@@ -167,7 +169,16 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     self.CSMTC_quickDellFold = indexPath.row;
     [collectionView reloadData];
+    [self CSMTC_braveGlenClimbFoldTrackHollowSpan];
 }
+
+- (void)CSMTC_braveGlenClimbFoldTrackHollowSpan {
+    NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.dataArray objectAtIndex:self.CSMTC_quickDellFold]];
+    if ([self.delegate respondsToSelector:@selector(CSMTC_tameValeTrackHollowClimbFoldBluff:CSMTC_keenCoveTrail:)]) {
+        [self.delegate CSMTC_tameValeTrackHollowClimbFoldBluff:self.titleLabel.text CSMTC_keenCoveTrail:CSMTC_firmHavenTrail];
+    }
+}
+
 
 
 

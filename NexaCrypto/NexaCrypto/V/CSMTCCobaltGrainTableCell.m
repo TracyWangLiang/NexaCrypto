@@ -120,8 +120,8 @@
         [self.CSMTC_iconImageView.centerYAnchor constraintEqualToAnchor:content.centerYAnchor],
         [self.CSMTC_iconImageView.widthAnchor constraintEqualToConstant:30],
         [self.CSMTC_iconImageView.heightAnchor constraintEqualToConstant:30],
-        [self.CSMTC_iconImageView.topAnchor constraintEqualToAnchor:content.topAnchor constant:10],
-        [self.CSMTC_iconImageView.bottomAnchor constraintEqualToAnchor:content.bottomAnchor constant:-10],
+        [self.CSMTC_iconImageView.topAnchor constraintEqualToAnchor:content.topAnchor constant:15],
+        [self.CSMTC_iconImageView.bottomAnchor constraintEqualToAnchor:content.bottomAnchor constant:-15],
 
         // name
         [self.CSMTC_nameLabel.leadingAnchor constraintEqualToAnchor:self.CSMTC_iconImageView.trailingAnchor constant:8],
@@ -157,5 +157,25 @@
     ]];
 }
 
+
+- (void)CSMTC_pureDellFoldTrailHollowClimbKnollRise:(CSMTCCobaltGrainDataItemModel*)CSMTC_model CSMTC_gentleRidgeClimb:(NSString *)CSMTC_gentleRidgeClimb {
+    
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
+    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
+        self.CSMTC_iconImageView.image = image;
+    }];
+    self.CSMTC_nameLabel.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_badgeLabel.text = CSMTC_gentleRidgeClimb;
+    self.CSMTC_symbolLabel.text = CSMTC_model.CSMTC_symbol;
+    self.CSMTC_trendImageView.highlighted = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h];
+    self.CSMTC_changeLabel.text = [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h];
+    self.CSMTC_changeLabel.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_percentChange1h];
+    self.CSMTC_priceLabel.text = [NSString stringWithFormat:@"$%@",[CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.CSMTC_marketCapLabel.text = [NSString stringWithFormat:@"Mkt Cap: $%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_marketCap]];
+    
+    
+    
+    
+}
 
 @end

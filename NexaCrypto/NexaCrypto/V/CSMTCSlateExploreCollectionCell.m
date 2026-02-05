@@ -65,6 +65,7 @@
     self.trendImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.trendImageView.contentMode = UIViewContentModeScaleToFill;
     [self.contentView addSubview:self.trendImageView];
+    
 
     /// change button
     self.changeButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -75,6 +76,7 @@
     self.changeButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     self.changeButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     [self.contentView addSubview:self.changeButton];
+   
 }
 
 #pragma mark - Constraints
@@ -120,4 +122,23 @@
         [self.changeButton.heightAnchor constraintEqualToConstant:16]
     ]];
 }
+
+- (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
+    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
+        self.iconImageView.image = image;
+    }];
+    self.symbolLabel.text = CSMTC_model.CSMTC_symbol;
+    self.priceLabel.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.trendImageView.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h] ? [UIImage imageNamed:@"CSMTC_gentleValeBridge"] : [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
+    if ([CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h]) {
+        [self.changeButton setImage:[UIImage imageNamed:@"CSMTC_plainHollowPeak"] forState:UIControlStateNormal];
+        [self.changeButton setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
+    } else {
+        [self.changeButton setImage:[UIImage imageNamed:@"CSMTC_wideRidgeTrail"] forState:UIControlStateNormal];
+        [self.changeButton setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
+    }
+    
+}
+
 @end

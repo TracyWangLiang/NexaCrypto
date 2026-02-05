@@ -37,7 +37,7 @@
     self.CSMTC_backgroundImageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_backgroundImageView.contentMode = UIViewContentModeScaleToFill;
     [self.contentView addSubview:self.CSMTC_backgroundImageView];
-    self.CSMTC_backgroundImageView.image = [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
+//    self.CSMTC_backgroundImageView.image = [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
 //    self.CSMTC_backgroundImageView.highlightedImage = [UIImage imageNamed:@"CSMTC_gentleValeBridge"];
 
     // name
@@ -88,6 +88,21 @@
         [self.CSMTC_changeLabel.leadingAnchor constraintEqualToAnchor:self.CSMTC_symbolLabel.trailingAnchor constant:4],
         [self.CSMTC_changeLabel.centerYAnchor constraintEqualToAnchor:self.CSMTC_symbolLabel.centerYAnchor],
     ]];
+}
+
+- (void)CSMTC_quickRidgeTrailPathHavenClimbReach:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
+//    @property (nonatomic, strong) UIImageView *CSMTC_backgroundImageView;
+//    @property (nonatomic, strong) UILabel *CSMTC_nameLabel;
+//    @property (nonatomic, strong) UILabel *CSMTC_symbolLabel;
+//    @property (nonatomic, strong) UILabel *CSMTC_changeLabel;
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
+    self.CSMTC_backgroundImageView.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h] ? [UIImage imageNamed:@"CSMTC_gentleValeBridge"] : [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
+    self.CSMTC_nameLabel.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_symbolLabel.text = CSMTC_model.CSMTC_symbol;
+    self.CSMTC_changeLabel.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_percentChange1h];
+    self.CSMTC_changeLabel.text = [NSString stringWithFormat:@"%@", [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]];
+    
+    
 }
 
 @end

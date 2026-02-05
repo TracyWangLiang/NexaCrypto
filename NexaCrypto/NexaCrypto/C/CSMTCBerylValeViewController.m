@@ -7,6 +7,7 @@
 
 #import "CSMTCBerylValeViewController.h"
 #import <WebKit/WebKit.h>
+#import "CSMTCLoadingHUD.h"
 
 @interface CSMTCBerylValeViewController () <WKNavigationDelegate, WKScriptMessageHandler>
 
@@ -29,11 +30,12 @@
 
 
 - (void)viewDidLoad {
-//    http://43.136.234.225:20092/backone
-//    87164025
-//    http://43.136.234.225:20102/#/页面名称?token=123&appID=123&deviceID=123
+    //    http://43.136.234.225:20092/backone
+    //    87164025
+    //    http://43.136.234.225:20102/#/页面名称?token=123&appID=123&deviceID=123
     
     [super viewDidLoad];
+    [CSMTCLoadingHUD CSMTC_showLoading];
     self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1];
     [self CSMTC_setupView];
     [self CSMTC_setupConstraint];
@@ -43,7 +45,7 @@
 }
 
 - (void)CSMTC_setupView {
-   self.CSMTC_briskHarborLoom = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.CSMTC_gentleValeBridge];
+    self.CSMTC_briskHarborLoom = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.CSMTC_gentleValeBridge];
     self.CSMTC_briskHarborLoom.navigationDelegate = self;
     self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_briskHarborLoom.hidden = YES;
@@ -58,7 +60,7 @@
         [self.CSMTC_briskHarborLoom.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
         [self.CSMTC_briskHarborLoom.topAnchor constraintEqualToAnchor:self.view.topAnchor],
         [self.CSMTC_briskHarborLoom.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
-       
+        
     ]];
 }
 
@@ -95,7 +97,7 @@
 }
 
 - (void)CSMTC_briskDellLaneShoreTrackHollowSpan {
-    //        [SVProgressHUD dismiss];
+    [CSMTCLoadingHUD CSMTC_dismiss];
     self.CSMTC_briskHarborLoom.hidden = NO;
 }
 

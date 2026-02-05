@@ -27,6 +27,8 @@
         _CSMTC_titles = titles ?: @[];
         _CSMTC_selectedIndex = 0;
         [self CSMTC_setupViews];
+        NSString *CSMTC_stillHollowFold = [NSString stringWithFormat:@"%@", [self.CSMTC_titles objectAtIndex:self.CSMTC_selectedIndex]];
+        [self CSMTC_keenDellFoldTrailKnollRiseShoreSpan:CSMTC_stillHollowFold];
     }
     return self;
 }
@@ -69,8 +71,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [self CSMTC_updateIndicatorPosition];
-        NSString *CSMTC_stillHollowFold = [NSString stringWithFormat:@"%@", [self.CSMTC_titles objectAtIndex:self.CSMTC_selectedIndex]];
-        [self CSMTC_keenDellFoldTrailKnollRiseShoreSpan:CSMTC_stillHollowFold];
+       
     });
 }
 
@@ -121,8 +122,6 @@
         [UIView animateWithDuration:0.25 animations:^{
             self.CSMTC_indicatorLabel.center = CGPointMake(indicatorCenterX, self.CSMTC_indicatorLabel.center.y);
         }];
-        
-        // 滚动 collectionView 保证选中 cell 可见
         [self.CSMTC_collectionView scrollRectToVisible:attrs.frame animated:YES];
     }
 }

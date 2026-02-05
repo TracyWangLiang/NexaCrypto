@@ -11,12 +11,15 @@
 #import "CSMTCCobaltGrainHeaderView.h"
 #import "CSMTCCobaltGrainTableCell.h"
 #import "CSMTCTourmalineViewController.h"
+#import "CSMTCNexaManager.h"
+#import "CSMTCCoralSpireViewController.h"
 
-@interface CSMTCCobaltGrainViewController () <UITableViewDelegate, UITableViewDataSource, CSMTCCobaltGrainHeaderViewDelegate>
+@interface CSMTCCobaltGrainViewController () <UITableViewDelegate, UITableViewDataSource, CSMTCCobaltGrainHeaderViewDelegate, CSMTCSearchNavigationBarDelegate>
 
 @property (nonatomic, strong) CSMTCSearchNavigationBar *topContainerView;
 @property (nonatomic, strong) UITableView *contentTableView;
 @property (nonatomic, strong) CSMTCCobaltGrainHeaderView *CSMTC_headerView;
+@property (nonatomic, copy) NSArray *array;
 
 @end
 
@@ -37,6 +40,7 @@
     self.topContainerView.translatesAutoresizingMaskIntoConstraints = NO;
     self.topContainerView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.topContainerView];
+    self.topContainerView.delegate = self;
 
 
     self.contentTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -74,30 +78,72 @@
 }
 
 - (void)setHeaderView {
-    CSMTCCobaltGrainHeaderView *headerView = [[CSMTCCobaltGrainHeaderView alloc] initWithFrame:CGRectZero];
+    CSMTCCobaltGrainHeaderView *headerView =
+    [[CSMTCCobaltGrainHeaderView alloc] initWithFrame:CGRectZero];
+
     headerView.delegate = self;
-    [headerView CSMTC_softValeFoldHollowClimbTrackShore:@[@"",@"",@"",@""]];
-    CGFloat targetWidth = [UIScreen mainScreen].bounds.size.width;
+
+    CGFloat targetWidth = UIScreen.mainScreen.bounds.size.width;
     headerView.translatesAutoresizingMaskIntoConstraints = NO;
     [headerView.widthAnchor constraintEqualToConstant:targetWidth].active = YES;
-    CGFloat fittingHeight = [headerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    headerView.frame = CGRectMake(0, 0, targetWidth, fittingHeight);
+
+    headerView.frame = CGRectMake(0, 0, targetWidth, 1);
+
     self.CSMTC_headerView = headerView;
     self.contentTableView.tableHeaderView = headerView;
 }
 
+- (void)CSMTC_refreshHeaderHeight {
+    if (!self.CSMTC_headerView) return;
+
+    CSMTCCobaltGrainHeaderView *headerView = self.CSMTC_headerView;
+
+    // 记录当前位置，防止跳
+    CGPoint currentOffset = self.contentTableView.contentOffset;
+
+    // 强制 header 内部布局完成（collectionView 非常关键）
+    [headerView setNeedsLayout];
+    [headerView layoutIfNeeded];
+
+    CGFloat targetWidth = UIScreen.mainScreen.bounds.size.width;
+    CGSize fittingSize =
+    [headerView systemLayoutSizeFittingSize:
+     CGSizeMake(targetWidth, UILayoutFittingCompressedSize.height)];
+
+    // 高度没变化就不折腾
+    if (fabs(headerView.frame.size.height - fittingSize.height) < 0.5) {
+        return;
+    }
+
+    [UIView performWithoutAnimation:^{
+        CGRect frame = headerView.frame;
+        frame.size.height = fittingSize.height;
+        headerView.frame = frame;
+
+        // 关键：重新赋值触发表头刷新
+        self.contentTableView.tableHeaderView = headerView;
+
+        // 还原滚动位置
+        self.contentTableView.contentOffset = currentOffset;
+        [self.contentTableView layoutIfNeeded];
+    }];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCCobaltGrainTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCCobaltGrainTableCell"];
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
+    [CSMTC_cell CSMTC_pureDellFoldTrailHollowClimbKnollRise:CSMTC_model CSMTC_gentleRidgeClimb:[NSString stringWithFormat:@"%ld", indexPath.row + 1]];
     return CSMTC_cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
+    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_id]];
+    [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
 }
 
 - (void)CSMTC_silentValePointFoldKnollBluffPath:(NSString *)CSMTC_freshHollowClimb {
@@ -114,6 +160,29 @@
         [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_tameRidgeTrail];
     }
 }
+
+- (void)CSMTC_keenCoveTrailFoldKnollClimbPathRise:(NSArray *)CSMTC_briskValeFold {
+    self.array = CSMTC_briskValeFold;
+    [self CSMTC_refreshHeaderHeight];
+    [self.contentTableView reloadData];
+   
+}
+
+- (void)CSMTC_humbleKnollRisePathTrackHavenFold:(NSString *)CSMTC_freshHollowFold {
+    [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowFold];
+}
+
+- (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan {
+    CSMTCCoralSpireViewController *CSMTC_CoralSpire = [[CSMTCCoralSpireViewController alloc] init];
+    CSMTC_CoralSpire.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    CSMTC_CoralSpire.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    CSMTC_CoralSpire.CSMTCCoralSpireViewBlock = ^{
+        [self.CSMTC_headerView CSMTC_stillHollowFoldTrailKnollClimbPathSpan];
+    };
+    [self presentViewController:CSMTC_CoralSpire animated:YES completion:nil];
+}
+
+
 
 
 @end

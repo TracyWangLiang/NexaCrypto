@@ -40,6 +40,7 @@
     self.coverImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.coverImageView.clipsToBounds = YES;
     [self.contentView addSubview:self.coverImageView];
+    self.coverImageView.layer.cornerRadius = 6;
 
     self.headlineLabel = [[UILabel alloc] init];
     self.headlineLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -94,6 +95,24 @@
         [self.metaInfoLabel.heightAnchor constraintEqualToConstant:16],
         [self.metaInfoLabel.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-18]
     ]];
+}
+
+- (void)CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:(CSMTCMicaShoreItemModel *)CSMTC_itemModel {
+//    @property (nonatomic, strong) UIImageView *coverImageView;
+//    @property (nonatomic, strong) UILabel *headlineLabel;
+//    @property (nonatomic, strong) UILabel *summaryLabel;
+//    @property (nonatomic, strong) UILabel *metaInfoLabel;
+    
+    if (CSMTC_itemModel.CSMTC_cityContours.count > 0) {
+        [CSMTCNexaManager loadImageWithURL:CSMTC_itemModel.CSMTC_cityContours.firstObject CSMTC_placeholder:nil completion:^(UIImage * _Nullable image) {
+            self.coverImageView.image = image;
+        }];
+    }
+    
+    self.headlineLabel.text = CSMTC_itemModel.CSMTC_urbanHorizons;
+    self.summaryLabel.text = CSMTC_itemModel.CSMTC_cityImpressions;
+    self.metaInfoLabel.text = [NSString stringWithFormat:@"%@ / %@ Read", [CSMTCNexaManager CSMTC_smartRidgePathFoldTrailKnollRiseBluff:CSMTC_itemModel.CSMTC_streetMoments], CSMTC_itemModel.CSMTC_cityExpressions];
+    
 }
 
 

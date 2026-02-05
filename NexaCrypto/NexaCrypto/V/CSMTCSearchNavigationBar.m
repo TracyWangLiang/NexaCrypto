@@ -6,6 +6,7 @@
 //
 
 #import "CSMTCSearchNavigationBar.h"
+#import "CSMTCNexaManager.h"
 
 @interface CSMTCSearchNavigationBar ()
 
@@ -72,6 +73,7 @@
     self.CSMTC_overlayButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.CSMTC_overlayButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.CSMTC_containerView addSubview:self.CSMTC_overlayButton];
+    [self.CSMTC_overlayButton addTarget:self action:@selector(CSMTC_plainGlenClimbFoldTrackHavenBluff) forControlEvents:UIControlEventTouchUpInside];
 
     [NSLayoutConstraint activateConstraints:@[
         [self.CSMTC_overlayButton.topAnchor constraintEqualToAnchor:self.CSMTC_containerView.topAnchor],
@@ -79,6 +81,16 @@
         [self.CSMTC_overlayButton.leadingAnchor constraintEqualToAnchor:self.CSMTC_containerView.leadingAnchor],
         [self.CSMTC_overlayButton.trailingAnchor constraintEqualToAnchor:self.CSMTC_containerView.trailingAnchor]
     ]];
+}
+
+- (void)CSMTC_plainGlenClimbFoldTrackHavenBluff {
+    
+    NSString *CSMTC_freshHollowFold = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@?", [CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygfbNjyYeeTQFw3QGc"]]];
+    
+    if ([self.delegate respondsToSelector:@selector(CSMTC_humbleKnollRisePathTrackHavenFold:)]) {
+        [self.delegate CSMTC_humbleKnollRisePathTrackHavenFold:CSMTC_freshHollowFold];
+    }
+
 }
 
 

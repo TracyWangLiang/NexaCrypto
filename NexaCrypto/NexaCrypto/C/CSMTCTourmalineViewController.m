@@ -8,8 +8,9 @@
 #import "CSMTCTourmalineViewController.h"
 #import "CSMTCTourmalineResultView.h"
 #import "CSMTCTourmalineTableView.h"
+#import "CSMTCNexaManager.h"
 
-@interface CSMTCTourmalineViewController ()
+@interface CSMTCTourmalineViewController () <CSMTCTourmalineTableViewDelegate>
 
 @property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) CSMTCTourmalineTableView *mainContainerView;
@@ -18,6 +19,15 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *subtitleLabel;
 
+@property (nonatomic, copy) NSString *CSMTC_firmHavenTrail;
+@property (nonatomic, copy) NSString *CSMTC_brightValeClimb;
+@property (nonatomic, copy) NSString *CSMTC_steadyKnollFold;
+@property (nonatomic, copy) NSString *CSMTC_gentleCoveTrail;
+@property (nonatomic, copy) NSString *CSMTC_quickDellFold;
+@property (nonatomic, copy) NSString *CSMTC_silentValeClimb;
+@property (nonatomic, copy) NSString *CSMTC_tameRidgeTrail;
+
+
 @end
 
 @implementation CSMTCTourmalineViewController
@@ -25,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1];
+    [self CSMTC_calmKnollShorePathRiseFoldTrail];
     [self setupBackButton];
     [self setupHeroImageView];
     [self setupTitleLabel];
@@ -32,6 +43,16 @@
     [self setupMainContainerView];
     [self setupOverlayContainerView];
     [self setupConstraints];
+}
+
+- (void)CSMTC_calmKnollShorePathRiseFoldTrail {
+    self.CSMTC_firmHavenTrail = @"ETH";
+    self.CSMTC_brightValeClimb = @"Supply Structure";
+    self.CSMTC_steadyKnollFold = @"Same Category";
+    self.CSMTC_gentleCoveTrail = @"Early Stage";
+    self.CSMTC_quickDellFold = @"Current Circulation";
+    self.CSMTC_silentValeClimb = @"Structural Balance";
+    self.CSMTC_tameRidgeTrail = @"USD";
 }
 
 
@@ -86,6 +107,7 @@
     self.mainContainerView.translatesAutoresizingMaskIntoConstraints = NO;
     self.mainContainerView.backgroundColor =
     [UIColor clearColor];
+    self.mainContainerView.delegate = self;
     [self.mainContainerView.calculationButton addTarget:self action:@selector(CSMTC_mellowKnollFoldTrailHollowPathClimbSpan) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:self.mainContainerView];
@@ -148,18 +170,78 @@
 }
 
 - (void)CSMTC_mellowKnollFoldTrailHollowPathClimbSpan {
-    self.overlayContainerView.hidden = NO;
-    self.overlayContainerView.alpha = 0.0;
-    [UIView animateWithDuration:0.25 animations:^{
-           self.mainContainerView.alpha = 0.0;
-           self.overlayContainerView.alpha = 1.0;
-       } completion:^(BOOL finished) {
-           self.mainContainerView.hidden = YES;
-           self.overlayContainerView.alpha = 1.0; 
-       }];
+    
+    
+    NSString *CSMTC_humbleRidgeTrail = [self analyzeMatrixReportWithAsset:self.CSMTC_firmHavenTrail structureDimension:self.CSMTC_brightValeClimb comparisonScope:self.CSMTC_steadyKnollFold lifecycleContext:self.CSMTC_gentleCoveTrail circulationPerspective:self.CSMTC_quickDellFold dataEmphasis:self.CSMTC_silentValeClimb baseUnit:self.CSMTC_tameRidgeTrail];
+    
+    [CSMTCLoadingHUD CSMTC_showLoading];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [CSMTCLoadingHUD CSMTC_dismiss];
+        [self.overlayContainerView CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_humbleRidgeTrail];
+        self.overlayContainerView.hidden = NO;
+        self.overlayContainerView.alpha = 0.0;
+        [UIView animateWithDuration:0.25 animations:^{
+            self.mainContainerView.alpha = 0.0;
+            self.overlayContainerView.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            self.mainContainerView.hidden = YES;
+            self.overlayContainerView.alpha = 1.0;
+        }];
+        
+    });
     
 }
 
+
+- (NSString *)analyzeMatrixReportWithAsset:(NSString *)assetToCompare structureDimension:(NSString *)structureDimension comparisonScope:(NSString *)comparisonScope lifecycleContext:(NSString *)lifecycleContext circulationPerspective:(NSString *)circulationPerspective dataEmphasis:(NSString *)dataEmphasis baseUnit:(NSString *)baseUnit {
+    NSMutableString *report = [NSMutableString string];
+
+    [report appendString:@"=== Structure Comparison Table ===\n"];
+    [report appendFormat:@"Asset: %@\n", assetToCompare];
+    [report appendFormat:@"Structure Dimension: %@\n", structureDimension];
+    [report appendFormat:@"Data Emphasis: %@\n\n", dataEmphasis];
+
+    [report appendString:@"=== Structural Difference Summary ===\n"];
+    [report appendFormat:@"For the selected asset '%@' and structure dimension '%@', considering the lifecycle context '%@' and circulation perspective '%@', the data emphasis on '%@' highlights key structural aspects. ", assetToCompare, structureDimension, lifecycleContext, circulationPerspective, dataEmphasis];
+    [report appendString:@"This summary serves as an abstract representation of structural variation and does not imply performance or outcomes.\n\n"];
+
+    NSUInteger assetHash = [assetToCompare length];
+    NSUInteger dimensionHash = [structureDimension length];
+    NSUInteger lifecycleHash = [lifecycleContext length];
+    NSUInteger circulationHash = [circulationPerspective length];
+    NSUInteger emphasisHash = [dataEmphasis length];
+
+    double simulatedIndex = fmod((assetHash * 0.2 + dimensionHash * 0.15 + lifecycleHash * 0.25 + circulationHash * 0.2 + emphasisHash * 0.2), 1.0);
+    NSString *indexString = [NSString stringWithFormat:@"%.2f", simulatedIndex];
+
+    [report appendString:@"=== Relative Structure Index ===\n"];
+    [report appendFormat:@"%@: %@\n\n", assetToCompare, indexString];
+
+    [report appendString:@"=== Reference Note ===\n"];
+    [report appendString:@"Results are for structural reference only and do not imply performance or outcomes.\n"];
+
+    return [report copy];
+}
+
+- (void)CSMTC_livelyHavenPathFoldTrailKnollRise:(NSString *)CSMTC_wideDellTrail CSMTC_keenCoveTrail:(NSString *)CSMTC_keenCoveTrail {
+    
+    if ([CSMTC_wideDellTrail isEqualToString:@"Assets to Compare"]) {
+        self.CSMTC_firmHavenTrail = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Structure Dimension"]) {
+        self.CSMTC_brightValeClimb = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Comparison Scope"]) {
+        self.CSMTC_steadyKnollFold = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Lifecycle Context"]) {
+        self.CSMTC_gentleCoveTrail = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Circulation Perspective"]) {
+        self.CSMTC_quickDellFold = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Data Emphasis"]) {
+        self.CSMTC_silentValeClimb = CSMTC_keenCoveTrail;
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"Base Unit"]) {
+        self.CSMTC_tameRidgeTrail = CSMTC_keenCoveTrail;
+    }
+    
+}
 
 
 @end

@@ -3,4 +3,22 @@
    uuid = "8DAF4EF7-B422-4E66-A3B0-6FBA6F490ED0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CB6235A-D9BF-46F9-8212-3568C1AC3FCB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NexaCrypto/V/CSMTCTourmalineTableView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-CSMTC_tameValeTrackHollowClimbFoldBluff:CSMTC_keenCoveTrail:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

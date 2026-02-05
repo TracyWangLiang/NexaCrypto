@@ -113,4 +113,8 @@
     ]];
 }
 
+- (void)CSMTC_freshCoveBluffTrackHavenClimbSpan:(NSString *)CSMTC_humbleRidgeTrail {
+    self.resultTextView.text = CSMTC_humbleRidgeTrail;
+}
+
 @end
