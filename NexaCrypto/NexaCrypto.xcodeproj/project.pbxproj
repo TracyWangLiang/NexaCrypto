@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33978B922F342C6200E22A03 /* CSMTCTourmalineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978B912F342C6200E22A03 /* CSMTCTourmalineTableView.m */; };
+		33978B962F342C8500E22A03 /* CSMTCTourmalineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978B942F342C8500E22A03 /* CSMTCTourmalineTableViewCell.m */; };
+		33978B9B2F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978B992F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.m */; };
+		33978B9F2F34324300E22A03 /* CSMTCNexaCryptoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978B9E2F34324300E22A03 /* CSMTCNexaCryptoModel.m */; };
+		33978BA22F3435C800E22A03 /* CSMTCTourmalineResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978BA12F3435C800E22A03 /* CSMTCTourmalineResultView.m */; };
+		33978BA52F3438C300E22A03 /* CSMTCNexaCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 33978BA42F3438C300E22A03 /* CSMTCNexaCrypto.m */; };
 		33AE9AA62F32F9A200632DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9A9A2F32F9A200632DB6 /* Assets.xcassets */; };
 		33AE9AA82F32F9A200632DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9A9D2F32F9A200632DB6 /* LaunchScreen.storyboard */; };
 		33AE9AA92F32F9A200632DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AA02F32F9A200632DB6 /* Main.storyboard */; };
@@ -36,6 +42,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33978B902F342C6200E22A03 /* CSMTCTourmalineTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCTourmalineTableView.h; sourceTree = "<group>"; };
+		33978B912F342C6200E22A03 /* CSMTCTourmalineTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCTourmalineTableView.m; sourceTree = "<group>"; };
+		33978B932F342C8500E22A03 /* CSMTCTourmalineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCTourmalineTableViewCell.h; sourceTree = "<group>"; };
+		33978B942F342C8500E22A03 /* CSMTCTourmalineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCTourmalineTableViewCell.m; sourceTree = "<group>"; };
+		33978B982F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCTourmalineTableCollectionCell.h; sourceTree = "<group>"; };
+		33978B992F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCTourmalineTableCollectionCell.m; sourceTree = "<group>"; };
+		33978B9D2F34324300E22A03 /* CSMTCNexaCryptoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCNexaCryptoModel.h; sourceTree = "<group>"; };
+		33978B9E2F34324300E22A03 /* CSMTCNexaCryptoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCNexaCryptoModel.m; sourceTree = "<group>"; };
+		33978BA02F3435C800E22A03 /* CSMTCTourmalineResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCTourmalineResultView.h; sourceTree = "<group>"; };
+		33978BA12F3435C800E22A03 /* CSMTCTourmalineResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCTourmalineResultView.m; sourceTree = "<group>"; };
+		33978BA32F3438C300E22A03 /* CSMTCNexaCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCNexaCrypto.h; sourceTree = "<group>"; };
+		33978BA42F3438C300E22A03 /* CSMTCNexaCrypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCNexaCrypto.m; sourceTree = "<group>"; };
 		33AE9A662F32F97B00632DB6 /* NexaCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexaCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AE9A982F32F9A200632DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33AE9A992F32F9A200632DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +156,10 @@
 		33AE9AAE2F3315C500632DB6 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				33978B9D2F34324300E22A03 /* CSMTCNexaCryptoModel.h */,
+				33978B9E2F34324300E22A03 /* CSMTCNexaCryptoModel.m */,
+				33978BA32F3438C300E22A03 /* CSMTCNexaCrypto.h */,
+				33978BA42F3438C300E22A03 /* CSMTCNexaCrypto.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -165,6 +187,14 @@
 				33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */,
 				33AE9AF42F33489400632DB6 /* CSMTCSlateRidgeReusableView.h */,
 				33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */,
+				33978B902F342C6200E22A03 /* CSMTCTourmalineTableView.h */,
+				33978B912F342C6200E22A03 /* CSMTCTourmalineTableView.m */,
+				33978B932F342C8500E22A03 /* CSMTCTourmalineTableViewCell.h */,
+				33978B942F342C8500E22A03 /* CSMTCTourmalineTableViewCell.m */,
+				33978B982F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.h */,
+				33978B992F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.m */,
+				33978BA02F3435C800E22A03 /* CSMTCTourmalineResultView.h */,
+				33978BA12F3435C800E22A03 /* CSMTCTourmalineResultView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -279,15 +309,21 @@
 				33AE9AAA2F32F9A200632DB6 /* AppDelegate.m in Sources */,
 				33AE9ACF2F331F3D00632DB6 /* CSMTCSearchNavigationBar.m in Sources */,
 				33AE9ABB2F33164100632DB6 /* CSMTCCobaltGrainViewController.m in Sources */,
+				33978B9B2F342DC300E22A03 /* CSMTCTourmalineTableCollectionCell.m in Sources */,
+				33978BA52F3438C300E22A03 /* CSMTCNexaCrypto.m in Sources */,
+				33978B9F2F34324300E22A03 /* CSMTCNexaCryptoModel.m in Sources */,
 				33AE9ABE2F33165900632DB6 /* CSMTCSlateRidgeViewController.m in Sources */,
 				33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */,
 				33AE9AE42F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m in Sources */,
 				33AE9AE92F333C1900632DB6 /* CSMTCMicaShoreTableCell.m in Sources */,
 				33AE9ACA2F3316C600632DB6 /* CSMTCBerylValeViewController.m in Sources */,
+				33978BA22F3435C800E22A03 /* CSMTCTourmalineResultView.m in Sources */,
 				33AE9AEE2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m in Sources */,
 				33AE9ADC2F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m in Sources */,
 				33AE9AC72F3316A500632DB6 /* CSMTCCoralSpireViewController.m in Sources */,
 				33AE9AAB2F32F9A200632DB6 /* main.m in Sources */,
+				33978B962F342C8500E22A03 /* CSMTCTourmalineTableViewCell.m in Sources */,
+				33978B922F342C6200E22A03 /* CSMTCTourmalineTableView.m in Sources */,
 				33AE9AAC2F32F9A200632DB6 /* SceneDelegate.m in Sources */,
 				33AE9AB62F3315E500632DB6 /* DemoViewController.m in Sources */,
 				33AE9AD72F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m in Sources */,
@@ -342,8 +378,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NexaCrypto.NexaCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -369,8 +409,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NexaCrypto.NexaCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

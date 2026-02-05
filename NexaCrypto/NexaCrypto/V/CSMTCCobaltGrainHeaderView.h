@@ -8,9 +8,15 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol CSMTCCobaltGrainHeaderViewDelegate <NSObject>
+@optional
+- (void)CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:(NSString *)CSMTC_tameRidgeTrail;
+@end
+
 
 @interface CSMTCCobaltGrainHeaderView : UIView
 - (void)CSMTC_softValeFoldHollowClimbTrackShore:(NSArray *)CSMTC_sharpKnollTrace;
+@property (nonatomic, weak) id<CSMTCCobaltGrainHeaderViewDelegate> delegate;
 
 @end
 

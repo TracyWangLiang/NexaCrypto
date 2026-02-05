@@ -19,49 +19,70 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJF-nq-gv9">
-                    <rect key="frame" x="0.0" y="118" width="393" height="72"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frv-gL-Fgu">
+                    <rect key="frame" x="15" y="138" width="38" height="34"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="72" id="JlU-dp-avK"/>
+                        <constraint firstAttribute="width" constant="38" id="T2Z-uq-Izo"/>
+                        <constraint firstAttribute="height" constant="34" id="mjQ-xr-mxd"/>
                     </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orv-br-DTt">
-                    <rect key="frame" x="0.0" y="190" width="393" height="33"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="CSMTC_lightHavenFold"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arf-tm-xJh">
+                    <rect key="frame" x="0.0" y="270" width="393" height="514"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0C1-ZK-lxe">
+                    <rect key="frame" x="0.0" y="270" width="393" height="514"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CSMTC_quietKnollRise" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-Hx-qf9">
+                    <rect key="frame" x="242" y="150" width="151" height="151"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="33" id="g32-Rx-aRJ"/>
+                        <constraint firstAttribute="width" constant="151" id="dcM-VF-LE1"/>
+                        <constraint firstAttribute="height" constant="151" id="eqK-6F-1rp"/>
                     </constraints>
-                </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-6t-c9M">
-                    <rect key="frame" x="0.0" y="223" width="393" height="561"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AfM-6w-GbW">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asset Comparison Matrix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTl-I5-Nbn">
+                    <rect key="frame" x="15" y="180" width="223.33333333333334" height="24"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matrix compares crypto assets across structural dimensions such as supply design, network role, and lifecycle context." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muF-lQ-XA8">
+                    <rect key="frame" x="15" y="204" width="215" height="47"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="13"/>
+                    <color key="textColor" red="0.72549019607843135" green="0.72549019607843135" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" red="0.023529411764705882" green="0.031372549019607843" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Tea-6t-c9M" secondAttribute="bottom" id="3PZ-wS-sG6"/>
-                <constraint firstItem="Tea-6t-c9M" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="6EJ-TU-d3o"/>
-                <constraint firstItem="TJF-nq-gv9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="7eV-zd-7V4"/>
-                <constraint firstItem="Tea-6t-c9M" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Gnp-Mz-VbI"/>
-                <constraint firstItem="Tea-6t-c9M" firstAttribute="top" secondItem="Orv-br-DTt" secondAttribute="bottom" id="PyD-IL-MDx"/>
-                <constraint firstItem="Orv-br-DTt" firstAttribute="top" secondItem="TJF-nq-gv9" secondAttribute="bottom" id="beD-7R-dAY"/>
-                <constraint firstItem="Orv-br-DTt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="efD-e3-kic"/>
-                <constraint firstItem="TJF-nq-gv9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="fBx-tD-Zf0"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="TJF-nq-gv9" secondAttribute="trailing" id="grn-IL-GHK"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Orv-br-DTt" secondAttribute="trailing" id="zkT-Sc-wau"/>
+                <constraint firstItem="Frv-gL-Fgu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="5YH-BO-kfi"/>
+                <constraint firstItem="arf-tm-xJh" firstAttribute="top" secondItem="muF-lQ-XA8" secondAttribute="bottom" constant="19" id="Gl8-5o-sP5"/>
+                <constraint firstItem="0C1-ZK-lxe" firstAttribute="leading" secondItem="arf-tm-xJh" secondAttribute="leading" id="Ja9-vl-90M"/>
+                <constraint firstItem="arf-tm-xJh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Jdn-I0-Nsu"/>
+                <constraint firstItem="0C1-ZK-lxe" firstAttribute="trailing" secondItem="arf-tm-xJh" secondAttribute="trailing" id="LIl-23-aaN"/>
+                <constraint firstItem="0C1-ZK-lxe" firstAttribute="top" secondItem="arf-tm-xJh" secondAttribute="top" id="OGY-Bc-sQp"/>
+                <constraint firstItem="0C1-ZK-lxe" firstAttribute="bottom" secondItem="arf-tm-xJh" secondAttribute="bottom" id="YFX-Ak-ACl"/>
+                <constraint firstItem="ezU-Hx-qf9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="32" id="a7W-oo-ffi"/>
+                <constraint firstItem="muF-lQ-XA8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="bnW-wU-YqW"/>
+                <constraint firstItem="arf-tm-xJh" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="cgX-0a-SbW"/>
+                <constraint firstItem="UTl-I5-Nbn" firstAttribute="top" secondItem="Frv-gL-Fgu" secondAttribute="bottom" constant="8" id="dVi-en-2uD"/>
+                <constraint firstItem="arf-tm-xJh" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="fMV-6Z-s1t"/>
+                <constraint firstItem="muF-lQ-XA8" firstAttribute="top" secondItem="UTl-I5-Nbn" secondAttribute="bottom" id="fid-nE-yL5"/>
+                <constraint firstItem="Frv-gL-Fgu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="i1P-Ks-tHX"/>
+                <constraint firstItem="UTl-I5-Nbn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="l2T-TI-8di"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ezU-Hx-qf9" secondAttribute="trailing" id="rVc-v7-lIc"/>
+                <constraint firstItem="ezU-Hx-qf9" firstAttribute="leading" secondItem="muF-lQ-XA8" secondAttribute="trailing" constant="12" id="v99-O8-PAu"/>
             </constraints>
             <point key="canvasLocation" x="29.770992366412212" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="CSMTC_lightHavenFold" width="38" height="34"/>
+        <image name="CSMTC_quietKnollRise" width="132.66667175292969" height="138.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -270,7 +270,15 @@
 }
 
 - (void)CSMTC_mellowCoveTrailFoldBluffShoreSpan:(UIButton *)sender {
-    NSLog(@"%@", sender.titleLabel.text);
+    NSString *CSMTC_tameRidgeTrail = @"";
+    if ([sender.titleLabel.text isEqualToString:@"Map"]) {
+        CSMTC_tameRidgeTrail = @"";
+    } else if ([sender.titleLabel.text isEqualToString:@"Flow"]) {
+        CSMTC_tameRidgeTrail = @"";
+    }
+    if ([self.delegate respondsToSelector:@selector(CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:)]) {
+        [self.delegate CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:CSMTC_tameRidgeTrail];
+    }
 }
 
 @end

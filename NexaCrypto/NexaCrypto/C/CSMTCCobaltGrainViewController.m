@@ -10,8 +10,9 @@
 #import "CSMTCBerylValeViewController.h"
 #import "CSMTCCobaltGrainHeaderView.h"
 #import "CSMTCCobaltGrainTableCell.h"
+#import "CSMTCTourmalineViewController.h"
 
-@interface CSMTCCobaltGrainViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface CSMTCCobaltGrainViewController () <UITableViewDelegate, UITableViewDataSource, CSMTCCobaltGrainHeaderViewDelegate>
 
 @property (nonatomic, strong) CSMTCSearchNavigationBar *topContainerView;
 @property (nonatomic, strong) UITableView *contentTableView;
@@ -74,6 +75,7 @@
 
 - (void)setHeaderView {
     CSMTCCobaltGrainHeaderView *headerView = [[CSMTCCobaltGrainHeaderView alloc] initWithFrame:CGRectZero];
+    headerView.delegate = self;
     [headerView CSMTC_softValeFoldHollowClimbTrackShore:@[@"",@"",@"",@""]];
     CGFloat targetWidth = [UIScreen mainScreen].bounds.size.width;
     headerView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -103,6 +105,15 @@
     [self.navigationController pushViewController:CSMTC_BerylVale animated:YES];
 }
 
+- (void)CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:(NSString *)CSMTC_tameRidgeTrail {
+    if ([CSMTC_tameRidgeTrail isEqualToString:@""]) {
+        CSMTCTourmalineViewController *CSMTC_Tourmaline = [[CSMTCTourmalineViewController alloc] init];
+        [self.navigationController pushViewController:CSMTC_Tourmaline animated:YES];
+        
+    } else {
+        [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_tameRidgeTrail];
+    }
+}
 
 
 @end
