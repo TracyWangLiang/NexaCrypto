@@ -7,6 +7,7 @@
 
 #import "CSMTCTourmalineTableViewCell.h"
 #import "CSMTCTourmalineTableCollectionCell.h"
+#import "NSString+CSMTCString.h"
 
 @interface CSMTCTourmalineTableViewCell ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -50,7 +51,7 @@
  
     self.CSMTC_fairHavenTrail = [[UILabel alloc] init];
     self.CSMTC_fairHavenTrail.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_fairHavenTrail.text = @"Assets to Compare";
+    self.CSMTC_fairHavenTrail.text = @"CSMTCMELLOW_AssCSMTCMELLOW_ets to ComCSMTCMELLOW_pare".CSMTC_removeMellowCoveSpan;
     self.CSMTC_fairHavenTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:16];
     self.CSMTC_fairHavenTrail.textColor = [UIColor whiteColor];
@@ -70,7 +71,7 @@
     self.CSMTC_pureDellFold.dataSource = self;
     
     [self.CSMTC_pureDellFold registerClass:[CSMTCTourmalineTableCollectionCell class]
-            forCellWithReuseIdentifier:@"CSMTCTourmalineTableCollectionCell"];
+            forCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCTouCSMTCMELLOW_rmalineTableColleCSMTCMELLOW_ctionCell".CSMTC_removeMellowCoveSpan];
     
     [self.CSMTC_smartRidgePath addSubview:self.CSMTC_pureDellFold];
 }
@@ -132,7 +133,7 @@
                           cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CSMTCTourmalineTableCollectionCell *CSMTC_cell =
-    [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCTourmalineTableCollectionCell" forIndexPath:indexPath];
+    [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCTouCSMTCMELLOW_rmalineTableColleCSMTCMELLOW_ctionCell".CSMTC_removeMellowCoveSpan forIndexPath:indexPath];
     NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.CSMTC_gentleRidgeClimb objectAtIndex:indexPath.row]];
     [CSMTC_cell CSMTC_gentleHollowBridgeFoldTrackSpanRise:CSMTC_firmHavenTrail CSMTC_brightValeClimb:self.CSMTC_quickDellFold == indexPath.row];
     return CSMTC_cell;

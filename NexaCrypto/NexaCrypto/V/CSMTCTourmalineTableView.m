@@ -8,6 +8,8 @@
 #import "CSMTCTourmalineTableView.h"
 #import "CSMTCTourmalineTableViewCell.h"
 #import "CSMTCNexaCryptoModel.h"
+#import "NSString+CSMTCString.h"
+
 @interface CSMTCTourmalineTableView () <UITableViewDelegate, UITableViewDataSource, CSMTCTourmalineTableViewCellDelegate>
 
 @property (nonatomic, strong) UITableView *CSMTC_brightHollowFold;
@@ -38,7 +40,7 @@
     self.CSMTC_brightHollowFold.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.CSMTC_brightHollowFold.delegate = self;
     self.CSMTC_brightHollowFold.dataSource = self;
-    [self.CSMTC_brightHollowFold registerClass:[CSMTCTourmalineTableViewCell class] forCellReuseIdentifier:@"CSMTCTourmalineTableViewCell"];
+    [self.CSMTC_brightHollowFold registerClass:[CSMTCTourmalineTableViewCell class] forCellReuseIdentifier:@"CSMTCMELLOW_CSMTCTourmaCSMTCMELLOW_lineTablCSMTCMELLOW_eVieCSMTCMELLOW_wCell".CSMTC_removeMellowCoveSpan];
     [self addSubview:self.CSMTC_brightHollowFold];
 }
 
@@ -50,7 +52,7 @@
     self.CSMTC_quickCoveTrail.titleLabel.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
     
-    [self.CSMTC_quickCoveTrail setTitle:@"Calculation"
+    [self.CSMTC_quickCoveTrail setTitle:@"CSMTCMELLOW_CalcCSMTCMELLOW_ulatCSMTCMELLOW_ion".CSMTC_removeMellowCoveSpan
                             forState:UIControlStateNormal];
     [self.CSMTC_quickCoveTrail setTitleColor:[UIColor blackColor]
                                  forState:UIControlStateNormal];
@@ -84,32 +86,32 @@
     for (int i = 0; i < 7; i++) {
         CSMTCTourmalineModel *CSMTC_model = [[CSMTCTourmalineModel alloc] init];
         if (i == 0) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Assets to Compare";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"ETH",@"SOL",@"ARB",@"BNB",@"BTC",@"XRP"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_AssCSMTCMELLOW_ets to ComCSMTCMELLOW_pare".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_ETCSMTCMELLOW_H".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_SOCSMTCMELLOW_L".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_ACSMTCMELLOW_RB".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_BCSMTCMELLOW_NB".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_BTCSMTCMELLOW_C".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_XRCSMTCMELLOW_P".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 3;
         } else if (i == 1) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Structure Dimension";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"Supply Structure",@"Network Role",@"Utility Distribution",@"Governance Design",@"Ecosystem Dependency"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_StruCSMTCMELLOW_cture DimenCSMTCMELLOW_sion".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_SuCSMTCMELLOW_pply StruCSMTCMELLOW_cture".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_NetwCSMTCMELLOW_ork RoCSMTCMELLOW_le".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_UtilCSMTCMELLOW_ity DistriCSMTCMELLOW_bution".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_GoverCSMTCMELLOW_nance DeCSMTCMELLOW_sign".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_EcosyCSMTCMELLOW_stem DepeCSMTCMELLOW_ndency".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 2;
         } else if (i == 2) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Comparison Scope";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"Same Category",@"Cross Category",@"Ecosystem Level"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_CompCSMTCMELLOW_arison ScoCSMTCMELLOW_pe".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_SaCSMTCMELLOW_me CatCSMTCMELLOW_egoCSMTCMELLOW_ry".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_CroCSMTCMELLOW_ss CatCSMTCMELLOW_egory".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_EcosyCSMTCMELLOW_stem LeCSMTCMELLOW_vel".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 2;
         } else if (i == 3) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Lifecycle Context";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"Early Stage",@"Growth Stage",@"Mature Stage"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_LifCSMTCMELLOW_ecycle ConCSMTCMELLOW_text".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_EaCSMTCMELLOW_rly StaCSMTCMELLOW_ge".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_GroCSMTCMELLOW_wth StCSMTCMELLOW_age".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_MatuCSMTCMELLOW_re StCSMTCMELLOW_age".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 3;
         } else if (i == 4) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Circulation Perspective";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"Current Circulation",@"Fully Released",@"Scheduled Release"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_CirculCSMTCMELLOW_ation PerspeCSMTCMELLOW_ctive".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_CurCSMTCMELLOW_rent CircCSMTCMELLOW_ulation".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_FuCSMTCMELLOW_lly ReleCSMTCMELLOW_ased".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_SchedCSMTCMELLOW_uled RelCSMTCMELLOW_ease".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 2;
         } else if (i == 5) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Data Emphasis";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"Structural Balance",@"Network Maturity",@"Ecosystem Stability"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_DaCSMTCMELLOW_ta EmpCSMTCMELLOW_hasis".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_StruCSMTCMELLOW_ctural BalaCSMTCMELLOW_nce".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_NetwCSMTCMELLOW_ork MatuCSMTCMELLOW_rity".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_EcosCSMTCMELLOW_ystem StabiCSMTCMELLOW_lity".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 2;
         } else if (i == 6) {
-            CSMTC_model.CSMTC_firmHavenTrail = @"Base Unit";
-            CSMTC_model.CSMTC_brightValeClimb = @[@"USD",@"ETH",@"ETH"];
+            CSMTC_model.CSMTC_firmHavenTrail = @"CSMTCMELLOW_BaCSMTCMELLOW_se UniCSMTCMELLOW_t".CSMTC_removeMellowCoveSpan;
+            CSMTC_model.CSMTC_brightValeClimb = @[@"CSMTCMELLOW_USCSMTCMELLOW_D".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_ETCSMTCMELLOW_H".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_ETCSMTCMELLOW_H".CSMTC_removeMellowCoveSpan];
             CSMTC_model.CSMTC_gentleCoveTrail = 3;
         }
         [CSMTC_steadyKnollFold addObject:CSMTC_model];
@@ -122,7 +124,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCTourmalineTableViewCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCTourmalineTableViewCell"];
+    CSMTCTourmalineTableViewCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMELLOW_CSMTCTourmaCSMTCMELLOW_lineTablCSMTCMELLOW_eVieCSMTCMELLOW_wCell".CSMTC_removeMellowCoveSpan];
     CSMTCTourmalineModel *CSMTC_model = [self.CSMTC_mistyValeClimb objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_quickRidgeTrailPathHavenClimbReach:CSMTC_model];
     CSMTC_cell.delegate = self;

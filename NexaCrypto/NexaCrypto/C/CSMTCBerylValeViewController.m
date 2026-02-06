@@ -8,6 +8,7 @@
 #import "CSMTCBerylValeViewController.h"
 #import <WebKit/WebKit.h>
 #import "CSMTCLoadingHUD.h"
+#import "CSMTCNexaManager.h"
 
 @interface CSMTCBerylValeViewController () <WKNavigationDelegate, WKScriptMessageHandler>
 
@@ -74,9 +75,9 @@
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach:(NSString *)CSMTC_quickRidgeHollow CSMTC_freshHollowClimb:(NSString *)CSMTC_freshHollowClimb {
     
-    if ([CSMTC_quickRidgeHollow isEqualToString:@"vexloria"]) {
+    if ([CSMTC_quickRidgeHollow isEqualToString:@"CSMTCMELLOW_vexCSMTCMELLOW_lorCSMTCMELLOW_ia".CSMTC_removeMellowCoveSpan]) {
         [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
-    }else if ([CSMTC_quickRidgeHollow isEqualToString:@"calypher"]) {
+    }else if ([CSMTC_quickRidgeHollow isEqualToString:@"CSMTCMELLOW_calCSMTCMELLOW_yphCSMTCMELLOW_er".CSMTC_removeMellowCoveSpan]) {
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
@@ -104,8 +105,8 @@
     if (!_CSMTC_gentleValeBridge) {
         _CSMTC_gentleValeBridge = [[WKWebViewConfiguration alloc] init];
         WKUserContentController *CSMTC_quickRidgeHollow = [[WKUserContentController alloc] init];
-        [CSMTC_quickRidgeHollow addScriptMessageHandler:self name:@"vexloria"];
-        [CSMTC_quickRidgeHollow addScriptMessageHandler:self name:@"calypher"];
+        [CSMTC_quickRidgeHollow addScriptMessageHandler:self name:@"CSMTCMELLOW_vexCSMTCMELLOW_lorCSMTCMELLOW_ia".CSMTC_removeMellowCoveSpan];
+        [CSMTC_quickRidgeHollow addScriptMessageHandler:self name:@"CSMTCMELLOW_calCSMTCMELLOW_yphCSMTCMELLOW_er".CSMTC_removeMellowCoveSpan];
         _CSMTC_gentleValeBridge.userContentController = CSMTC_quickRidgeHollow;
     }
     return _CSMTC_gentleValeBridge;

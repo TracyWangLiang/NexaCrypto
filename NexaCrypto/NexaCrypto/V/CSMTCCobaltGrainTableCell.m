@@ -49,7 +49,7 @@
     self.CSMTC_silentValeClimb.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:16];
     self.CSMTC_silentValeClimb.textColor = [UIColor whiteColor];
     [self.contentView addSubview:self.CSMTC_silentValeClimb];
-    self.CSMTC_silentValeClimb.text = @"Bitcoin";
+    self.CSMTC_silentValeClimb.text = @"CSMTCMELLOW_BitCSMTCMELLOW_coin".CSMTC_removeMellowCoveSpan;
 
     self.CSMTC_quickDellFold = [[UILabel alloc] init];
     self.CSMTC_quickDellFold.translatesAutoresizingMaskIntoConstraints = NO;
@@ -60,21 +60,21 @@
     self.CSMTC_quickDellFold.layer.cornerRadius = 2;
     self.CSMTC_quickDellFold.layer.masksToBounds = YES;
     [self.contentView addSubview:self.CSMTC_quickDellFold];
-    self.CSMTC_quickDellFold.text = @"1";
+    self.CSMTC_quickDellFold.text = @"CSMTCMELLOW_1CSMTCMELLOW_".CSMTC_removeMellowCoveSpan;
 
     self.CSMTC_gentleCoveTrail = [[UILabel alloc] init];
     self.CSMTC_gentleCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_gentleCoveTrail.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
     self.CSMTC_gentleCoveTrail.textColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
     [self.contentView addSubview:self.CSMTC_gentleCoveTrail];
-    self.CSMTC_gentleCoveTrail.text = @"BTC";
+    self.CSMTC_gentleCoveTrail.text = @"CSMTCMELLOW_BTCSMTCMELLOW_C".CSMTC_removeMellowCoveSpan;
 
     self.CSMTC_steadyKnollFold = [[UIImageView alloc] init];
     self.CSMTC_steadyKnollFold.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_steadyKnollFold.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.CSMTC_steadyKnollFold];
-    self.CSMTC_steadyKnollFold.image = [UIImage imageNamed:@"CSMTC_calmKnollShore"];
-    self.CSMTC_steadyKnollFold.highlightedImage = [UIImage imageNamed:@"CSMTC_steadyCoveRise"];
+    self.CSMTC_steadyKnollFold.image = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_calmKCSMTCMELLOW_nollSCSMTCMELLOW_hore".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_steadyKnollFold.highlightedImage = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_steCSMTCMELLOW_adyCovCSMTCMELLOW_eRise".CSMTC_removeMellowCoveSpan];
 
     self.CSMTC_brightValeClimb = [[UILabel alloc] init];
     self.CSMTC_brightValeClimb.translatesAutoresizingMaskIntoConstraints = NO;
@@ -82,7 +82,7 @@
     self.CSMTC_brightValeClimb.textColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
     [self.contentView addSubview:self.CSMTC_brightValeClimb];
 
-    self.CSMTC_brightValeClimb.text = @"0.00";
+    self.CSMTC_brightValeClimb.text = @"CSMTCMELLOW_0.0CSMTCMELLOW_0".CSMTC_removeMellowCoveSpan;
     
     self.CSMTC_firmHavenTrail = [[UILabel alloc] init];
     self.CSMTC_firmHavenTrail.translatesAutoresizingMaskIntoConstraints = NO;
@@ -90,7 +90,7 @@
     self.CSMTC_firmHavenTrail.textColor = [UIColor whiteColor];
     self.CSMTC_firmHavenTrail.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:self.CSMTC_firmHavenTrail];
-    self.CSMTC_firmHavenTrail.text = @"$0.00";
+    self.CSMTC_firmHavenTrail.text = @"CSMTCMELLOW_$0.0CSMTCMELLOW_0".CSMTC_removeMellowCoveSpan;
 
     self.CSMTC_briskHarborLoom = [[UILabel alloc] init];
     self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
@@ -98,7 +98,7 @@
     self.CSMTC_briskHarborLoom.textColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
     self.CSMTC_briskHarborLoom.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:self.CSMTC_briskHarborLoom];
-    self.CSMTC_briskHarborLoom.text = @"Mkt Cap: $0.00";
+    self.CSMTC_briskHarborLoom.text = @"CSMTCMELLOW_Mkt CaCSMTCMELLOW_p: $0.00CSMTCMELLOW_".CSMTC_removeMellowCoveSpan;
 }
 
 
@@ -143,18 +143,18 @@
 
 - (void)CSMTC_pureDellFoldTrailHollowClimbKnollRise:(CSMTCCobaltGrainDataItemModel*)CSMTC_model CSMTC_gentleRidgeClimb:(NSString *)CSMTC_gentleRidgeClimb {
     
-    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
-    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_humbleKnollRise.firstObject;
+    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_sharpKnollTrace completion:^(UIImage * _Nullable image) {
         self.CSMTC_tameRidgeTrail.image = image;
     }];
-    self.CSMTC_silentValeClimb.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_silentValeClimb.text = CSMTC_model.CSMTC_vastValePoint;
     self.CSMTC_quickDellFold.text = CSMTC_gentleRidgeClimb;
-    self.CSMTC_gentleCoveTrail.text = CSMTC_model.CSMTC_symbol;
-    self.CSMTC_steadyKnollFold.highlighted = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h];
-    self.CSMTC_brightValeClimb.text = [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h];
-    self.CSMTC_brightValeClimb.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_percentChange1h];
-    self.CSMTC_firmHavenTrail.text = [NSString stringWithFormat:@"$%@",[CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
-    self.CSMTC_briskHarborLoom.text = [NSString stringWithFormat:@"Mkt Cap: $%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_marketCap]];
+    self.CSMTC_gentleCoveTrail.text = CSMTC_model.CSMTC_plainHollowPeak;
+    self.CSMTC_steadyKnollFold.highlighted = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_freshHollowClimb];
+    self.CSMTC_brightValeClimb.text = [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_freshHollowClimb];
+    self.CSMTC_brightValeClimb.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_freshHollowClimb];
+    self.CSMTC_firmHavenTrail.text = [NSString stringWithFormat:@"$%@",[CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_silentHarborGlen]];
+    self.CSMTC_briskHarborLoom.text = [NSString stringWithFormat:@"CSMTCMELLOW_MkCSMTCMELLOW_t CCSMTCMELLOW_ap: $%@".CSMTC_removeMellowCoveSpan, [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_quickRidgeHollow]];
     
 }
 

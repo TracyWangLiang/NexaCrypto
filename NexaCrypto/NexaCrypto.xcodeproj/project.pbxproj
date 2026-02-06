@@ -24,9 +24,6 @@
 		33AE9AAB2F32F9A200632DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9A9E2F32F9A200632DB6 /* main.m */; };
 		33AE9AAC2F32F9A200632DB6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AA22F32F9A200632DB6 /* SceneDelegate.m */; };
 		33AE9AAD2F32F9A200632DB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AA42F32F9A200632DB6 /* ViewController.m */; };
-		33AE9AB52F3315E500632DB6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AB42F3315E500632DB6 /* DemoViewController.xib */; };
-		33AE9AB62F3315E500632DB6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AB32F3315E500632DB6 /* DemoViewController.m */; };
-		33AE9AB82F3315F000632DB6 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AE9AB72F3315F000632DB6 /* DemoView.xib */; };
 		33AE9ABB2F33164100632DB6 /* CSMTCCobaltGrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ABA2F33164100632DB6 /* CSMTCCobaltGrainViewController.m */; };
 		33AE9ABE2F33165900632DB6 /* CSMTCSlateRidgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9ABD2F33165900632DB6 /* CSMTCSlateRidgeViewController.m */; };
 		33AE9AC12F33166B00632DB6 /* CSMTCMicaShoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AC02F33166B00632DB6 /* CSMTCMicaShoreViewController.m */; };
@@ -43,6 +40,7 @@
 		33AE9AEE2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AEB2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m */; };
 		33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */; };
 		33AE9AF82F33489400632DB6 /* CSMTCSlateRidgeReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */; };
+		33FD19832F35905D0086031E /* NSString+CSMTCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD19822F35905D0086031E /* NSString+CSMTCString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,10 +76,6 @@
 		33AE9AA22F32F9A200632DB6 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		33AE9AA32F32F9A200632DB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33AE9AA42F32F9A200632DB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		33AE9AB22F3315E500632DB6 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
-		33AE9AB32F3315E500632DB6 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
-		33AE9AB42F3315E500632DB6 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
-		33AE9AB72F3315F000632DB6 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
 		33AE9AB92F33164100632DB6 /* CSMTCCobaltGrainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCCobaltGrainViewController.h; sourceTree = "<group>"; };
 		33AE9ABA2F33164100632DB6 /* CSMTCCobaltGrainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCCobaltGrainViewController.m; sourceTree = "<group>"; };
 		33AE9ABC2F33165900632DB6 /* CSMTCSlateRidgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateRidgeViewController.h; sourceTree = "<group>"; };
@@ -114,6 +108,8 @@
 		33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateExploreCollectionCell.m; sourceTree = "<group>"; };
 		33AE9AF42F33489400632DB6 /* CSMTCSlateRidgeReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMTCSlateRidgeReusableView.h; sourceTree = "<group>"; };
 		33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateRidgeReusableView.m; sourceTree = "<group>"; };
+		33FD19812F35905D0086031E /* NSString+CSMTCString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CSMTCString.h"; sourceTree = "<group>"; };
+		33FD19822F35905D0086031E /* NSString+CSMTCString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CSMTCString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +142,8 @@
 		33AE9AA52F32F9A200632DB6 /* NexaCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				33AE9AB12F3315D400632DB6 /* O */,
+				33FD19812F35905D0086031E /* NSString+CSMTCString.h */,
+				33FD19822F35905D0086031E /* NSString+CSMTCString.m */,
 				33AE9AB02F3315D000632DB6 /* C */,
 				33AE9AAF2F3315CA00632DB6 /* V */,
 				33AE9AAE2F3315C500632DB6 /* M */,
@@ -238,17 +235,6 @@
 			path = C;
 			sourceTree = "<group>";
 		};
-		33AE9AB12F3315D400632DB6 /* O */ = {
-			isa = PBXGroup;
-			children = (
-				33AE9AB22F3315E500632DB6 /* DemoViewController.h */,
-				33AE9AB32F3315E500632DB6 /* DemoViewController.m */,
-				33AE9AB42F3315E500632DB6 /* DemoViewController.xib */,
-				33AE9AB72F3315F000632DB6 /* DemoView.xib */,
-			);
-			path = O;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,10 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AE9AA62F32F9A200632DB6 /* Assets.xcassets in Resources */,
-				33AE9AB82F3315F000632DB6 /* DemoView.xib in Resources */,
 				33AE9AA82F32F9A200632DB6 /* LaunchScreen.storyboard in Resources */,
 				33AE9AA92F32F9A200632DB6 /* Main.storyboard in Resources */,
-				33AE9AB52F3315E500632DB6 /* DemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +318,7 @@
 				33978BA52F3438C300E22A03 /* CSMTCNexaCrypto.m in Sources */,
 				33978B9F2F34324300E22A03 /* CSMTCNexaCryptoModel.m in Sources */,
 				33AE9ABE2F33165900632DB6 /* CSMTCSlateRidgeViewController.m in Sources */,
+				33FD19832F35905D0086031E /* NSString+CSMTCString.m in Sources */,
 				33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */,
 				33AE9AE42F3333E000632DB6 /* CSMTCCobaltGrainHeaderView.m in Sources */,
 				33AE9AE92F333C1900632DB6 /* CSMTCMicaShoreTableCell.m in Sources */,
@@ -349,7 +334,6 @@
 				33978B922F342C6200E22A03 /* CSMTCTourmalineTableView.m in Sources */,
 				33978BA82F343F5800E22A03 /* CSMTCNexaManager.m in Sources */,
 				33AE9AAC2F32F9A200632DB6 /* SceneDelegate.m in Sources */,
-				33AE9AB62F3315E500632DB6 /* DemoViewController.m in Sources */,
 				33AE9AD72F33264900632DB6 /* CSMTCSelectHeaderCollectionCell.m in Sources */,
 				33AE9AC12F33166B00632DB6 /* CSMTCMicaShoreViewController.m in Sources */,
 				33AE9AE12F332E2A00632DB6 /* CSMTCCobaltGrainTableCell.m in Sources */,

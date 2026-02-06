@@ -9,6 +9,7 @@
 #import "CSMTCCobaltGrainViewController.h"
 #import "CSMTCSlateRidgeViewController.h"
 #import "CSMTCMicaShoreViewController.h"
+#import "CSMTCNexaManager.h"
 
 @interface SceneDelegate ()
 
@@ -39,20 +40,20 @@
 
 - (UITabBarController *)CSMTC_clearKnollClimbTrailFoldHollowPathSpan {
     UITabBarController *CSMTC_tabbar = [[UITabBarController alloc] init];
-    UITabBarAppearance *appearance = [[UITabBarAppearance alloc] init];
-    [appearance configureWithOpaqueBackground];
-    appearance.backgroundColor = [UIColor colorWithRed:13/255.0 green:13/255.0 blue:15/255.0 alpha:1];
-    appearance.stackedLayoutAppearance.normal.titleTextAttributes = @{
+    UITabBarAppearance *CSMTC_gentleCoveTrail = [[UITabBarAppearance alloc] init];
+    [CSMTC_gentleCoveTrail configureWithOpaqueBackground];
+    CSMTC_gentleCoveTrail.backgroundColor = [UIColor colorWithRed:13/255.0 green:13/255.0 blue:15/255.0 alpha:1];
+    CSMTC_gentleCoveTrail.stackedLayoutAppearance.normal.titleTextAttributes = @{
         NSForegroundColorAttributeName: [[UIColor whiteColor] colorWithAlphaComponent:0.5],
         NSFontAttributeName: [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:12]
     };
-    appearance.stackedLayoutAppearance.selected.titleTextAttributes = @{
+    CSMTC_gentleCoveTrail.stackedLayoutAppearance.selected.titleTextAttributes = @{
         NSForegroundColorAttributeName: [UIColor whiteColor],
         NSFontAttributeName: [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:12]
     };
-    [UITabBar appearance].standardAppearance = appearance;
+    [UITabBar appearance].standardAppearance = CSMTC_gentleCoveTrail;
     if (@available(iOS 15.0, *)) {
-        [UITabBar appearance].scrollEdgeAppearance = appearance;
+        [UITabBar appearance].scrollEdgeAppearance = CSMTC_gentleCoveTrail;
     }
     CSMTC_tabbar.viewControllers = [self CSMTC_softDellFoldTrailHavenClimbKnollRise];
     return CSMTC_tabbar;
@@ -61,24 +62,20 @@
 - (void)CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:(UIViewController *)CSMTC_firmHavenTrail CSMTC_brightValeClimb:(NSString *)CSMTC_brightValeClimb {
     NSString *CSMTC_steadyKnollFold = @"";
     NSString *CSMTC_gentleCoveTrail = @"";
-    if ([CSMTC_brightValeClimb isEqualToString:@"Home"]) {
-        CSMTC_steadyKnollFold = @"CSMTC_sharpKnollTrace";
-        CSMTC_gentleCoveTrail = @"CSMTC_softCrestLane";
-    } else if ([CSMTC_brightValeClimb isEqualToString:@"Market"]) {
-        CSMTC_steadyKnollFold = @"CSMTC_clearGlenFold";
-        CSMTC_gentleCoveTrail = @"CSMTC_vastValePoint";
-    } else if ([CSMTC_brightValeClimb isEqualToString:@"News"]) {
-        CSMTC_steadyKnollFold = @"CSMTC_mistyDellSpan";
-        CSMTC_gentleCoveTrail = @"CSMTC_deepGlenTrack";
+    if ([CSMTC_brightValeClimb isEqualToString:@"CSMTCMELLOW_HomCSMTCMELLOW_e".CSMTC_removeMellowCoveSpan]) {
+        CSMTC_steadyKnollFold = @"CSMTCMELLOW_CSMTC_shaCSMTCMELLOW_rpKnolCSMTCMELLOW_lTrace".CSMTC_removeMellowCoveSpan;
+        CSMTC_gentleCoveTrail = @"CSMTCMELLOW_CSMTC_soCSMTCMELLOW_ftCresCSMTCMELLOW_tLane".CSMTC_removeMellowCoveSpan;
+    } else if ([CSMTC_brightValeClimb isEqualToString:@"CSMTCMELLOW_MaCSMTCMELLOW_rkCSMTCMELLOW_et".CSMTC_removeMellowCoveSpan]) {
+        CSMTC_steadyKnollFold = @"CSMTCMELLOW_CSMTC_cleCSMTCMELLOW_arGleCSMTCMELLOW_nFold".CSMTC_removeMellowCoveSpan;
+        CSMTC_gentleCoveTrail = @"CSMTCMELLOW_CSMTC_vasCSMTCMELLOW_tValeCSMTCMELLOW_Point".CSMTC_removeMellowCoveSpan;
+    } else if ([CSMTC_brightValeClimb isEqualToString:@"CSMTCMELLOW_NCSMTCMELLOW_ewCSMTCMELLOW_s".CSMTC_removeMellowCoveSpan]) {
+        CSMTC_steadyKnollFold = @"CSMTCMELLOW_CSMTC_mCSMTCMELLOW_istyDCSMTCMELLOW_ellSpan".CSMTC_removeMellowCoveSpan;
+        CSMTC_gentleCoveTrail = @"CSMTCMELLOW_CSMTC_deeCSMTCMELLOW_pGlenCSMTCMELLOW_Track".CSMTC_removeMellowCoveSpan;
     }
     
     CSMTC_firmHavenTrail.tabBarItem = [[UITabBarItem alloc] initWithTitle:CSMTC_brightValeClimb image:[[UIImage imageNamed:CSMTC_steadyKnollFold] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:CSMTC_gentleCoveTrail] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
 }
-
-
-
-
 
 
 

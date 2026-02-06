@@ -62,10 +62,10 @@
     [self.CSMTC_silentHarborGlen addSubview:self.CSMTC_gentleValeBridge];
     self.CSMTC_gentleValeBridge.delegate = self;
     self.CSMTC_gentleValeBridge.dataSource = self;
-    [self.CSMTC_gentleValeBridge registerClass:[CSMTCCoralSpireTableCell class] forCellReuseIdentifier:@"CSMTCCoralSpireTableCell"];
+    [self.CSMTC_gentleValeBridge registerClass:[CSMTCCoralSpireTableCell class] forCellReuseIdentifier:@"CSMTCMELLOW_CSMTCCorCSMTCMELLOW_alSpirCSMTCMELLOW_eTableCell".CSMTC_removeMellowCoveSpan];
     
     self.CSMTC_quickRidgeHollow = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.CSMTC_quickRidgeHollow setTitle:@"Sure" forState:UIControlStateNormal];
+    [self.CSMTC_quickRidgeHollow setTitle:@"CSMTCMELLOW_SuCSMTCMELLOW_re".CSMTC_removeMellowCoveSpan forState:UIControlStateNormal];
     [self.CSMTC_quickRidgeHollow setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.CSMTC_quickRidgeHollow.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
     self.CSMTC_quickRidgeHollow.backgroundColor = [UIColor blackColor];
@@ -125,7 +125,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCCoralSpireTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCCoralSpireTableCell"];
+    CSMTCCoralSpireTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMELLOW_CSMTCCorCSMTCMELLOW_alSpirCSMTCMELLOW_eTableCell".CSMTC_removeMellowCoveSpan];
     CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_freshHollowClimb objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_fairHavenTrailFoldClimbKnollPathSpan:CSMTC_model];
     return CSMTC_cell;
@@ -145,7 +145,7 @@
 - (BOOL)CSMTC_calmKnollShorePathRiseFoldTrail:(CSMTCCobaltGrainDataItemModel *)CSMTC_brightValeClimb CSMTC_firmHavenTrail:(NSArray *)CSMTC_firmHavenTrail {
     if (!CSMTC_brightValeClimb || !CSMTC_firmHavenTrail || CSMTC_firmHavenTrail.count == 0) return NO;
     for (CSMTCCobaltGrainDataItemModel *CSMTC_steadyKnollFold in CSMTC_firmHavenTrail) {
-        if ([CSMTC_steadyKnollFold.CSMTC_id isEqualToString:CSMTC_brightValeClimb.CSMTC_id]) {
+        if ([CSMTC_steadyKnollFold.CSMTC_sharpKnollTrace isEqualToString:CSMTC_brightValeClimb.CSMTC_sharpKnollTrace]) {
             return YES;
         }
     }
@@ -156,7 +156,7 @@
     [CSMTCNexaManager CSMTC_firmKnollTrailFoldHavenClimbSpan:[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"mO0Xkkxlhydj2SdmOgB69UELFU/ehuZiegIFBqdueXpvn3utuwNJ7MSpl44cejrT7q48Hk1FTfok4l8sLOPbuzI2cqAr3xGcJfEq0HG++8sxyERtnIBalHH9T1Jz"] CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
         if (CSMTC_dict.count > 0) {
             CSMTCCobaltGrainDataModel *CSMTC_model = [CSMTCCobaltGrainDataModel CSMTC_modelWithDictionary:CSMTC_dict];
-            self.CSMTC_freshHollowClimb = [CSMTCNexaManager CSMTC_briskRidgeTrailFoldDellKnollSpan:CSMTC_model.CSMTC_cryptoCurrencyList CSMTC_humbleRidgeTrail:CSMTCQuoteSortFieldPrice];
+            self.CSMTC_freshHollowClimb = [CSMTCNexaManager CSMTC_briskRidgeTrailFoldDellKnollSpan:CSMTC_model.CSMTC_fairRidgeTrail CSMTC_humbleRidgeTrail:CSMTCQuoteSortFieldPrice];
             [self.CSMTC_gentleValeBridge reloadData];
         }
     } CSMTC_failure:^(NSInteger CSMTC_errorCode, NSString * _Nonnull CSMTC_errorMsg) {

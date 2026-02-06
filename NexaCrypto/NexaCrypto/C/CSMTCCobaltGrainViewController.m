@@ -50,7 +50,7 @@
     self.CSMTC_silentHarborGlen.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.CSMTC_silentHarborGlen.delegate = self;
     self.CSMTC_silentHarborGlen.dataSource = self;
-    [self.CSMTC_silentHarborGlen registerClass:[CSMTCCobaltGrainTableCell class] forCellReuseIdentifier:@"CSMTCCobaltGrainTableCell"];
+    [self.CSMTC_silentHarborGlen registerClass:[CSMTCCobaltGrainTableCell class] forCellReuseIdentifier:@"CSMTCMELLOW_CSMTCCobCSMTCMELLOW_altGrainCSMTCMELLOW_TableCell".CSMTC_removeMellowCoveSpan];
     [self.view addSubview:self.CSMTC_silentHarborGlen];
 }
 
@@ -118,7 +118,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCCobaltGrainTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCCobaltGrainTableCell"];
+    CSMTCCobaltGrainTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMELLOW_CSMTCCobCSMTCMELLOW_altGrainCSMTCMELLOW_TableCell".CSMTC_removeMellowCoveSpan];
     CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_gentleValeBridge objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_pureDellFoldTrailHollowClimbKnollRise:CSMTC_model CSMTC_gentleRidgeClimb:[NSString stringWithFormat:@"%ld", indexPath.row + 1]];
     return CSMTC_cell;
@@ -126,7 +126,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_gentleValeBridge objectAtIndex:indexPath.row];
-    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_id]];
+    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_sharpKnollTrace]];
     [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
 }
 
@@ -167,7 +167,7 @@
 }
 
 - (void)CSMTC_freshHollowFoldTrailKnollRisePathBluff:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
-    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_id]];
+    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_sharpKnollTrace]];
     [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
 }
 

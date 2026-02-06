@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+CSMTCString.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,18 +24,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMTCCobaltGrainItemModel : NSObject
 
-@property (nonatomic, copy) NSString *CSMTC_name;
-@property (nonatomic, copy) NSString *CSMTC_price;
-@property (nonatomic, copy) NSString *CSMTC_volume24h;
-@property (nonatomic, copy) NSString *CSMTC_volume7d;
-@property (nonatomic, copy) NSString *CSMTC_marketCap;
-@property (nonatomic, copy) NSString *CSMTC_percentChange1h;
-@property (nonatomic, copy) NSString *CSMTC_percentChange24h;
-@property (nonatomic, copy) NSString *CSMTC_percentChange7d;
-@property (nonatomic, copy) NSString *CSMTC_percentChange30d;
-@property (nonatomic, copy) NSString *CSMTC_percentChange60d;
-@property (nonatomic, copy) NSString *CSMTC_percentChange90d;
-@property (nonatomic, copy) NSString *CSMTC_lastUpdated;
+@property (nonatomic, copy) NSString *CSMTC_briskHarborLoom;
+@property (nonatomic, copy) NSString *CSMTC_silentHarborGlen;
+@property (nonatomic, copy) NSString *CSMTC_firmHavenCrest;
+@property (nonatomic, copy) NSString *CSMTC_gentleValeBridge;
+@property (nonatomic, copy) NSString *CSMTC_quickRidgeHollow;
+@property (nonatomic, copy) NSString *CSMTC_freshHollowClimb;
+@property (nonatomic, copy) NSString *CSMTC_brightDellPath;
+@property (nonatomic, copy) NSString *CSMTC_calmKnollShore;
+@property (nonatomic, copy) NSString *CSMTC_steadyCoveRise;
+@property (nonatomic, copy) NSString *CSMTC_softCrestLane;
+@property (nonatomic, copy) NSString *CSMTC_clearGlenFold;
+@property (nonatomic, copy) NSString *CSMTC_mistyDellSpan;
 
 + (instancetype)CSMTC_modelWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)CSMTC_toDictionary;
@@ -43,12 +44,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMTCCobaltGrainDataItemModel : NSObject
 
-@property (nonatomic, copy) NSString *CSMTC_id;
-@property (nonatomic, copy) NSString *CSMTC_name;
-@property (nonatomic, copy) NSString *CSMTC_symbol;
-@property (nonatomic, copy) NSString *CSMTC_slug;
-@property (nonatomic, copy) NSString *CSMTC_marketPairCount;
-@property (nonatomic, strong) NSArray *CSMTC_quotes;
+@property (nonatomic, copy) NSString *CSMTC_sharpKnollTrace;
+@property (nonatomic, copy) NSString *CSMTC_vastValePoint;
+@property (nonatomic, copy) NSString *CSMTC_plainHollowPeak;
+@property (nonatomic, copy) NSString *CSMTC_wideRidgeTrail;
+@property (nonatomic, copy) NSString *CSMTC_mellowCoveBluff;
+@property (nonatomic, strong) NSArray *CSMTC_humbleKnollRise;
 
 + (instancetype)CSMTC_modelWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)CSMTC_toDictionary;
@@ -57,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMTCCobaltGrainDataModel : NSObject
 
-@property (nonatomic, strong) NSArray *CSMTC_cryptoCurrencyList;
+@property (nonatomic, strong) NSArray *CSMTC_fairRidgeTrail;
 
 + (instancetype)CSMTC_modelWithDictionary:(NSDictionary *)dictionary;
 

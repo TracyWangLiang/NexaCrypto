@@ -6,7 +6,7 @@
 //
 
 #import "CSMTCTourmalineResultView.h"
-
+#import "NSString+CSMTCString.h"
 @interface CSMTCTourmalineResultView ()
 
 @property (nonatomic, strong) UIView *CSMTC_wideDellTrail;
@@ -45,7 +45,7 @@
 - (void)CSMTC_clearKnollClimbTrailFoldHollowPathSpan {
     self.CSMTC_lightHavenClimb = [[UILabel alloc] init];
     self.CSMTC_lightHavenClimb.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_lightHavenClimb.text = @"Calculation Result";
+    self.CSMTC_lightHavenClimb.text = @"CSMTCMELLOW_CalcuCSMTCMELLOW_lation ResCSMTCMELLOW_ult".CSMTC_removeMellowCoveSpan;
     self.CSMTC_lightHavenClimb.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:16];
     self.CSMTC_lightHavenClimb.textColor = [UIColor whiteColor];
@@ -62,7 +62,7 @@
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:15];
     self.CSMTC_mellowKnollFold.textColor = [UIColor whiteColor];
     self.CSMTC_mellowKnollFold.text =
-    @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    @"CSMTCMELLOW_LorCSMTCMELLOW_em ipsCSMTCMELLOW_um doCSMTCMELLOW_lor sCSMTCMELLOW_it er eCSMTCMELLOW_lit lCSMTCMELLOW_amet, conCSMTCMELLOW_sectetaur cillCSMTCMELLOW_ium adipiCSMTCMELLOW_sicing peCSMTCMELLOW_cu, seCSMTCMELLOW_d dCSMTCMELLOW_o eiusCSMTCMELLOW_mod temCSMTCMELLOW_por incidCSMTCMELLOW_idunt uCSMTCMELLOW_t labCSMTCMELLOW_ore eCSMTCMELLOW_t doCSMTCMELLOW_lore maCSMTCMELLOW_gna aliCSMTCMELLOW_qua.".CSMTC_removeMellowCoveSpan;
     
     [self.CSMTC_wideDellTrail addSubview:self.CSMTC_mellowKnollFold];
 }
@@ -72,7 +72,7 @@
     self.CSMTC_tameRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_tameRidgeTrail.numberOfLines = 2;
     self.CSMTC_tameRidgeTrail.text =
-    @"Results are for structural reference only and do not imply performance or outcomes.";
+    @"CSMTCMELLOW_ResuCSMTCMELLOW_lts arCSMTCMELLOW_e fCSMTCMELLOW_or struCSMTCMELLOW_ctural referCSMTCMELLOW_ence onCSMTCMELLOW_ly aCSMTCMELLOW_nd dCSMTCMELLOW_o nCSMTCMELLOW_ot impCSMTCMELLOW_ly perfCSMTCMELLOW_ormance oCSMTCMELLOW_r outcCSMTCMELLOW_omes.".CSMTC_removeMellowCoveSpan;
     self.CSMTC_tameRidgeTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:12];
     self.CSMTC_tameRidgeTrail.textColor =

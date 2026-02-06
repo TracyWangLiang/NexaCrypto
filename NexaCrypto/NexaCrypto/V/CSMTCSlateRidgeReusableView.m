@@ -6,7 +6,7 @@
 //
 
 #import "CSMTCSlateRidgeReusableView.h"
-
+#import "NSString+CSMTCString.h"
 @interface CSMTCSlateRidgeReusableView ()
 
 @property (nonatomic, strong) UIImageView *CSMTC_mellowCoveBluff;
@@ -29,13 +29,13 @@
 
 - (void)CSMTC_mistyValeClimbTrailFoldShoreKnollSpan {
 
-    self.CSMTC_mellowCoveBluff = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTC_mellowCoveBluff"]];
+    self.CSMTC_mellowCoveBluff = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_mellCSMTCMELLOW_owCoveBCSMTCMELLOW_luff".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_mellowCoveBluff.contentMode = UIViewContentModeScaleAspectFit;
     self.CSMTC_mellowCoveBluff.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.CSMTC_mellowCoveBluff];
  
     self.CSMTC_humbleKnollRise = [[UILabel alloc] init];
-    self.CSMTC_humbleKnollRise.text = @"Ask AI to help you understand crypto data";
+    self.CSMTC_humbleKnollRise.text = @"CSMTCMELLOW_AsCSMTCMELLOW_k ACSMTCMELLOW_I tCSMTCMELLOW_o heCSMTCMELLOW_lp yoCSMTCMELLOW_u underCSMTCMELLOW_stand crCSMTCMELLOW_ypto daCSMTCMELLOW_ta".CSMTC_removeMellowCoveSpan;
     self.CSMTC_humbleKnollRise.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:20];
     self.CSMTC_humbleKnollRise.textColor = [UIColor whiteColor];
     self.CSMTC_humbleKnollRise.textAlignment = NSTextAlignmentCenter;
@@ -44,7 +44,7 @@
     [self addSubview:self.CSMTC_humbleKnollRise];
 
     self.CSMTC_wideRidgeTrail = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.CSMTC_wideRidgeTrail setTitle:@"Chat now" forState:UIControlStateNormal];
+    [self.CSMTC_wideRidgeTrail setTitle:@"CSMTCMELLOW_ChCSMTCMELLOW_at noCSMTCMELLOW_w".CSMTC_removeMellowCoveSpan forState:UIControlStateNormal];
     [self.CSMTC_wideRidgeTrail setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.CSMTC_wideRidgeTrail.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
     self.CSMTC_wideRidgeTrail.backgroundColor = [UIColor whiteColor];
@@ -54,7 +54,7 @@
     [self addSubview:self.CSMTC_wideRidgeTrail];
  
     self.CSMTC_fairRidgeTrail = [[UILabel alloc] init];
-    self.CSMTC_fairRidgeTrail.text = @"Trending";
+    self.CSMTC_fairRidgeTrail.text = @"CSMTCMELLOW_TrenCSMTCMELLOW_dinCSMTCMELLOW_g".CSMTC_removeMellowCoveSpan;
     self.CSMTC_fairRidgeTrail.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:16];
     self.CSMTC_fairRidgeTrail.textColor = [UIColor whiteColor];
     self.CSMTC_fairRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;

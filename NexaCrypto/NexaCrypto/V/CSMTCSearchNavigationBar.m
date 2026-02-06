@@ -44,7 +44,7 @@
     ]];
 
 
-    self.CSMTC_silentHarborGlen = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTC_briskHarborLoom"]];
+    self.CSMTC_silentHarborGlen = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_briskCSMTCMELLOW_HarborLCSMTCMELLOW_oom".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_silentHarborGlen.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_silentHarborGlen.clipsToBounds = YES;
     self.CSMTC_silentHarborGlen.contentMode = UIViewContentModeScaleAspectFit;
@@ -59,7 +59,7 @@
 
     self.CSMTC_firmHavenCrest = [[UILabel alloc] init];
     self.CSMTC_firmHavenCrest.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_firmHavenCrest.text = @"Search";
+    self.CSMTC_firmHavenCrest.text = @"CSMTCMELLOW_SeaCSMTCMELLOW_rcCSMTCMELLOW_h".CSMTC_removeMellowCoveSpan;
     self.CSMTC_firmHavenCrest.font = [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:13];
     self.CSMTC_firmHavenCrest.textColor = [UIColor colorWithRed:90/255.0 green:93/255.0 blue:100/255.0 alpha:1];
     self.CSMTC_firmHavenCrest.textAlignment = NSTextAlignmentLeft;

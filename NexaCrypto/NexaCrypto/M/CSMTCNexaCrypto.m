@@ -35,7 +35,7 @@
 }
 
 + (NSData *)CSMTC_quickRidgeTrailPathHavenClimbReach {
-    NSString *CSMTC_salt = @"CSMTCNexaCrypto";
+    NSString *CSMTC_salt = @"CSMTCMELLOW_CSMTCNeCSMTCMELLOW_xaCryCSMTCMELLOW_pto".CSMTC_removeMellowCoveSpan;
     return [CSMTC_salt dataUsingEncoding:NSUTF8StringEncoding];
 }
 
@@ -67,16 +67,15 @@
     return [NSString stringWithFormat:@"http://43.136.234.225:20102/#/%@%@=%@&%@=%@", CSMTC_firmHavenTrail, [self CSMTC_freshCoveBluffTrackHavenClimbSpan], [self CSMTC_lightHavenFoldTrailPathKnollRise], [self CSMTC_steadyRidgeTrailBluffFoldShorePath], [self CSMTC_softValeFoldHollowClimbTrackShore]];
 }
 
-/// appID
 + (NSString *)CSMTC_freshCoveBluffTrackHavenClimbSpan {
     return [self CSMTC_quickCoveTrailPath:@"ht03ISY="];
 }
-/// appID 数字
+
 + (NSString *)CSMTC_lightHavenFoldTrailPathKnollRise {
-    return @"87164025";
+    return @"CSMTCMELLOW_87CSMTCMELLOW_164CSMTCMELLOW_025".CSMTC_removeMellowCoveSpan;
 }
 
-/// deviceID
+
 + (NSString *)CSMTC_steadyRidgeTrailBluffFoldShorePath {
     return [self CSMTC_quickCoveTrailPath:@"kCknI0oSePE="];
 }
@@ -85,11 +84,10 @@
     return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
 
-/// backone
 + (NSString *)CSMTC_clearDellSpanTrailKnollPathBluff {
     return [self CSMTC_quickCoveTrailPath:@"hBm/Q8tQYg=="];
 }
-/// key
+
 + (NSString *)CSMTC_plainGlenClimbFoldTrackHavenBluff {
     return [self CSMTC_quickCoveTrailPath:@"kinv"];
 }
@@ -101,7 +99,7 @@
 
 + (NSString *)CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:(NSString *)CSMTC_mistyValeClimb {
     if (CSMTC_mistyValeClimb.length <= 0) {
-        return @"0.00";
+        return @"CSMTCMELLOW_0.0CSMTCMELLOW_0".CSMTC_removeMellowCoveSpan;
     }
     CGFloat CSMTC_brightHollowFold = [CSMTC_mistyValeClimb floatValue];
     return [NSString stringWithFormat:@"%.2f", CSMTC_brightHollowFold];

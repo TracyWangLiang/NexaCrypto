@@ -46,20 +46,20 @@
 }
 
 - (void)CSMTC_calmKnollShorePathRiseFoldTrail {
-    self.CSMTC_firmHavenTrail = @"ETH";
-    self.CSMTC_brightValeClimb = @"Supply Structure";
-    self.CSMTC_steadyKnollFold = @"Same Category";
-    self.CSMTC_gentleCoveTrail = @"Early Stage";
-    self.CSMTC_quickDellFold = @"Current Circulation";
-    self.CSMTC_silentValeClimb = @"Structural Balance";
-    self.CSMTC_tameRidgeTrail = @"USD";
+    self.CSMTC_firmHavenTrail = @"CSMTCMELLOW_ETCSMTCMELLOW_H".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_brightValeClimb = @"CSMTCMELLOW_SuCSMTCMELLOW_pply StruCSMTCMELLOW_cture".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_steadyKnollFold = @"CSMTCMELLOW_SaCSMTCMELLOW_me CatCSMTCMELLOW_egoCSMTCMELLOW_ry".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_gentleCoveTrail = @"CSMTCMELLOW_EaCSMTCMELLOW_rly StaCSMTCMELLOW_ge".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_quickDellFold = @"CSMTCMELLOW_CurCSMTCMELLOW_rent CircCSMTCMELLOW_ulation".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_silentValeClimb = @"CSMTCMELLOW_StruCSMTCMELLOW_ctural BalaCSMTCMELLOW_nce".CSMTC_removeMellowCoveSpan;
+    self.CSMTC_tameRidgeTrail = @"CSMTCMELLOW_USCSMTCMELLOW_D".CSMTC_removeMellowCoveSpan;
 }
 
 
 - (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise {
     self.CSMTC_clearKnollClimb = [UIButton buttonWithType:UIButtonTypeCustom];
     self.CSMTC_clearKnollClimb.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.CSMTC_clearKnollClimb setImage:[UIImage imageNamed:@"CSMTC_lightHavenFold"]
+    [self.CSMTC_clearKnollClimb setImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_lightCSMTCMELLOW_HaveCSMTCMELLOW_nFold".CSMTC_removeMellowCoveSpan]
                      forState:UIControlStateNormal];
     [self.CSMTC_clearKnollClimb addTarget:self
                         action:@selector(CSMTC_clearDellSpanTrailKnollPathBluff)
@@ -70,7 +70,7 @@
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
     self.CSMTC_keenCoveTrail = [[UIImageView alloc] initWithImage:
-                          [UIImage imageNamed:@"CSMTC_quietKnollRise"]];
+                          [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_quietKCSMTCMELLOW_nollRCSMTCMELLOW_ise".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_keenCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_keenCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
     
@@ -80,7 +80,7 @@
 - (void)CSMTC_silentValePointFoldKnollBluffPath {
     self.CSMTC_briskValeFold = [[UILabel alloc] init];
     self.CSMTC_briskValeFold.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_briskValeFold.text = @"Asset Comparison Matrix";
+    self.CSMTC_briskValeFold.text = @"CSMTCMELLOW_AssCSMTCMELLOW_et CoCSMTCMELLOW_mparison MatCSMTCMELLOW_rix".CSMTC_removeMellowCoveSpan;
     self.CSMTC_briskValeFold.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:20];
     self.CSMTC_briskValeFold.textColor = [UIColor whiteColor];
@@ -92,7 +92,7 @@
     self.CSMTC_wideDellTrail = [[UILabel alloc] init];
     self.CSMTC_wideDellTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_wideDellTrail.text =
-    @"Matrix compares crypto assets across structural dimensions such as supply design, network role, and lifecycle context.";
+    @"CSMTCMELLOW_MatCSMTCMELLOW_rix coCSMTCMELLOW_mpares cryCSMTCMELLOW_pto asseCSMTCMELLOW_ts acroCSMTCMELLOW_ss strCSMTCMELLOW_uctural dimenCSMTCMELLOW_sions sucCSMTCMELLOW_h as suCSMTCMELLOW_pply desigCSMTCMELLOW_n, netCSMTCMELLOW_work roCSMTCMELLOW_le, aCSMTCMELLOW_nd lifeCSMTCMELLOW_cycle conCSMTCMELLOW_text.".CSMTC_removeMellowCoveSpan;
     self.CSMTC_wideDellTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
     self.CSMTC_wideDellTrail.textColor =
@@ -218,19 +218,19 @@
 
 - (void)CSMTC_livelyHavenPathFoldTrailKnollRise:(NSString *)CSMTC_wideDellTrail CSMTC_keenCoveTrail:(NSString *)CSMTC_keenCoveTrail {
     
-    if ([CSMTC_wideDellTrail isEqualToString:@"Assets to Compare"]) {
+    if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_AssCSMTCMELLOW_ets to ComCSMTCMELLOW_pare".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_firmHavenTrail = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Structure Dimension"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_StruCSMTCMELLOW_cture DimenCSMTCMELLOW_sion".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_brightValeClimb = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Comparison Scope"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_CompCSMTCMELLOW_arison ScoCSMTCMELLOW_pe".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_steadyKnollFold = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Lifecycle Context"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_LifCSMTCMELLOW_ecycle ConCSMTCMELLOW_text".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_gentleCoveTrail = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Circulation Perspective"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_CirculCSMTCMELLOW_ation PerspeCSMTCMELLOW_ctive".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_quickDellFold = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Data Emphasis"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_DaCSMTCMELLOW_ta EmpCSMTCMELLOW_hasis".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_silentValeClimb = CSMTC_keenCoveTrail;
-    } else if ([CSMTC_wideDellTrail isEqualToString:@"Base Unit"]) {
+    } else if ([CSMTC_wideDellTrail isEqualToString:@"CSMTCMELLOW_BaCSMTCMELLOW_se UniCSMTCMELLOW_t".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_tameRidgeTrail = CSMTC_keenCoveTrail;
     }
     

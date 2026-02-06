@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSString+CSMTCString.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMTCMicaShoreModel : NSObject
@@ -43,8 +43,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMTCMicaShoreDataModel : NSObject
 
-@property (nonatomic, copy) NSString *CSMTC_code;
-@property (nonatomic, strong) NSArray<CSMTCMicaShoreItemModel *> *CSMTC_data;
+@property (nonatomic, copy) NSString *CSMTC_quickCoveTrail;
+@property (nonatomic, strong) NSArray<CSMTCMicaShoreItemModel *> *CSMTC_brightHollowFold;
 
 + (instancetype)CSMTC_modelWithDictionary:(NSDictionary *)dictionary;
 

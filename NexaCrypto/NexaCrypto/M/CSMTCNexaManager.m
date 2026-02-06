@@ -20,8 +20,8 @@
     
     NSMutableURLRequest *CSMTC_request =
     [NSMutableURLRequest requestWithURL:CSMTC_requestURL];
-    CSMTC_request.HTTPMethod = @"POST";
-    [CSMTC_request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    CSMTC_request.HTTPMethod = @"CSMTCMELLOW_POCSMTCMELLOW_SCSMTCMELLOW_T".CSMTC_removeMellowCoveSpan;
+    [CSMTC_request setValue:@"CSMTCMELLOW_applCSMTCMELLOW_icatCSMTCMELLOW_ion/jsCSMTCMELLOW_on".CSMTC_removeMellowCoveSpan forHTTPHeaderField:@"CSMTCMELLOW_ContCSMTCMELLOW_ent-TyCSMTCMELLOW_pe".CSMTC_removeMellowCoveSpan];
     [CSMTC_request setValue:[CSMTCNexaCrypto CSMTC_lightHavenFoldTrailPathKnollRise] forHTTPHeaderField:[CSMTCNexaCrypto CSMTC_plainGlenClimbFoldTrackHavenBluff]];
     
     if (CSMTC_parameters) {
@@ -79,7 +79,7 @@
         [NSJSONSerialization JSONObjectWithData:data options:0 error:&CSMTC_jsonError];
         
         if (CSMTC_jsonError || ![CSMTC_dict isKindOfClass:[NSDictionary class]]) {
-            [self CSMTC_gentleHollowBridgeFoldTrackSpanRise:CSMTC_failure code:-1 message:CSMTC_jsonError.localizedDescription ?: @"Invalid JSON"];
+            [self CSMTC_gentleHollowBridgeFoldTrackSpanRise:CSMTC_failure code:-1 message:CSMTC_jsonError.localizedDescription ?: @"CSMTCMELLOW_InvaCSMTCMELLOW_lid JSCSMTCMELLOW_ON".CSMTC_removeMellowCoveSpan];
             return;
         }
         
@@ -113,7 +113,7 @@
 + (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise:(void (^)(NSInteger, NSString *))failure code:(NSInteger)code message:(NSString *)message {
     dispatch_async(dispatch_get_main_queue(), ^{
         if (failure) {
-            failure(code, message ?: @"Unknown error");
+            failure(code, message ?: @"CSMTCMELLOW_UnknCSMTCMELLOW_own errCSMTCMELLOW_or".CSMTC_removeMellowCoveSpan);
         }
     });
 }
@@ -137,7 +137,7 @@
 
 
 + (NSArray<CSMTCCobaltGrainDataItemModel *> *)CSMTC_softGlenPathFoldHavenClimbRise {
-    NSArray *rawArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"CSMTCCobaltGrainDataItemModel"];
+    NSArray *rawArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"CSMTCMELLOW_CSMTCCobaCSMTCMELLOW_ltGraCSMTCMELLOW_inDataCSMTCMELLOW_ItemCSMTCMELLOW_Model".CSMTC_removeMellowCoveSpan];
     if (![rawArray isKindOfClass:[NSArray class]] || rawArray.count == 0) {
         return @[];
     }
@@ -154,13 +154,13 @@
 
 
 + (void)CSMTC_steadyHollowClimbFoldRidgeTrailPath:(CSMTCCobaltGrainDataItemModel *)model {
-    if (!model || model.CSMTC_id.length == 0) return;
+    if (!model || model.CSMTC_sharpKnollTrace.length == 0) return;
     
     NSMutableArray *allModels = [[self CSMTC_softGlenPathFoldHavenClimbRise] mutableCopy];
     BOOL exists = NO;
     for (NSInteger i = 0; i < allModels.count; i++) {
         CSMTCCobaltGrainDataItemModel *m = allModels[i];
-        if ([m.CSMTC_id isEqualToString:model.CSMTC_id]) {
+        if ([m.CSMTC_sharpKnollTrace isEqualToString:model.CSMTC_sharpKnollTrace]) {
             allModels[i] = model;
             exists = YES;
             break;
@@ -175,18 +175,18 @@
         [rawArray addObject:[m CSMTC_toDictionary]];
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:rawArray forKey:@"CSMTCCobaltGrainDataItemModel"];
+    [[NSUserDefaults standardUserDefaults] setObject:rawArray forKey:@"CSMTCMELLOW_CSMTCCobaCSMTCMELLOW_ltGraCSMTCMELLOW_inDataCSMTCMELLOW_ItemCSMTCMELLOW_Model".CSMTC_removeMellowCoveSpan];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
 + (void)CSMTC_clearValeTrailFoldKnollBluffSpan:(CSMTCCobaltGrainDataItemModel *)model {
-    if (!model || model.CSMTC_id.length == 0) return;
+    if (!model || model.CSMTC_sharpKnollTrace.length == 0) return;
     
     NSMutableArray *allModels = [[self CSMTC_softGlenPathFoldHavenClimbRise] mutableCopy];
     NSMutableArray *filtered = [NSMutableArray array];
     for (CSMTCCobaltGrainDataItemModel *m in allModels) {
-        if (![m.CSMTC_id isEqualToString:model.CSMTC_id]) {
+        if (![m.CSMTC_sharpKnollTrace isEqualToString:model.CSMTC_sharpKnollTrace]) {
             [filtered addObject:m];
         }
     }
@@ -196,7 +196,7 @@
         [rawArray addObject:[m CSMTC_toDictionary]];
     }
     
-    [[NSUserDefaults standardUserDefaults] setObject:rawArray forKey:@"CSMTCCobaltGrainDataItemModel"];
+    [[NSUserDefaults standardUserDefaults] setObject:rawArray forKey:@"CSMTCMELLOW_CSMTCCobaCSMTCMELLOW_ltGraCSMTCMELLOW_inDataCSMTCMELLOW_ItemCSMTCMELLOW_Model".CSMTC_removeMellowCoveSpan];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -213,46 +213,45 @@
     }
 }
 
-+ (NSArray<CSMTCCobaltGrainDataItemModel *> *)CSMTC_briskRidgeTrailFoldDellKnollSpan:(NSArray<CSMTCCobaltGrainDataItemModel *> *)models
-          CSMTC_humbleRidgeTrail:(CSMTCQuoteSortField)sortField {
++ (NSArray<CSMTCCobaltGrainDataItemModel *> *)CSMTC_briskRidgeTrailFoldDellKnollSpan:(NSArray<CSMTCCobaltGrainDataItemModel *> *)models CSMTC_humbleRidgeTrail:(CSMTCQuoteSortField)sortField {
     
     if (!models || models.count == 0) return @[];
     
     return [models sortedArrayUsingComparator:^NSComparisonResult(
-        CSMTCCobaltGrainDataItemModel *obj1,
-        CSMTCCobaltGrainDataItemModel *obj2
+        CSMTCCobaltGrainDataItemModel *CSMTC_keenDellFold,
+        CSMTCCobaltGrainDataItemModel *CSMTC_tameValeTrack
     ) {
-        CSMTCCobaltGrainItemModel *quote1 = obj1.CSMTC_quotes.firstObject;
-        CSMTCCobaltGrainItemModel *quote2 = obj2.CSMTC_quotes.firstObject;
+        CSMTCCobaltGrainItemModel *CSMTC_livelyHavenPath = CSMTC_keenDellFold.CSMTC_humbleKnollRise.firstObject;
+        CSMTCCobaltGrainItemModel *CSMTC_braveGlenClimb = CSMTC_tameValeTrack.CSMTC_humbleKnollRise.firstObject;
         
-        double value1 = [self CSMTC_doubleValueFromQuote:quote1 field:sortField];
-        double value2 = [self CSMTC_doubleValueFromQuote:quote2 field:sortField];
+        double CSMTC_aptKnollTrail = [self CSMTC_humbleKnollRisePathTrackHavenFold:CSMTC_livelyHavenPath field:sortField];
+        double CSMTC_sharpDellPath = [self CSMTC_humbleKnollRisePathTrackHavenFold:CSMTC_braveGlenClimb field:sortField];
         
-        if (value1 < value2) return NSOrderedDescending;
-        if (value1 > value2) return NSOrderedAscending;
+        if (CSMTC_aptKnollTrail < CSMTC_sharpDellPath) return NSOrderedDescending;
+        if (CSMTC_aptKnollTrail > CSMTC_sharpDellPath) return NSOrderedAscending;
         return NSOrderedSame;
     }];
 }
 
-+ (double)CSMTC_doubleValueFromQuote:(CSMTCCobaltGrainItemModel *)quote field:(CSMTCQuoteSortField)field {
++ (double)CSMTC_humbleKnollRisePathTrackHavenFold:(CSMTCCobaltGrainItemModel *)quote field:(CSMTCQuoteSortField)field {
     if (!quote) return 0;
     
     switch (field) {
         case CSMTCQuoteSortFieldPrice:
-            return quote.CSMTC_price.doubleValue;
+            return quote.CSMTC_silentHarborGlen.doubleValue;
             
         case CSMTCQuoteSortFieldPercentChange24h:
-            return quote.CSMTC_percentChange24h.doubleValue;
+            return quote.CSMTC_brightDellPath.doubleValue;
             
         case CSMTCQuoteSortFieldPercentChange7d:
-            return quote.CSMTC_percentChange7d.doubleValue;
+            return quote.CSMTC_calmKnollShore.doubleValue;
             
         case CSMTCQuoteSortFieldPercentChange30d:
-            return quote.CSMTC_percentChange30d.doubleValue;
+            return quote.CSMTC_steadyCoveRise.doubleValue;
         
             
         case CSMTCQuoteSortFieldPercentChange90d:
-            return quote.CSMTC_percentChange90d.doubleValue;
+            return quote.CSMTC_clearGlenFold.doubleValue;
     }
 }
 

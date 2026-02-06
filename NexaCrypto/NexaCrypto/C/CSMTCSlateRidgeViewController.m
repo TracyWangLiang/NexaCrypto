@@ -51,7 +51,7 @@
 }
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
-    self.CSMTC_vastValePoint = [[CSMTCSelectHeaderView alloc] initWithTitles:@[@"Top Gainers",@"Top Losers",@"Explore"]];
+    self.CSMTC_vastValePoint = [[CSMTCSelectHeaderView alloc] initWithTitles:@[@"CSMTCMELLOW_ToCSMTCMELLOW_p GainCSMTCMELLOW_ers".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_ToCSMTCMELLOW_p LosCSMTCMELLOW_ers".CSMTC_removeMellowCoveSpan,@"CSMTCMELLOW_ExpCSMTCMELLOW_lorCSMTCMELLOW_e".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_vastValePoint.delegate = self;
     self.CSMTC_vastValePoint.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_vastValePoint.backgroundColor = [UIColor clearColor];
@@ -70,15 +70,15 @@
     self.CSMTC_plainHollowPeak.delegate = self;
     self.CSMTC_plainHollowPeak.dataSource = self;
 
-    [self.CSMTC_plainHollowPeak registerClass:NSClassFromString(@"CSMTCSlateRidgeCollectionCell")
-            forCellWithReuseIdentifier:@"CSMTCSlateRidgeCollectionCell"];
+    [self.CSMTC_plainHollowPeak registerClass:NSClassFromString(@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teRidgeCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan)
+            forCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teRidgeCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan];
     
-    [self.CSMTC_plainHollowPeak registerClass:NSClassFromString(@"CSMTCSlateExploreCollectionCell")
-            forCellWithReuseIdentifier:@"CSMTCSlateExploreCollectionCell"];
+    [self.CSMTC_plainHollowPeak registerClass:NSClassFromString(@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teExploreCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan)
+            forCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teExploreCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan];
     
     [self.CSMTC_plainHollowPeak registerClass:[CSMTCSlateRidgeReusableView class]
             forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                   withReuseIdentifier:@"CSMTCSlateRidgeReusableView"];
+                   withReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teRidgeReusCSMTCMELLOW_ableView".CSMTC_removeMellowCoveSpan];
     
     [self.view addSubview:self.CSMTC_plainHollowPeak];
 }
@@ -160,7 +160,7 @@
     }
     
     CSMTCSlateRidgeReusableView *CSMTC_quickCoveTrail =
-    [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"CSMTCSlateRidgeReusableView" forIndexPath:indexPath];
+    [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teRidgeReusCSMTCMELLOW_ableView".CSMTC_removeMellowCoveSpan forIndexPath:indexPath];
     [CSMTC_quickCoveTrail.CSMTC_wideRidgeTrail addTarget:self action:@selector(CSMTC_stillHollowFoldTrailKnollClimbPathSpan) forControlEvents:UIControlEventTouchUpInside];
     return CSMTC_quickCoveTrail;
 }
@@ -172,12 +172,12 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.CSMTC_wideRidgeTrail) {
         
-        CSMTCSlateExploreCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCSlateExploreCollectionCell" forIndexPath:indexPath];
+        CSMTCSlateExploreCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teExploreCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan forIndexPath:indexPath];
         CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_mellowCoveBluff objectAtIndex:indexPath.row];
         [CSMTC_cell CSMTC_fairHavenTrailFoldClimbKnollPathSpan:CSMTC_model];
         return CSMTC_cell;
     } else {
-        CSMTCSlateRidgeCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCSlateRidgeCollectionCell" forIndexPath:indexPath];
+        CSMTCSlateRidgeCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSlaCSMTCMELLOW_teRidgeCoCSMTCMELLOW_llectionCell".CSMTC_removeMellowCoveSpan forIndexPath:indexPath];
         CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_mellowCoveBluff objectAtIndex:indexPath.row];
         [CSMTC_cell CSMTC_fairHavenTrailFoldClimbKnollPathSpan:CSMTC_model CSMTC_clearKnollClimb:[NSString stringWithFormat:@"%ld", indexPath.row + 1]];
         return CSMTC_cell;
@@ -186,13 +186,13 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_mellowCoveBluff objectAtIndex:indexPath.row];
-    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_id]];
+    NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdZOvyedeOvnE2YkL+BDn+L7auVm/Hq+ZMw=="], CSMTC_model.CSMTC_sharpKnollTrace]];
     [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
 }
 
 
 - (void)CSMTC_softValeFoldHollowClimbTrackShore:(NSString *)CSMTC_tameRidgeTrail {
-    if ([CSMTC_tameRidgeTrail isEqualToString:@"Explore"]) {
+    if ([CSMTC_tameRidgeTrail isEqualToString:@"CSMTCMELLOW_ExpCSMTCMELLOW_lorCSMTCMELLOW_e".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_wideRidgeTrail = YES;
         [self CSMTC_mellowCoveTrailFoldBluffShoreSpan];
         [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
@@ -200,9 +200,9 @@
     }
     self.CSMTC_wideRidgeTrail = NO;
     [self CSMTC_lightHavenFoldTrailPathKnollRise];
-    if ([CSMTC_tameRidgeTrail isEqualToString:@"Top Gainers"]) {
+    if ([CSMTC_tameRidgeTrail isEqualToString:@"CSMTCMELLOW_ToCSMTCMELLOW_p GainCSMTCMELLOW_ers".CSMTC_removeMellowCoveSpan]) {
         [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
-    } else if ([CSMTC_tameRidgeTrail isEqualToString:@"Top Losers"]) {
+    } else if ([CSMTC_tameRidgeTrail isEqualToString:@"CSMTCMELLOW_ToCSMTCMELLOW_p LosCSMTCMELLOW_ers".CSMTC_removeMellowCoveSpan]) {
         self.CSMTC_mellowCoveBluff = [[self.CSMTC_mellowCoveBluff reverseObjectEnumerator] allObjects];
         [self.CSMTC_plainHollowPeak reloadData];
     }
@@ -224,7 +224,7 @@
     [CSMTCNexaManager CSMTC_firmKnollTrailFoldHavenClimbSpan:[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"mO0Xkkxlhydj2SdmOgB69UELFU/ehuZiegIFBqdueXpvn3utuwNJ7MSpl44cejrT7q48Hk1FTfok4l8sLOPbuzI2cqAr3xGcJfEq0HG++8sxyERtnIBalHH9T1Jz"] CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
         if (CSMTC_dict.count > 0) {
             CSMTCCobaltGrainDataModel *CSMTC_model = [CSMTCCobaltGrainDataModel CSMTC_modelWithDictionary:CSMTC_dict];
-            self.CSMTC_mellowCoveBluff = [CSMTCNexaManager CSMTC_briskRidgeTrailFoldDellKnollSpan:CSMTC_model.CSMTC_cryptoCurrencyList CSMTC_humbleRidgeTrail:CSMTCQuoteSortFieldPrice];
+            self.CSMTC_mellowCoveBluff = [CSMTCNexaManager CSMTC_briskRidgeTrailFoldDellKnollSpan:CSMTC_model.CSMTC_fairRidgeTrail CSMTC_humbleRidgeTrail:CSMTCQuoteSortFieldPrice];
             [self.CSMTC_plainHollowPeak reloadData];
            
         }

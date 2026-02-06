@@ -83,12 +83,12 @@
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
 
-    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
-    self.CSMTC_briskValeFold.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h] ? [UIImage imageNamed:@"CSMTC_gentleValeBridge"] : [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
-    self.CSMTC_wideDellTrail.text = CSMTC_model.CSMTC_name;
-    self.CSMTC_lightHavenClimb.text = CSMTC_model.CSMTC_symbol;
-    self.CSMTC_mellowKnollFold.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_percentChange1h];
-    self.CSMTC_mellowKnollFold.text = [NSString stringWithFormat:@"%@", [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]];
+    CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_humbleKnollRise.firstObject;
+    self.CSMTC_briskValeFold.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_freshHollowClimb] ? [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_gentCSMTCMELLOW_leValeBrCSMTCMELLOW_idge".CSMTC_removeMellowCoveSpan] : [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_firmCSMTCMELLOW_HavenCSMTCMELLOW_Crest".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_wideDellTrail.text = CSMTC_model.CSMTC_vastValePoint;
+    self.CSMTC_lightHavenClimb.text = CSMTC_model.CSMTC_plainHollowPeak;
+    self.CSMTC_mellowKnollFold.textColor = [CSMTCNexaManager CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_freshHollowClimb];
+    self.CSMTC_mellowKnollFold.text = [NSString stringWithFormat:@"%@", [CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_freshHollowClimb]];
     
 }
 

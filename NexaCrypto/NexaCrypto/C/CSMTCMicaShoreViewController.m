@@ -45,7 +45,7 @@
     self.CSMTC_mistyValeClimb.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.CSMTC_mistyValeClimb.delegate = self;
     self.CSMTC_mistyValeClimb.dataSource = self;
-    [self.CSMTC_mistyValeClimb registerClass:[CSMTCMicaShoreTableCell class] forCellReuseIdentifier:@"CSMTCMicaShoreTableCell"];
+    [self.CSMTC_mistyValeClimb registerClass:[CSMTCMicaShoreTableCell class] forCellReuseIdentifier:@"CSMTCMELLOW_CSMTCMCSMTCMELLOW_icaShoCSMTCMELLOW_reTableCell".CSMTC_removeMellowCoveSpan];
     [self.view addSubview:self.CSMTC_mistyValeClimb];
 }
 
@@ -73,7 +73,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCMicaShoreTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMicaShoreTableCell"];
+    CSMTCMicaShoreTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMELLOW_CSMTCMCSMTCMELLOW_icaShoCSMTCMELLOW_reTableCell".CSMTC_removeMellowCoveSpan];
     CSMTCMicaShoreItemModel *CSMTC_itemModel = [self.CSMTC_smartRidgePath objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel];
     return CSMTC_cell;
@@ -96,11 +96,11 @@
 
 - (void)CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff {
     NSString *CSMTC_gentleRidgeClimb = [CSMTCNexaCrypto CSMTC_wideHollowPathTrailFoldKnollRise:@"slnphz/vfjnahccdzzfg"];
-    [CSMTCNexaManager CSMTC_quietDellPathFoldRidgeBluffRise:CSMTC_gentleRidgeClimb CSMTC_parameters:@{@"urbanGroove":@"1",@"nightDistrict":@"3"} CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
+    [CSMTCNexaManager CSMTC_quietDellPathFoldRidgeBluffRise:CSMTC_gentleRidgeClimb CSMTC_parameters:@{@"urbanGroove":@"CSMTCMELLOW_1CSMTCMELLOW_".CSMTC_removeMellowCoveSpan,@"nightDistrict":@"3"} CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
         if (CSMTC_dict.count > 0) {
             CSMTCMicaShoreDataModel *CSMTC_model = [CSMTCMicaShoreDataModel CSMTC_modelWithDictionary:CSMTC_dict];
-            if ([CSMTC_model.CSMTC_code isEqualToString:@"200000"]) {
-                self.CSMTC_smartRidgePath = CSMTC_model.CSMTC_data;
+            if ([CSMTC_model.CSMTC_quickCoveTrail isEqualToString:@"CSMTCMELLOW_20CSMTCMELLOW_00CSMTCMELLOW_00".CSMTC_removeMellowCoveSpan]) {
+                self.CSMTC_smartRidgePath = CSMTC_model.CSMTC_brightHollowFold;
                 [self.CSMTC_mistyValeClimb reloadData];
             }
         }

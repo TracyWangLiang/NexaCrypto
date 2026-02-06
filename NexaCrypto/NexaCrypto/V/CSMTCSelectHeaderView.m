@@ -7,6 +7,7 @@
 
 #import "CSMTCSelectHeaderView.h"
 #import "CSMTCSelectHeaderCollectionCell.h"
+#import "CSMTCNexaManager.h"
 
 @interface CSMTCSelectHeaderView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -47,7 +48,7 @@
     self.CSMTC_steadyCoveRise.showsHorizontalScrollIndicator = NO;
     self.CSMTC_steadyCoveRise.delegate = self;
     self.CSMTC_steadyCoveRise.dataSource = self;
-    [self.CSMTC_steadyCoveRise registerClass:[CSMTCSelectHeaderCollectionCell class] forCellWithReuseIdentifier:@"CSMTCSelectHeaderCollectionCell"];
+    [self.CSMTC_steadyCoveRise registerClass:[CSMTCSelectHeaderCollectionCell class] forCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSelCSMTCMELLOW_ectHeaCSMTCMELLOW_derCollCSMTCMELLOW_ectionCell".CSMTC_removeMellowCoveSpan];
     [self addSubview:self.CSMTC_steadyCoveRise];
 
     self.CSMTC_softCrestLane = [[UILabel alloc] init];
@@ -79,7 +80,7 @@
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCSelectHeaderCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCSelectHeaderCollectionCell" forIndexPath:indexPath];
+    CSMTCSelectHeaderCollectionCell *CSMTC_cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCMELLOW_CSMTCSelCSMTCMELLOW_ectHeaCSMTCMELLOW_derCollCSMTCMELLOW_ectionCell".CSMTC_removeMellowCoveSpan forIndexPath:indexPath];
     NSString *CSMTC_keenDellFold = self.CSMTC_clearGlenFold[indexPath.item];
     [CSMTC_cell CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_keenDellFold CSMTC_steadyCoveRise:self.CSMTC_mistyDellSpan == indexPath.item];
     return CSMTC_cell;

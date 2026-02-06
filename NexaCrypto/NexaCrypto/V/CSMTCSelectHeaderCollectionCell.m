@@ -6,6 +6,7 @@
 //
 
 #import "CSMTCSelectHeaderCollectionCell.h"
+#import "CSMTCNexaManager.h"
 
 @interface CSMTCSelectHeaderCollectionCell ()
 @property (nonatomic, strong) UILabel *CSMTC_freshHollowFold;
@@ -29,7 +30,7 @@
 
     self.CSMTC_freshHollowFold = [[UILabel alloc] init];
     self.CSMTC_freshHollowFold.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_freshHollowFold.text = @"Top Gainers";
+    self.CSMTC_freshHollowFold.text = @"CSMTCMELLOW_ToCSMTCMELLOW_p GainCSMTCMELLOW_ers".CSMTC_removeMellowCoveSpan;
     self.CSMTC_freshHollowFold.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:14];
     self.CSMTC_freshHollowFold.textColor = [UIColor whiteColor];
     self.CSMTC_freshHollowFold.textAlignment = NSTextAlignmentCenter;

@@ -42,15 +42,15 @@
     self.CSMTC_quickDellFold = [[UILabel alloc] init];
     self.CSMTC_quickDellFold.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_quickDellFold.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
-    self.CSMTC_quickDellFold.textColor = [UIColor blackColor]; // sRGB
+    self.CSMTC_quickDellFold.textColor = [UIColor blackColor];
     [self.contentView addSubview:self.CSMTC_quickDellFold];
 
     self.CSMTC_gentleCoveTrail = [[UIImageView alloc] init];
     self.CSMTC_gentleCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_gentleCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.CSMTC_gentleCoveTrail];
-    self.CSMTC_gentleCoveTrail.image = [UIImage imageNamed:@"CSMTC_steadyValeBluff"];
-    self.CSMTC_gentleCoveTrail.highlightedImage = [UIImage imageNamed:@"CSMTC_lightHollowTrack"];
+    self.CSMTC_gentleCoveTrail.image = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_steaCSMTCMELLOW_dyValeCSMTCMELLOW_Bluff".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_gentleCoveTrail.highlightedImage = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_lighCSMTCMELLOW_tHollCSMTCMELLOW_owTrack".CSMTC_removeMellowCoveSpan];
 }
 
 - (void)CSMTC_wideDellTrailFoldKnollClimbHollowPath {
@@ -75,10 +75,10 @@
 }
 
 - (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
-    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
+    [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_sharpKnollTrace completion:^(UIImage * _Nullable image) {
         self.CSMTC_silentValeClimb.image = image;
     }];
-    self.CSMTC_quickDellFold.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_quickDellFold.text = CSMTC_model.CSMTC_vastValePoint;
     self.CSMTC_gentleCoveTrail.highlighted = [self CSMTC_lightHavenClimbFoldTrailKnollRiseBluff:CSMTC_model CSMTC_quickDellFold:[CSMTCNexaManager CSMTC_softGlenPathFoldHavenClimbRise]];
     
 }
@@ -86,7 +86,7 @@
 - (BOOL)CSMTC_lightHavenClimbFoldTrailKnollRiseBluff:(CSMTCCobaltGrainDataItemModel *)CSMTC_gentleCoveTrail CSMTC_quickDellFold:(NSArray *)CSMTC_quickDellFold {
     if (!CSMTC_gentleCoveTrail || !CSMTC_quickDellFold || CSMTC_quickDellFold.count == 0) return NO;
     for (CSMTCCobaltGrainDataItemModel *CSMTC_steadyKnollFold in CSMTC_quickDellFold) {
-        if ([CSMTC_steadyKnollFold.CSMTC_id isEqualToString:CSMTC_gentleCoveTrail.CSMTC_id]) {
+        if ([CSMTC_steadyKnollFold.CSMTC_sharpKnollTrace isEqualToString:CSMTC_gentleCoveTrail.CSMTC_sharpKnollTrace]) {
             return YES;
         }
     }
