@@ -2,7 +2,7 @@
 //  CSMTCTourmalineViewController.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCTourmalineViewController.h"
@@ -12,12 +12,12 @@
 
 @interface CSMTCTourmalineViewController () <CSMTCTourmalineTableViewDelegate>
 
-@property (nonatomic, strong) UIButton *backButton;
-@property (nonatomic, strong) CSMTCTourmalineTableView *mainContainerView;
-@property (nonatomic, strong) CSMTCTourmalineResultView *overlayContainerView;
-@property (nonatomic, strong) UIImageView *heroImageView;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *subtitleLabel;
+@property (nonatomic, strong) UIButton *CSMTC_clearKnollClimb;
+@property (nonatomic, strong) CSMTCTourmalineTableView *CSMTC_humbleRidgeTrail;
+@property (nonatomic, strong) CSMTCTourmalineResultView *CSMTC_freshHollowFold;
+@property (nonatomic, strong) UIImageView *CSMTC_keenCoveTrail;
+@property (nonatomic, strong) UILabel *CSMTC_briskValeFold;
+@property (nonatomic, strong) UILabel *CSMTC_wideDellTrail;
 
 @property (nonatomic, copy) NSString *CSMTC_firmHavenTrail;
 @property (nonatomic, copy) NSString *CSMTC_brightValeClimb;
@@ -36,13 +36,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1];
     [self CSMTC_calmKnollShorePathRiseFoldTrail];
-    [self setupBackButton];
-    [self setupHeroImageView];
-    [self setupTitleLabel];
-    [self setupSubtitleLabel];
-    [self setupMainContainerView];
-    [self setupOverlayContainerView];
-    [self setupConstraints];
+    [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
+    [self CSMTC_quickRidgeTrailPathHavenClimbReach];
+    [self CSMTC_silentValePointFoldKnollBluffPath];
+    [self CSMTC_briskDellLaneShoreTrackHollowSpan];
+    [self CSMTC_lightHavenFoldTrailPathKnollRise];
+    [self CSMTC_steadyRidgeTrailBluffFoldShorePath];
+    [self CSMTC_softValeFoldHollowClimbTrackShore];
 }
 
 - (void)CSMTC_calmKnollShorePathRiseFoldTrail {
@@ -56,136 +56,128 @@
 }
 
 
-- (void)setupBackButton {
-    self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.backButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.backButton setImage:[UIImage imageNamed:@"CSMTC_lightHavenFold"]
+- (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise {
+    self.CSMTC_clearKnollClimb = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.CSMTC_clearKnollClimb.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.CSMTC_clearKnollClimb setImage:[UIImage imageNamed:@"CSMTC_lightHavenFold"]
                      forState:UIControlStateNormal];
-    [self.backButton addTarget:self
-                        action:@selector(handleBackButtonTap)
+    [self.CSMTC_clearKnollClimb addTarget:self
+                        action:@selector(CSMTC_clearDellSpanTrailKnollPathBluff)
               forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:self.backButton];
+    [self.view addSubview:self.CSMTC_clearKnollClimb];
 }
 
-- (void)setupHeroImageView {
-    self.heroImageView = [[UIImageView alloc] initWithImage:
+- (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
+    self.CSMTC_keenCoveTrail = [[UIImageView alloc] initWithImage:
                           [UIImage imageNamed:@"CSMTC_quietKnollRise"]];
-    self.heroImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.heroImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.CSMTC_keenCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_keenCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
     
-    [self.view addSubview:self.heroImageView];
+    [self.view addSubview:self.CSMTC_keenCoveTrail];
 }
 
-- (void)setupTitleLabel {
-    self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.titleLabel.text = @"Asset Comparison Matrix";
-    self.titleLabel.font =
+- (void)CSMTC_silentValePointFoldKnollBluffPath {
+    self.CSMTC_briskValeFold = [[UILabel alloc] init];
+    self.CSMTC_briskValeFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_briskValeFold.text = @"Asset Comparison Matrix";
+    self.CSMTC_briskValeFold.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:20];
-    self.titleLabel.textColor = [UIColor whiteColor];
+    self.CSMTC_briskValeFold.textColor = [UIColor whiteColor];
     
-    [self.view addSubview:self.titleLabel];
+    [self.view addSubview:self.CSMTC_briskValeFold];
 }
 
-- (void)setupSubtitleLabel {
-    self.subtitleLabel = [[UILabel alloc] init];
-    self.subtitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.subtitleLabel.text =
+- (void)CSMTC_briskDellLaneShoreTrackHollowSpan {
+    self.CSMTC_wideDellTrail = [[UILabel alloc] init];
+    self.CSMTC_wideDellTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_wideDellTrail.text =
     @"Matrix compares crypto assets across structural dimensions such as supply design, network role, and lifecycle context.";
-    self.subtitleLabel.font =
+    self.CSMTC_wideDellTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.subtitleLabel.textColor =
+    self.CSMTC_wideDellTrail.textColor =
     [UIColor colorWithWhite:0.725 alpha:1];
-    self.subtitleLabel.numberOfLines = 3;
+    self.CSMTC_wideDellTrail.numberOfLines = 3;
     
-    [self.view addSubview:self.subtitleLabel];
+    [self.view addSubview:self.CSMTC_wideDellTrail];
 }
 
-- (void)setupMainContainerView {
-    self.mainContainerView = [[CSMTCTourmalineTableView alloc] init];
-    self.mainContainerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.mainContainerView.backgroundColor =
+- (void)CSMTC_lightHavenFoldTrailPathKnollRise {
+    self.CSMTC_humbleRidgeTrail = [[CSMTCTourmalineTableView alloc] init];
+    self.CSMTC_humbleRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_humbleRidgeTrail.backgroundColor =
     [UIColor clearColor];
-    self.mainContainerView.delegate = self;
-    [self.mainContainerView.calculationButton addTarget:self action:@selector(CSMTC_mellowKnollFoldTrailHollowPathClimbSpan) forControlEvents:UIControlEventTouchUpInside];
+    self.CSMTC_humbleRidgeTrail.delegate = self;
+    [self.CSMTC_humbleRidgeTrail.CSMTC_quickCoveTrail addTarget:self action:@selector(CSMTC_mellowKnollFoldTrailHollowPathClimbSpan) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:self.mainContainerView];
+    [self.view addSubview:self.CSMTC_humbleRidgeTrail];
 }
 
-- (void)setupOverlayContainerView {
-    self.overlayContainerView = [[CSMTCTourmalineResultView alloc] init];
-    self.overlayContainerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.overlayContainerView.backgroundColor =
+- (void)CSMTC_steadyRidgeTrailBluffFoldShorePath {
+    self.CSMTC_freshHollowFold = [[CSMTCTourmalineResultView alloc] init];
+    self.CSMTC_freshHollowFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_freshHollowFold.backgroundColor =
     [UIColor clearColor];
-    self.overlayContainerView.hidden = YES;
+    self.CSMTC_freshHollowFold.hidden = YES;
     
-    [self.view addSubview:self.overlayContainerView];
+    [self.view addSubview:self.CSMTC_freshHollowFold];
 }
 
-#pragma mark - Constraints
-
-- (void)setupConstraints {
-    UILayoutGuide *safeArea = self.view.safeAreaLayoutGuide;
+- (void)CSMTC_softValeFoldHollowClimbTrackShore {
+    UILayoutGuide *CSMTC_safeArea = self.view.safeAreaLayoutGuide;
     
     [NSLayoutConstraint activateConstraints:@[
         
-        // backButton
-        [self.backButton.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:15],
-        [self.backButton.topAnchor constraintEqualToAnchor:safeArea.topAnchor constant:20],
-        [self.backButton.widthAnchor constraintEqualToConstant:38],
-        [self.backButton.heightAnchor constraintEqualToConstant:34],
+        [self.CSMTC_clearKnollClimb.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:15],
+        [self.CSMTC_clearKnollClimb.topAnchor constraintEqualToAnchor:CSMTC_safeArea.topAnchor constant:20],
+        [self.CSMTC_clearKnollClimb.widthAnchor constraintEqualToConstant:38],
+        [self.CSMTC_clearKnollClimb.heightAnchor constraintEqualToConstant:34],
+
+        [self.CSMTC_keenCoveTrail.topAnchor constraintEqualToAnchor:CSMTC_safeArea.topAnchor constant:32],
+        [self.CSMTC_keenCoveTrail.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor],
+        [self.CSMTC_keenCoveTrail.widthAnchor constraintEqualToConstant:151],
+        [self.CSMTC_keenCoveTrail.heightAnchor constraintEqualToConstant:151],
+        [self.CSMTC_keenCoveTrail.leadingAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.trailingAnchor constant:12],
+
+        [self.CSMTC_briskValeFold.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:15],
+        [self.CSMTC_briskValeFold.topAnchor constraintEqualToAnchor:self.CSMTC_clearKnollClimb.bottomAnchor constant:8],
         
-        // heroImageView
-        [self.heroImageView.topAnchor constraintEqualToAnchor:safeArea.topAnchor constant:32],
-        [self.heroImageView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor],
-        [self.heroImageView.widthAnchor constraintEqualToConstant:151],
-        [self.heroImageView.heightAnchor constraintEqualToConstant:151],
-        [self.heroImageView.leadingAnchor constraintEqualToAnchor:self.subtitleLabel.trailingAnchor constant:12],
-        
-        // titleLabel
-        [self.titleLabel.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:15],
-        [self.titleLabel.topAnchor constraintEqualToAnchor:self.backButton.bottomAnchor constant:8],
-        
-        // subtitleLabel
-        [self.subtitleLabel.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:15],
-        [self.subtitleLabel.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor],
-        
-        // mainContainerView
-        [self.mainContainerView.topAnchor constraintEqualToAnchor:self.subtitleLabel.bottomAnchor constant:19],
-        [self.mainContainerView.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor],
-        [self.mainContainerView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor],
-        [self.mainContainerView.bottomAnchor constraintEqualToAnchor:safeArea.bottomAnchor],
-        
-        // overlayContainerView（完全覆盖 mainContainerView）
-        [self.overlayContainerView.topAnchor constraintEqualToAnchor:self.mainContainerView.topAnchor],
-        [self.overlayContainerView.leadingAnchor constraintEqualToAnchor:self.mainContainerView.leadingAnchor],
-        [self.overlayContainerView.trailingAnchor constraintEqualToAnchor:self.mainContainerView.trailingAnchor],
-        [self.overlayContainerView.bottomAnchor constraintEqualToAnchor:self.mainContainerView.bottomAnchor]
+        [self.CSMTC_wideDellTrail.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:15],
+        [self.CSMTC_wideDellTrail.topAnchor constraintEqualToAnchor:self.CSMTC_briskValeFold.bottomAnchor],
+      
+        [self.CSMTC_humbleRidgeTrail.topAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.bottomAnchor constant:19],
+        [self.CSMTC_humbleRidgeTrail.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor],
+        [self.CSMTC_humbleRidgeTrail.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor],
+        [self.CSMTC_humbleRidgeTrail.bottomAnchor constraintEqualToAnchor:CSMTC_safeArea.bottomAnchor],
+       
+        [self.CSMTC_freshHollowFold.topAnchor constraintEqualToAnchor:self.CSMTC_humbleRidgeTrail.topAnchor],
+        [self.CSMTC_freshHollowFold.leadingAnchor constraintEqualToAnchor:self.CSMTC_humbleRidgeTrail.leadingAnchor],
+        [self.CSMTC_freshHollowFold.trailingAnchor constraintEqualToAnchor:self.CSMTC_humbleRidgeTrail.trailingAnchor],
+        [self.CSMTC_freshHollowFold.bottomAnchor constraintEqualToAnchor:self.CSMTC_humbleRidgeTrail.bottomAnchor]
     ]];
 }
 
-- (void)handleBackButtonTap {
+- (void)CSMTC_clearDellSpanTrailKnollPathBluff {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)CSMTC_mellowKnollFoldTrailHollowPathClimbSpan {
     
     
-    NSString *CSMTC_humbleRidgeTrail = [self analyzeMatrixReportWithAsset:self.CSMTC_firmHavenTrail structureDimension:self.CSMTC_brightValeClimb comparisonScope:self.CSMTC_steadyKnollFold lifecycleContext:self.CSMTC_gentleCoveTrail circulationPerspective:self.CSMTC_quickDellFold dataEmphasis:self.CSMTC_silentValeClimb baseUnit:self.CSMTC_tameRidgeTrail];
+    NSString *CSMTC_humbleRidgeTrail = [self CSMTC_plainGlenClimbFoldTrackHavenBluff:self.CSMTC_firmHavenTrail CSMTC_brightValeClimb:self.CSMTC_brightValeClimb CSMTC_steadyKnollFold:self.CSMTC_steadyKnollFold CSMTC_gentleCoveTrail:self.CSMTC_gentleCoveTrail CSMTC_quickDellFold:self.CSMTC_quickDellFold CSMTC_silentValeClimb:self.CSMTC_silentValeClimb CSMTC_tameRidgeTrail:self.CSMTC_tameRidgeTrail];
     
-    [CSMTCLoadingHUD CSMTC_showLoading];
+    [CSMTCLoadingHUD CSMTC_mellowHavenFoldTrailClimbPathRise];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [CSMTCLoadingHUD CSMTC_dismiss];
-        [self.overlayContainerView CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_humbleRidgeTrail];
-        self.overlayContainerView.hidden = NO;
-        self.overlayContainerView.alpha = 0.0;
+        [CSMTCLoadingHUD CSMTC_plainDellTrailFoldRidgeClimbRise];
+        [self.CSMTC_freshHollowFold CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_humbleRidgeTrail];
+        self.CSMTC_freshHollowFold.hidden = NO;
+        self.CSMTC_freshHollowFold.alpha = 0.0;
         [UIView animateWithDuration:0.25 animations:^{
-            self.mainContainerView.alpha = 0.0;
-            self.overlayContainerView.alpha = 1.0;
+            self.CSMTC_humbleRidgeTrail.alpha = 0.0;
+            self.CSMTC_freshHollowFold.alpha = 1.0;
         } completion:^(BOOL finished) {
-            self.mainContainerView.hidden = YES;
-            self.overlayContainerView.alpha = 1.0;
+            self.CSMTC_humbleRidgeTrail.hidden = YES;
+            self.CSMTC_freshHollowFold.alpha = 1.0;
         }];
         
     });
@@ -193,34 +185,35 @@
 }
 
 
-- (NSString *)analyzeMatrixReportWithAsset:(NSString *)assetToCompare structureDimension:(NSString *)structureDimension comparisonScope:(NSString *)comparisonScope lifecycleContext:(NSString *)lifecycleContext circulationPerspective:(NSString *)circulationPerspective dataEmphasis:(NSString *)dataEmphasis baseUnit:(NSString *)baseUnit {
-    NSMutableString *report = [NSMutableString string];
+- (NSString *)CSMTC_plainGlenClimbFoldTrackHavenBluff:(NSString *)CSMTC_firmHavenTrail CSMTC_brightValeClimb:(NSString *)CSMTC_brightValeClimb CSMTC_steadyKnollFold:(NSString *)CSMTC_steadyKnollFold CSMTC_gentleCoveTrail:(NSString *)CSMTC_gentleCoveTrail CSMTC_quickDellFold:(NSString *)CSMTC_quickDellFold CSMTC_silentValeClimb:(NSString *)CSMTC_silentValeClimb CSMTC_tameRidgeTrail:(NSString *)CSMTC_tameRidgeTrail {
+    
+    NSMutableString *CSMTC_mellowKnollFold = [NSMutableString string];
 
-    [report appendString:@"=== Structure Comparison Table ===\n"];
-    [report appendFormat:@"Asset: %@\n", assetToCompare];
-    [report appendFormat:@"Structure Dimension: %@\n", structureDimension];
-    [report appendFormat:@"Data Emphasis: %@\n\n", dataEmphasis];
+    [CSMTC_mellowKnollFold appendString:@"=== Structure Comparison Table ===\n"];
+    [CSMTC_mellowKnollFold appendFormat:@"Asset: %@\n", CSMTC_firmHavenTrail];
+    [CSMTC_mellowKnollFold appendFormat:@"Structure Dimension: %@\n", CSMTC_brightValeClimb];
+    [CSMTC_mellowKnollFold appendFormat:@"Data Emphasis: %@\n\n", CSMTC_silentValeClimb];
 
-    [report appendString:@"=== Structural Difference Summary ===\n"];
-    [report appendFormat:@"For the selected asset '%@' and structure dimension '%@', considering the lifecycle context '%@' and circulation perspective '%@', the data emphasis on '%@' highlights key structural aspects. ", assetToCompare, structureDimension, lifecycleContext, circulationPerspective, dataEmphasis];
-    [report appendString:@"This summary serves as an abstract representation of structural variation and does not imply performance or outcomes.\n\n"];
+    [CSMTC_mellowKnollFold appendString:@"=== Structural Difference Summary ===\n"];
+    [CSMTC_mellowKnollFold appendFormat:@"For the selected asset '%@' and structure dimension '%@', considering the lifecycle context '%@' and circulation perspective '%@', the data emphasis on '%@' highlights key structural aspects. ", CSMTC_firmHavenTrail, CSMTC_brightValeClimb, CSMTC_gentleCoveTrail, CSMTC_quickDellFold, CSMTC_silentValeClimb];
+    [CSMTC_mellowKnollFold appendString:@"This summary serves as an abstract representation of structural variation and does not imply performance or outcomes.\n\n"];
 
-    NSUInteger assetHash = [assetToCompare length];
-    NSUInteger dimensionHash = [structureDimension length];
-    NSUInteger lifecycleHash = [lifecycleContext length];
-    NSUInteger circulationHash = [circulationPerspective length];
-    NSUInteger emphasisHash = [dataEmphasis length];
+    NSUInteger CSMTC_lightHavenClimb = [CSMTC_firmHavenTrail length];
+    NSUInteger CSMTC_wideDellTrail = [CSMTC_brightValeClimb length];
+    NSUInteger CSMTC_briskValeFold = [CSMTC_gentleCoveTrail length];
+    NSUInteger CSMTC_keenCoveTrail = [CSMTC_quickDellFold length];
+    NSUInteger CSMTC_freshHollowFold = [CSMTC_silentValeClimb length];
 
-    double simulatedIndex = fmod((assetHash * 0.2 + dimensionHash * 0.15 + lifecycleHash * 0.25 + circulationHash * 0.2 + emphasisHash * 0.2), 1.0);
-    NSString *indexString = [NSString stringWithFormat:@"%.2f", simulatedIndex];
+    double CSMTC_humbleRidgeTrail = fmod((CSMTC_lightHavenClimb * 0.2 + CSMTC_wideDellTrail * 0.15 + CSMTC_briskValeFold * 0.25 + CSMTC_keenCoveTrail * 0.2 + CSMTC_freshHollowFold * 0.2), 1.0);
+    NSString *CSMTC_clearKnollClimb = [NSString stringWithFormat:@"%.2f", CSMTC_humbleRidgeTrail];
 
-    [report appendString:@"=== Relative Structure Index ===\n"];
-    [report appendFormat:@"%@: %@\n\n", assetToCompare, indexString];
+    [CSMTC_mellowKnollFold appendString:@"=== Relative Structure Index ===\n"];
+    [CSMTC_mellowKnollFold appendFormat:@"%@: %@\n\n", CSMTC_firmHavenTrail, CSMTC_clearKnollClimb];
 
-    [report appendString:@"=== Reference Note ===\n"];
-    [report appendString:@"Results are for structural reference only and do not imply performance or outcomes.\n"];
+    [CSMTC_mellowKnollFold appendString:@"=== Reference Note ===\n"];
+    [CSMTC_mellowKnollFold appendString:@"Results are for structural reference only and do not imply performance or outcomes.\n"];
 
-    return [report copy];
+    return [CSMTC_mellowKnollFold copy];
 }
 
 - (void)CSMTC_livelyHavenPathFoldTrailKnollRise:(NSString *)CSMTC_wideDellTrail CSMTC_keenCoveTrail:(NSString *)CSMTC_keenCoveTrail {

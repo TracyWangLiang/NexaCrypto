@@ -2,7 +2,7 @@
 //  CSMTCMicaShoreViewController.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCMicaShoreViewController.h"
@@ -12,9 +12,9 @@
 #import "CSMTCNexaManager.h"
 
 @interface CSMTCMicaShoreViewController () <UITableViewDelegate, UITableViewDataSource, CSMTCSearchNavigationBarDelegate>
-@property (nonatomic, strong) CSMTCSearchNavigationBar *topContainerView;
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, copy) NSArray *array;
+@property (nonatomic, strong) CSMTCSearchNavigationBar *CSMTC_brightHollowFold;
+@property (nonatomic, strong) UITableView *CSMTC_mistyValeClimb;
+@property (nonatomic, copy) NSArray *CSMTC_smartRidgePath;
 
 @end
 
@@ -24,68 +24,63 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1];
-    [self setupSubviews];
-    [self setupConstraints];
+    [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
+    [self CSMTC_quickRidgeTrailPathHavenClimbReach];
     [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
 }
 
 
-- (void)setupSubviews {
+- (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise {
 
-    self.topContainerView = [[CSMTCSearchNavigationBar alloc] init];
-    self.topContainerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.topContainerView.backgroundColor = UIColor.clearColor;
-    [self.view addSubview:self.topContainerView];
-    self.topContainerView.delegate = self;
+    self.CSMTC_brightHollowFold = [[CSMTCSearchNavigationBar alloc] init];
+    self.CSMTC_brightHollowFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_brightHollowFold.backgroundColor = UIColor.clearColor;
+    [self.view addSubview:self.CSMTC_brightHollowFold];
+    self.CSMTC_brightHollowFold.delegate = self;
 
-    /// TableView
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.tableView.backgroundColor = UIColor.clearColor;
-    self.tableView.alwaysBounceVertical = YES;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.tableView registerClass:[CSMTCMicaShoreTableCell class] forCellReuseIdentifier:@"CSMTCMicaShoreTableCell"];
-    [self.view addSubview:self.tableView];
+    self.CSMTC_mistyValeClimb = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.CSMTC_mistyValeClimb.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_mistyValeClimb.backgroundColor = UIColor.clearColor;
+    self.CSMTC_mistyValeClimb.alwaysBounceVertical = YES;
+    self.CSMTC_mistyValeClimb.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.CSMTC_mistyValeClimb.delegate = self;
+    self.CSMTC_mistyValeClimb.dataSource = self;
+    [self.CSMTC_mistyValeClimb registerClass:[CSMTCMicaShoreTableCell class] forCellReuseIdentifier:@"CSMTCMicaShoreTableCell"];
+    [self.view addSubview:self.CSMTC_mistyValeClimb];
 }
 
-#pragma mark - Constraints
 
-- (void)setupConstraints {
+- (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
 
-    UILayoutGuide *safe = self.view.safeAreaLayoutGuide;
-
-    /// topContainerView
+    UILayoutGuide *CSMTC_safe = self.view.safeAreaLayoutGuide;
     [NSLayoutConstraint activateConstraints:@[
-        [self.topContainerView.topAnchor constraintEqualToAnchor:safe.topAnchor],
-        [self.topContainerView.leadingAnchor constraintEqualToAnchor:safe.leadingAnchor],
-        [self.topContainerView.trailingAnchor constraintEqualToAnchor:safe.trailingAnchor],
-        [self.topContainerView.heightAnchor constraintEqualToConstant:72]
+        [self.CSMTC_brightHollowFold.topAnchor constraintEqualToAnchor:CSMTC_safe.topAnchor],
+        [self.CSMTC_brightHollowFold.leadingAnchor constraintEqualToAnchor:CSMTC_safe.leadingAnchor],
+        [self.CSMTC_brightHollowFold.trailingAnchor constraintEqualToAnchor:CSMTC_safe.trailingAnchor],
+        [self.CSMTC_brightHollowFold.heightAnchor constraintEqualToConstant:72]
     ]];
 
-    /// tableView
     [NSLayoutConstraint activateConstraints:@[
-        [self.tableView.topAnchor constraintEqualToAnchor:self.topContainerView.bottomAnchor],
-        [self.tableView.leadingAnchor constraintEqualToAnchor:safe.leadingAnchor],
-        [self.tableView.trailingAnchor constraintEqualToAnchor:safe.trailingAnchor],
-        [self.tableView.bottomAnchor constraintEqualToAnchor:safe.bottomAnchor]
+        [self.CSMTC_mistyValeClimb.topAnchor constraintEqualToAnchor:self.CSMTC_brightHollowFold.bottomAnchor],
+        [self.CSMTC_mistyValeClimb.leadingAnchor constraintEqualToAnchor:CSMTC_safe.leadingAnchor],
+        [self.CSMTC_mistyValeClimb.trailingAnchor constraintEqualToAnchor:CSMTC_safe.trailingAnchor],
+        [self.CSMTC_mistyValeClimb.bottomAnchor constraintEqualToAnchor:CSMTC_safe.bottomAnchor]
     ]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.array.count;
+    return self.CSMTC_smartRidgePath.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCMicaShoreTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCMicaShoreTableCell"];
-    CSMTCMicaShoreItemModel *CSMTC_itemModel = [self.array objectAtIndex:indexPath.row];
+    CSMTCMicaShoreItemModel *CSMTC_itemModel = [self.CSMTC_smartRidgePath objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel];
     return CSMTC_cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCMicaShoreItemModel *CSMTC_itemModel = [self.array objectAtIndex:indexPath.row];
+    CSMTCMicaShoreItemModel *CSMTC_itemModel = [self.CSMTC_smartRidgePath objectAtIndex:indexPath.row];
     NSString *CSMTC_freshHollowClimb = [CSMTCNexaCrypto CSMTC_calmKnollShorePathRiseFoldTrail:[NSString stringWithFormat:@"%@%@&",[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"qBmfY0ygdI23kYceu4uCHeGLWFH5fNKKqbgQgY9xUTrMH0mjyA=="], CSMTC_itemModel.CSMTC_streetDynamics]];
     [self CSMTC_silentValePointFoldKnollBluffPath:CSMTC_freshHollowClimb];
 }
@@ -101,12 +96,12 @@
 
 - (void)CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff {
     NSString *CSMTC_gentleRidgeClimb = [CSMTCNexaCrypto CSMTC_wideHollowPathTrailFoldKnollRise:@"slnphz/vfjnahccdzzfg"];
-    [CSMTCNexaManager postRequestWithURL:CSMTC_gentleRidgeClimb CSMTC_parameters:@{@"urbanGroove":@"1",@"nightDistrict":@"3"} CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
+    [CSMTCNexaManager CSMTC_quietDellPathFoldRidgeBluffRise:CSMTC_gentleRidgeClimb CSMTC_parameters:@{@"urbanGroove":@"1",@"nightDistrict":@"3"} CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
         if (CSMTC_dict.count > 0) {
             CSMTCMicaShoreDataModel *CSMTC_model = [CSMTCMicaShoreDataModel CSMTC_modelWithDictionary:CSMTC_dict];
             if ([CSMTC_model.CSMTC_code isEqualToString:@"200000"]) {
-                self.array = CSMTC_model.CSMTC_data;
-                [self.tableView reloadData];
+                self.CSMTC_smartRidgePath = CSMTC_model.CSMTC_data;
+                [self.CSMTC_mistyValeClimb reloadData];
             }
         }
     } CSMTC_failure:^(NSInteger CSMTC_errorCode, NSString * _Nonnull CSMTC_errorMsg) {
@@ -114,11 +109,11 @@
     }];
 }
 
-- (NSArray *)array {
-    if (!_array) {
-        _array = @[];
+- (NSArray *)CSMTC_smartRidgePath {
+    if (!_CSMTC_smartRidgePath) {
+        _CSMTC_smartRidgePath = @[];
     }
-    return _array;
+    return _CSMTC_smartRidgePath;
 }
 
 @end

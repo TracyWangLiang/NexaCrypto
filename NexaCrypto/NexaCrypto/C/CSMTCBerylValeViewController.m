@@ -2,7 +2,7 @@
 //  CSMTCBerylValeViewController.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCBerylValeViewController.h"
@@ -30,21 +30,18 @@
 
 
 - (void)viewDidLoad {
-    //    http://43.136.234.225:20092/backone
-    //    87164025
-    //    http://43.136.234.225:20102/#/页面名称?token=123&appID=123&deviceID=123
     
     [super viewDidLoad];
-    [CSMTCLoadingHUD CSMTC_showLoading];
+    [CSMTCLoadingHUD CSMTC_mellowHavenFoldTrailClimbPathRise];
     self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1];
-    [self CSMTC_setupView];
-    [self CSMTC_setupConstraint];
+    [self CSMTC_calmKnollShorePathRiseFoldTrail];
+    [self CSMTC_freshCoveBluffTrackHavenClimbSpan];
     [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
     
     
 }
 
-- (void)CSMTC_setupView {
+- (void)CSMTC_calmKnollShorePathRiseFoldTrail {
     self.CSMTC_briskHarborLoom = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.CSMTC_gentleValeBridge];
     self.CSMTC_briskHarborLoom.navigationDelegate = self;
     self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
@@ -54,7 +51,7 @@
     
 }
 
-- (void)CSMTC_setupConstraint {
+- (void)CSMTC_freshCoveBluffTrackHavenClimbSpan {
     [NSLayoutConstraint activateConstraints:@[
         [self.CSMTC_briskHarborLoom.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
         [self.CSMTC_briskHarborLoom.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
@@ -97,7 +94,7 @@
 }
 
 - (void)CSMTC_briskDellLaneShoreTrackHollowSpan {
-    [CSMTCLoadingHUD CSMTC_dismiss];
+    [CSMTCLoadingHUD CSMTC_plainDellTrailFoldRidgeClimbRise];
     self.CSMTC_briskHarborLoom.hidden = NO;
 }
 

@@ -2,16 +2,16 @@
 //  CSMTCCoralSpireTableCell.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/5.
+//   
 //
 
 #import "CSMTCCoralSpireTableCell.h"
 
 @interface CSMTCCoralSpireTableCell ()
 
-@property (nonatomic, strong) UIImageView *leftImageView;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UIImageView *rightImageView;
+@property (nonatomic, strong) UIImageView *CSMTC_silentValeClimb;
+@property (nonatomic, strong) UILabel *CSMTC_quickDellFold;
+@property (nonatomic, strong) UIImageView *CSMTC_gentleCoveTrail;
 
 @end
 
@@ -20,70 +20,73 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self setupSubviews];
-        [self setupConstraints];
+        self.backgroundColor = [UIColor clearColor];
+        self.contentView.backgroundColor =[UIColor clearColor];
+        [self CSMTC_briskValeFoldTrailHollowClimbKnollPath];
+        [self CSMTC_wideDellTrailFoldKnollClimbHollowPath];
     }
     return self;
 }
 
 
-- (void)setupSubviews {
+- (void)CSMTC_briskValeFoldTrailHollowClimbKnollPath {
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 
-    self.leftImageView = [[UIImageView alloc] init];
-    self.leftImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.leftImageView.contentMode = UIViewContentModeScaleAspectFill;
-    [self.contentView addSubview:self.leftImageView];
-    self.leftImageView.layer.masksToBounds = YES;
-    self.leftImageView.layer.cornerRadius = 15;
+    self.CSMTC_silentValeClimb = [[UIImageView alloc] init];
+    self.CSMTC_silentValeClimb.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_silentValeClimb.contentMode = UIViewContentModeScaleAspectFill;
+    [self.contentView addSubview:self.CSMTC_silentValeClimb];
+    self.CSMTC_silentValeClimb.layer.masksToBounds = YES;
+    self.CSMTC_silentValeClimb.layer.cornerRadius = 15;
 
-    self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
-    self.titleLabel.textColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:1]; // sRGB
-    [self.contentView addSubview:self.titleLabel];
+    self.CSMTC_quickDellFold = [[UILabel alloc] init];
+    self.CSMTC_quickDellFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_quickDellFold.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
+    self.CSMTC_quickDellFold.textColor = [UIColor blackColor]; // sRGB
+    [self.contentView addSubview:self.CSMTC_quickDellFold];
 
-    self.rightImageView = [[UIImageView alloc] init];
-    self.rightImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.rightImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.contentView addSubview:self.rightImageView];
+    self.CSMTC_gentleCoveTrail = [[UIImageView alloc] init];
+    self.CSMTC_gentleCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_gentleCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
+    [self.contentView addSubview:self.CSMTC_gentleCoveTrail];
+    self.CSMTC_gentleCoveTrail.image = [UIImage imageNamed:@"CSMTC_steadyValeBluff"];
+    self.CSMTC_gentleCoveTrail.highlightedImage = [UIImage imageNamed:@"CSMTC_lightHollowTrack"];
 }
 
-- (void)setupConstraints {
-    UILayoutGuide *safeArea = self.contentView.safeAreaLayoutGuide;
+- (void)CSMTC_wideDellTrailFoldKnollClimbHollowPath {
+    UILayoutGuide *CSMTC_safeArea = self.contentView.safeAreaLayoutGuide;
 
     [NSLayoutConstraint activateConstraints:@[
-        // leftImageView
-        [self.leftImageView.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:12],
-        [self.leftImageView.centerYAnchor constraintEqualToAnchor:safeArea.centerYAnchor],
-        [self.leftImageView.widthAnchor constraintEqualToConstant:30],
-        [self.leftImageView.heightAnchor constraintEqualToConstant:30],
+        [self.CSMTC_silentValeClimb.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:12],
+        [self.CSMTC_silentValeClimb.centerYAnchor constraintEqualToAnchor:CSMTC_safeArea.centerYAnchor],
+        [self.CSMTC_silentValeClimb.widthAnchor constraintEqualToConstant:30],
+        [self.CSMTC_silentValeClimb.heightAnchor constraintEqualToConstant:30],
+        [self.CSMTC_silentValeClimb.topAnchor constraintEqualToAnchor:CSMTC_safeArea.topAnchor constant:15],
+        [self.CSMTC_silentValeClimb.bottomAnchor constraintEqualToAnchor:CSMTC_safeArea.bottomAnchor constant:-15],
+        
+        [self.CSMTC_quickDellFold.leadingAnchor constraintEqualToAnchor:self.CSMTC_silentValeClimb.trailingAnchor constant:8],
+        [self.CSMTC_quickDellFold.centerYAnchor constraintEqualToAnchor:self.CSMTC_silentValeClimb.centerYAnchor],
 
-        // titleLabel
-        [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.leftImageView.trailingAnchor constant:8],
-        [self.titleLabel.centerYAnchor constraintEqualToAnchor:self.leftImageView.centerYAnchor],
-
-        // rightImageView
-        [self.rightImageView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor constant:-12],
-        [self.rightImageView.centerYAnchor constraintEqualToAnchor:safeArea.centerYAnchor],
-        [self.rightImageView.widthAnchor constraintEqualToConstant:20],
-        [self.rightImageView.heightAnchor constraintEqualToConstant:20],
+        [self.CSMTC_gentleCoveTrail.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor constant:-12],
+        [self.CSMTC_gentleCoveTrail.centerYAnchor constraintEqualToAnchor:CSMTC_safeArea.centerYAnchor],
+        [self.CSMTC_gentleCoveTrail.widthAnchor constraintEqualToConstant:20],
+        [self.CSMTC_gentleCoveTrail.heightAnchor constraintEqualToConstant:20],
     ]];
 }
 
 - (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
     [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
-        self.leftImageView.image = image;
+        self.CSMTC_silentValeClimb.image = image;
     }];
-    self.titleLabel.text = CSMTC_model.CSMTC_name;
-    self.rightImageView.highlighted = [self CSMTC_containsDataModel:CSMTC_model inArray:[CSMTCNexaManager CSMTC_loadAllGrainDataModels]];
+    self.CSMTC_quickDellFold.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_gentleCoveTrail.highlighted = [self CSMTC_lightHavenClimbFoldTrailKnollRiseBluff:CSMTC_model CSMTC_quickDellFold:[CSMTCNexaManager CSMTC_softGlenPathFoldHavenClimbRise]];
     
 }
 
-- (BOOL)CSMTC_containsDataModel:(CSMTCCobaltGrainDataItemModel *)model inArray:(NSArray *)array {
-    if (!model || !array || array.count == 0) return NO;
-    for (CSMTCCobaltGrainDataItemModel *item in array) {
-        if ([item.CSMTC_id isEqualToString:model.CSMTC_id]) {
+- (BOOL)CSMTC_lightHavenClimbFoldTrailKnollRiseBluff:(CSMTCCobaltGrainDataItemModel *)CSMTC_gentleCoveTrail CSMTC_quickDellFold:(NSArray *)CSMTC_quickDellFold {
+    if (!CSMTC_gentleCoveTrail || !CSMTC_quickDellFold || CSMTC_quickDellFold.count == 0) return NO;
+    for (CSMTCCobaltGrainDataItemModel *CSMTC_steadyKnollFold in CSMTC_quickDellFold) {
+        if ([CSMTC_steadyKnollFold.CSMTC_id isEqualToString:CSMTC_gentleCoveTrail.CSMTC_id]) {
             return YES;
         }
     }

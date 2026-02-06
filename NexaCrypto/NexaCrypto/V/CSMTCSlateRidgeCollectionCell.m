@@ -2,23 +2,23 @@
 //  CSMTCSlateRidgeCollectionCell.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCSlateRidgeCollectionCell.h"
 
 @interface CSMTCSlateRidgeCollectionCell ()
 
-@property (nonatomic, strong) UILabel *rankLabel;
-@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *CSMTC_briskHarborLoom;
+@property (nonatomic, strong) UIImageView *CSMTC_silentHarborGlen;
 
-@property (nonatomic, strong) UILabel *nameLabel;
-@property (nonatomic, strong) UILabel *symbolLabel;
-@property (nonatomic, strong) UILabel *priceLabel;
+@property (nonatomic, strong) UILabel *CSMTC_firmHavenCrest;
+@property (nonatomic, strong) UILabel *CSMTC_gentleValeBridge;
+@property (nonatomic, strong) UILabel *CSMTC_quickRidgeHollow;
 
-@property (nonatomic, strong) UIView *changeContainer;
-@property (nonatomic, strong) UIImageView *changeIcon;
-@property (nonatomic, strong) UILabel *changeLabel;
+@property (nonatomic, strong) UIView *CSMTC_freshHollowClimb;
+@property (nonatomic, strong) UIImageView *CSMTC_brightDellPath;
+@property (nonatomic, strong) UILabel *CSMTC_calmKnollShore;
 
 @end
 
@@ -27,164 +27,153 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupSubviews];
-        [self setupConstraints];
+        [self CSMTC_aptKnollTrailFoldPathBluffRiseTrack];
+        [self CSMTC_sharpDellPathFoldHollowTrailKnollSpan];
     }
     return self;
 }
 
 
-- (void)setupSubviews {
+- (void)CSMTC_aptKnollTrailFoldPathBluffRiseTrack {
 
     self.contentView.backgroundColor = UIColor.clearColor;
 
-    self.rankLabel = [[UILabel alloc] init];
-    self.rankLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.rankLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.rankLabel.textColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:1];
-    [self.contentView addSubview:self.rankLabel];
-    self.iconImageView = [[UIImageView alloc] init];
-    self.iconImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.iconImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.iconImageView.clipsToBounds = YES;
-    self.iconImageView.layer.cornerRadius = 15;
-    self.iconImageView.backgroundColor = [UIColor redColor];
-    [self.contentView addSubview:self.iconImageView];
-    self.rankLabel.text = @"1";
+    self.CSMTC_briskHarborLoom = [[UILabel alloc] init];
+    self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_briskHarborLoom.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
+    self.CSMTC_briskHarborLoom.textColor = [UIColor colorWithRed:180/255.0 green:180/255.0 blue:180/255.0 alpha:1];
+    [self.contentView addSubview:self.CSMTC_briskHarborLoom];
+    self.CSMTC_silentHarborGlen = [[UIImageView alloc] init];
+    self.CSMTC_silentHarborGlen.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_silentHarborGlen.contentMode = UIViewContentModeScaleAspectFill;
+    self.CSMTC_silentHarborGlen.clipsToBounds = YES;
+    self.CSMTC_silentHarborGlen.layer.cornerRadius = 15;
+    self.CSMTC_silentHarborGlen.backgroundColor = [UIColor redColor];
+    [self.contentView addSubview:self.CSMTC_silentHarborGlen];
+    self.CSMTC_briskHarborLoom.text = @"1";
 
-    /// 名称
-    self.nameLabel = [[UILabel alloc] init];
-    self.nameLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.nameLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:16];
-    self.nameLabel.textColor = UIColor.whiteColor;
-    [self.contentView addSubview:self.nameLabel];
-    self.nameLabel.text = @"Bitcoin";
 
-    /// 简称
-    self.symbolLabel = [[UILabel alloc] init];
-    self.symbolLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.symbolLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.symbolLabel.textColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
-    [self.contentView addSubview:self.symbolLabel];
-    self.symbolLabel.text = @"BTC";
+    self.CSMTC_firmHavenCrest = [[UILabel alloc] init];
+    self.CSMTC_firmHavenCrest.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_firmHavenCrest.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:16];
+    self.CSMTC_firmHavenCrest.textColor = UIColor.whiteColor;
+    [self.contentView addSubview:self.CSMTC_firmHavenCrest];
+    self.CSMTC_firmHavenCrest.text = @"Bitcoin";
 
-    /// 价格
-    self.priceLabel = [[UILabel alloc] init];
-    self.priceLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.priceLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:15];
-    self.priceLabel.textColor = UIColor.whiteColor;
-    [self.contentView addSubview:self.priceLabel];
-    self.priceLabel.text = @"$9,4963.39";
+  
+    self.CSMTC_gentleValeBridge = [[UILabel alloc] init];
+    self.CSMTC_gentleValeBridge.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_gentleValeBridge.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
+    self.CSMTC_gentleValeBridge.textColor = [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
+    [self.contentView addSubview:self.CSMTC_gentleValeBridge];
+    self.CSMTC_gentleValeBridge.text = @"BTC";
 
-    /// 涨跌容器
-    self.changeContainer = [[UIView alloc] init];
-    self.changeContainer.translatesAutoresizingMaskIntoConstraints = NO;
-    self.changeContainer.backgroundColor =
+
+    self.CSMTC_quickRidgeHollow = [[UILabel alloc] init];
+    self.CSMTC_quickRidgeHollow.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_quickRidgeHollow.font = [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:15];
+    self.CSMTC_quickRidgeHollow.textColor = UIColor.whiteColor;
+    [self.contentView addSubview:self.CSMTC_quickRidgeHollow];
+    self.CSMTC_quickRidgeHollow.text = @"$0.00";
+
+    self.CSMTC_freshHollowClimb = [[UIView alloc] init];
+    self.CSMTC_freshHollowClimb.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_freshHollowClimb.backgroundColor =
     [UIColor colorWithRed:253/255.0 green:49/255.0 blue:118/255.0 alpha:1];
-    [self.contentView addSubview:self.changeContainer];
-    self.changeContainer.layer.masksToBounds = YES;
-    self.changeContainer.layer.cornerRadius = 6;
+    [self.contentView addSubview:self.CSMTC_freshHollowClimb];
+    self.CSMTC_freshHollowClimb.layer.masksToBounds = YES;
+    self.CSMTC_freshHollowClimb.layer.cornerRadius = 6;
 
-    /// 涨跌图标
-    self.changeIcon = [[UIImageView alloc] init];
-    self.changeIcon.translatesAutoresizingMaskIntoConstraints = NO;
-    self.changeIcon.contentMode = UIViewContentModeScaleAspectFit;
-    [self.changeContainer addSubview:self.changeIcon];
-    self.changeIcon.image = [UIImage imageNamed:@"CSMTC_wideRidgeTrail"];
-    self.changeIcon.highlightedImage = [UIImage imageNamed:@"CSMTC_plainHollowPeak"];
+    self.CSMTC_brightDellPath = [[UIImageView alloc] init];
+    self.CSMTC_brightDellPath.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_brightDellPath.contentMode = UIViewContentModeScaleAspectFit;
+    [self.CSMTC_freshHollowClimb addSubview:self.CSMTC_brightDellPath];
+    self.CSMTC_brightDellPath.image = [UIImage imageNamed:@"CSMTC_wideRidgeTrail"];
+    self.CSMTC_brightDellPath.highlightedImage = [UIImage imageNamed:@"CSMTC_plainHollowPeak"];
 
-    /// 涨跌文字
-    self.changeLabel = [[UILabel alloc] init];
-    self.changeLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.changeLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.changeLabel.textColor = UIColor.whiteColor;
-    [self.changeContainer addSubview:self.changeLabel];
-    self.changeLabel.text = @"+0.00%";
+    self.CSMTC_calmKnollShore = [[UILabel alloc] init];
+    self.CSMTC_calmKnollShore.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_calmKnollShore.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
+    self.CSMTC_calmKnollShore.textColor = UIColor.whiteColor;
+    [self.CSMTC_freshHollowClimb addSubview:self.CSMTC_calmKnollShore];
+    self.CSMTC_calmKnollShore.text = @"+0.00%";
 }
 
-#pragma mark - Constraints
+- (void)CSMTC_sharpDellPathFoldHollowTrailKnollSpan {
 
-- (void)setupConstraints {
+    UIView *CSMTC_steadyCoveRise = self.contentView;
 
-    UIView *cv = self.contentView;
-
-    /// rankLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.rankLabel.leadingAnchor constraintEqualToAnchor:cv.leadingAnchor constant:8],
-        [self.rankLabel.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor]
+        [self.CSMTC_briskHarborLoom.leadingAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.leadingAnchor constant:8],
+        [self.CSMTC_briskHarborLoom.centerYAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.centerYAnchor]
     ]];
 
-    /// iconImageView
     [NSLayoutConstraint activateConstraints:@[
-        [self.iconImageView.leadingAnchor constraintEqualToAnchor:self.rankLabel.trailingAnchor constant:12],
-        [self.iconImageView.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor],
-        [self.iconImageView.widthAnchor constraintEqualToConstant:30],
-        [self.iconImageView.heightAnchor constraintEqualToConstant:30],
-        [self.iconImageView.topAnchor constraintEqualToAnchor:cv.topAnchor constant:15],
-        [self.iconImageView.bottomAnchor constraintEqualToAnchor:cv.bottomAnchor constant:-15]
+        [self.CSMTC_silentHarborGlen.leadingAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.trailingAnchor constant:12],
+        [self.CSMTC_silentHarborGlen.centerYAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.centerYAnchor],
+        [self.CSMTC_silentHarborGlen.widthAnchor constraintEqualToConstant:30],
+        [self.CSMTC_silentHarborGlen.heightAnchor constraintEqualToConstant:30],
+        [self.CSMTC_silentHarborGlen.topAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.topAnchor constant:15],
+        [self.CSMTC_silentHarborGlen.bottomAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.bottomAnchor constant:-15]
     ]];
 
-    /// nameLabel
+
     [NSLayoutConstraint activateConstraints:@[
-        [self.nameLabel.leadingAnchor constraintEqualToAnchor:self.iconImageView.trailingAnchor constant:8],
-        [self.nameLabel.topAnchor constraintEqualToAnchor:self.iconImageView.topAnchor constant:-3],
-        [self.nameLabel.widthAnchor constraintLessThanOrEqualToConstant:150]
+        [self.CSMTC_firmHavenCrest.leadingAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.trailingAnchor constant:8],
+        [self.CSMTC_firmHavenCrest.topAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.topAnchor constant:-3],
+        [self.CSMTC_firmHavenCrest.widthAnchor constraintLessThanOrEqualToConstant:150]
     ]];
 
-    /// symbolLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.symbolLabel.leadingAnchor constraintEqualToAnchor:self.iconImageView.trailingAnchor constant:8],
-        [self.symbolLabel.bottomAnchor constraintEqualToAnchor:self.iconImageView.bottomAnchor constant:4]
+        [self.CSMTC_gentleValeBridge.leadingAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.trailingAnchor constant:8],
+        [self.CSMTC_gentleValeBridge.bottomAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.bottomAnchor constant:4]
     ]];
 
-    /// priceLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.priceLabel.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor],
-        [self.priceLabel.trailingAnchor constraintEqualToAnchor:self.changeContainer.leadingAnchor constant:-20]
+        [self.CSMTC_quickRidgeHollow.centerYAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.centerYAnchor],
+        [self.CSMTC_quickRidgeHollow.trailingAnchor constraintEqualToAnchor:self.CSMTC_freshHollowClimb.leadingAnchor constant:-20]
     ]];
 
-    /// changeContainer
     [NSLayoutConstraint activateConstraints:@[
-//        [self.changeContainer.leadingAnchor constraintEqualToAnchor:self.priceLabel.trailingAnchor constant:20],
-        [self.changeContainer.trailingAnchor constraintEqualToAnchor:cv.trailingAnchor constant:-12],
-        [self.changeContainer.centerYAnchor constraintEqualToAnchor:cv.centerYAnchor],
-        [self.changeContainer.heightAnchor constraintEqualToConstant:28],
-        [self.changeContainer.widthAnchor constraintEqualToConstant:75]
+
+        [self.CSMTC_freshHollowClimb.trailingAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.trailingAnchor constant:-12],
+        [self.CSMTC_freshHollowClimb.centerYAnchor constraintEqualToAnchor:CSMTC_steadyCoveRise.centerYAnchor],
+        [self.CSMTC_freshHollowClimb.heightAnchor constraintEqualToConstant:28],
+        [self.CSMTC_freshHollowClimb.widthAnchor constraintEqualToConstant:75]
     ]];
 
-    /// changeIcon
+
     [NSLayoutConstraint activateConstraints:@[
-        [self.changeIcon.leadingAnchor constraintEqualToAnchor:self.changeContainer.leadingAnchor constant:10],
-        [self.changeIcon.centerYAnchor constraintEqualToAnchor:self.changeContainer.centerYAnchor],
-        [self.changeIcon.widthAnchor constraintEqualToConstant:8],
-        [self.changeIcon.heightAnchor constraintEqualToConstant:8]
+        [self.CSMTC_brightDellPath.leadingAnchor constraintEqualToAnchor:self.CSMTC_freshHollowClimb.leadingAnchor constant:10],
+        [self.CSMTC_brightDellPath.centerYAnchor constraintEqualToAnchor:self.CSMTC_freshHollowClimb.centerYAnchor],
+        [self.CSMTC_brightDellPath.widthAnchor constraintEqualToConstant:8],
+        [self.CSMTC_brightDellPath.heightAnchor constraintEqualToConstant:8]
     ]];
 
-    /// changeLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.changeLabel.leadingAnchor constraintEqualToAnchor:self.changeIcon.trailingAnchor constant:2],
-        [self.changeLabel.trailingAnchor constraintEqualToAnchor:self.changeContainer.trailingAnchor constant:-9],
-        [self.changeLabel.centerYAnchor constraintEqualToAnchor:self.changeContainer.centerYAnchor]
+        [self.CSMTC_calmKnollShore.leadingAnchor constraintEqualToAnchor:self.CSMTC_brightDellPath.trailingAnchor constant:2],
+        [self.CSMTC_calmKnollShore.trailingAnchor constraintEqualToAnchor:self.CSMTC_freshHollowClimb.trailingAnchor constant:-9],
+        [self.CSMTC_calmKnollShore.centerYAnchor constraintEqualToAnchor:self.CSMTC_freshHollowClimb.centerYAnchor]
     ]];
 }
 
 - (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model CSMTC_clearKnollClimb:(NSString *)CSMTC_clearKnollClimb {
-    self.rankLabel.text = CSMTC_clearKnollClimb;
+    self.CSMTC_briskHarborLoom.text = CSMTC_clearKnollClimb;
     CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
     [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
-        self.iconImageView.image = image;
+        self.CSMTC_silentHarborGlen.image = image;
     }];
-    self.nameLabel.text = CSMTC_model.CSMTC_name;
-    self.symbolLabel.text = CSMTC_model.CSMTC_symbol;
-    self.priceLabel.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
-    self.changeLabel.text = [NSString stringWithFormat:@"%@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]];
+    self.CSMTC_firmHavenCrest.text = CSMTC_model.CSMTC_name;
+    self.CSMTC_gentleValeBridge.text = CSMTC_model.CSMTC_symbol;
+    self.CSMTC_quickRidgeHollow.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.CSMTC_calmKnollShore.text = [NSString stringWithFormat:@"%@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]];
     
     if ([CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h]) {
-        self.changeIcon.highlighted = YES;
-        self.changeContainer.backgroundColor = [UIColor colorWithRed:253/255.0 green:49/255.0 blue:118/255.0 alpha:1];
+        self.CSMTC_brightDellPath.highlighted = YES;
+        self.CSMTC_freshHollowClimb.backgroundColor = [UIColor colorWithRed:253/255.0 green:49/255.0 blue:118/255.0 alpha:1];
     } else {
-        self.changeIcon.highlighted = NO;
-        self.changeContainer.backgroundColor = [UIColor colorWithRed:0/255.0 green:183/255.0 blue:214/255.0 alpha:1];
+        self.CSMTC_brightDellPath.highlighted = NO;
+        self.CSMTC_freshHollowClimb.backgroundColor = [UIColor colorWithRed:0/255.0 green:183/255.0 blue:214/255.0 alpha:1];
     }
     
 }

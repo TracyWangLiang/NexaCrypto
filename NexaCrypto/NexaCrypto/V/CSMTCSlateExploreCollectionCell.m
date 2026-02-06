@@ -2,18 +2,18 @@
 //  CSMTCSlateExploreCollectionCell.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCSlateExploreCollectionCell.h"
 
 @interface CSMTCSlateExploreCollectionCell ()
 
-@property (nonatomic, strong) UIImageView *iconImageView;
-@property (nonatomic, strong) UILabel *symbolLabel;
-@property (nonatomic, strong) UILabel *priceLabel;
-@property (nonatomic, strong) UIImageView *trendImageView;
-@property (nonatomic, strong) UIButton *changeButton;
+@property (nonatomic, strong) UIImageView *CSMTC_softCrestLane;
+@property (nonatomic, strong) UILabel *CSMTC_clearGlenFold;
+@property (nonatomic, strong) UILabel *CSMTC_mistyDellSpan;
+@property (nonatomic, strong) UIImageView *CSMTC_sharpKnollTrace;
+@property (nonatomic, strong) UIButton *CSMTC_vastValePoint;
 
 @end
 
@@ -24,119 +24,105 @@
     if (self) {
         self.layer.masksToBounds = YES;
         self.layer.cornerRadius = 10;
-        [self setupSubviews];
-        [self setupConstraints];
+        [self CSMTC_quickCoveTrailFoldHavenClimbPathRise];
+        [self CSMTC_smartRidgePathFoldTrailKnollRiseBluff];
     }
     return self;
 }
 
-#pragma mark - Subviews
-
-- (void)setupSubviews {
+- (void)CSMTC_quickCoveTrailFoldHavenClimbPathRise {
 
     self.contentView.backgroundColor =
     [UIColor colorWithRed:24/255.0 green:25/255.0 blue:27/255.0 alpha:1];
 
-    /// icon
-    self.iconImageView = [[UIImageView alloc] init];
-    self.iconImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.iconImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.iconImageView.clipsToBounds = YES;
-    self.iconImageView.layer.cornerRadius = 13;
-    [self.contentView addSubview:self.iconImageView];
+    self.CSMTC_softCrestLane = [[UIImageView alloc] init];
+    self.CSMTC_softCrestLane.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_softCrestLane.contentMode = UIViewContentModeScaleAspectFill;
+    self.CSMTC_softCrestLane.clipsToBounds = YES;
+    self.CSMTC_softCrestLane.layer.cornerRadius = 13;
+    [self.contentView addSubview:self.CSMTC_softCrestLane];
 
-    /// symbol
-    self.symbolLabel = [[UILabel alloc] init];
-    self.symbolLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.symbolLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:16];
-    self.symbolLabel.textColor = UIColor.whiteColor;
-    [self.contentView addSubview:self.symbolLabel];
+    self.CSMTC_clearGlenFold = [[UILabel alloc] init];
+    self.CSMTC_clearGlenFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_clearGlenFold.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:16];
+    self.CSMTC_clearGlenFold.textColor = UIColor.whiteColor;
+    [self.contentView addSubview:self.CSMTC_clearGlenFold];
 
-    /// price
-    self.priceLabel = [[UILabel alloc] init];
-    self.priceLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.priceLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.priceLabel.textColor =
+    self.CSMTC_mistyDellSpan = [[UILabel alloc] init];
+    self.CSMTC_mistyDellSpan.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_mistyDellSpan.font = [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
+    self.CSMTC_mistyDellSpan.textColor =
     [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1];
-    [self.contentView addSubview:self.priceLabel];
+    [self.contentView addSubview:self.CSMTC_mistyDellSpan];
 
-    /// trend image
-    self.trendImageView = [[UIImageView alloc] init];
-    self.trendImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.trendImageView.contentMode = UIViewContentModeScaleToFill;
-    [self.contentView addSubview:self.trendImageView];
-    
+    self.CSMTC_sharpKnollTrace = [[UIImageView alloc] init];
+    self.CSMTC_sharpKnollTrace.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_sharpKnollTrace.contentMode = UIViewContentModeScaleToFill;
+    [self.contentView addSubview:self.CSMTC_sharpKnollTrace];
 
-    /// change button
-    self.changeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.changeButton.translatesAutoresizingMaskIntoConstraints = NO;
-    self.changeButton.titleLabel.font =
+    self.CSMTC_vastValePoint = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.CSMTC_vastValePoint.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_vastValePoint.titleLabel.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:13];
-    self.changeButton.userInteractionEnabled = NO;
-    self.changeButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-    self.changeButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    [self.contentView addSubview:self.changeButton];
+    self.CSMTC_vastValePoint.userInteractionEnabled = NO;
+    self.CSMTC_vastValePoint.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+    self.CSMTC_vastValePoint.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    [self.contentView addSubview:self.CSMTC_vastValePoint];
    
 }
 
-#pragma mark - Constraints
 
-- (void)setupConstraints {
+- (void)CSMTC_smartRidgePathFoldTrailKnollRiseBluff {
 
-    UIView *cv = self.contentView;
+    UIView *CSMTC_plainHollowPeak = self.contentView;
 
-    /// iconImageView
     [NSLayoutConstraint activateConstraints:@[
-        [self.iconImageView.leadingAnchor constraintEqualToAnchor:cv.leadingAnchor constant:8],
-        [self.iconImageView.topAnchor constraintEqualToAnchor:cv.topAnchor constant:21],
-        [self.iconImageView.widthAnchor constraintEqualToConstant:26],
-        [self.iconImageView.heightAnchor constraintEqualToConstant:26]
+        [self.CSMTC_softCrestLane.leadingAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.leadingAnchor constant:8],
+        [self.CSMTC_softCrestLane.topAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.topAnchor constant:21],
+        [self.CSMTC_softCrestLane.widthAnchor constraintEqualToConstant:26],
+        [self.CSMTC_softCrestLane.heightAnchor constraintEqualToConstant:26]
     ]];
 
-    /// symbolLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.symbolLabel.leadingAnchor constraintEqualToAnchor:self.iconImageView.trailingAnchor constant:6],
-        [self.symbolLabel.topAnchor constraintEqualToAnchor:self.iconImageView.topAnchor constant:-5],
-        [self.symbolLabel.trailingAnchor constraintEqualToAnchor:cv.trailingAnchor constant:-9]
+        [self.CSMTC_clearGlenFold.leadingAnchor constraintEqualToAnchor:self.CSMTC_softCrestLane.trailingAnchor constant:6],
+        [self.CSMTC_clearGlenFold.topAnchor constraintEqualToAnchor:self.CSMTC_softCrestLane.topAnchor constant:-5],
+        [self.CSMTC_clearGlenFold.trailingAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.trailingAnchor constant:-9]
     ]];
 
-    /// priceLabel
     [NSLayoutConstraint activateConstraints:@[
-        [self.priceLabel.leadingAnchor constraintEqualToAnchor:self.iconImageView.trailingAnchor constant:6],
-        [self.priceLabel.topAnchor constraintEqualToAnchor:self.symbolLabel.bottomAnchor constant:2],
-        [self.priceLabel.trailingAnchor constraintEqualToAnchor:cv.trailingAnchor constant:-9]
+        [self.CSMTC_mistyDellSpan.leadingAnchor constraintEqualToAnchor:self.CSMTC_softCrestLane.trailingAnchor constant:6],
+        [self.CSMTC_mistyDellSpan.topAnchor constraintEqualToAnchor:self.CSMTC_clearGlenFold.bottomAnchor constant:2],
+        [self.CSMTC_mistyDellSpan.trailingAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.trailingAnchor constant:-9]
     ]];
 
-    /// trendImageView
     [NSLayoutConstraint activateConstraints:@[
-        [self.trendImageView.leadingAnchor constraintEqualToAnchor:cv.leadingAnchor constant:10],
-        [self.trendImageView.topAnchor constraintEqualToAnchor:self.priceLabel.bottomAnchor constant:10],
-        [self.trendImageView.widthAnchor constraintEqualToConstant:56],
-        [self.trendImageView.heightAnchor constraintEqualToConstant:33]
+        [self.CSMTC_sharpKnollTrace.leadingAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.leadingAnchor constant:10],
+        [self.CSMTC_sharpKnollTrace.topAnchor constraintEqualToAnchor:self.CSMTC_mistyDellSpan.bottomAnchor constant:10],
+        [self.CSMTC_sharpKnollTrace.widthAnchor constraintEqualToConstant:56],
+        [self.CSMTC_sharpKnollTrace.heightAnchor constraintEqualToConstant:33]
     ]];
 
-    /// changeButton
     [NSLayoutConstraint activateConstraints:@[
-        [self.changeButton.leadingAnchor constraintEqualToAnchor:cv.leadingAnchor constant:9],
-        [self.changeButton.topAnchor constraintEqualToAnchor:self.trendImageView.bottomAnchor constant:16],
-        [self.changeButton.heightAnchor constraintEqualToConstant:16]
+        [self.CSMTC_vastValePoint.leadingAnchor constraintEqualToAnchor:CSMTC_plainHollowPeak.leadingAnchor constant:9],
+        [self.CSMTC_vastValePoint.topAnchor constraintEqualToAnchor:self.CSMTC_sharpKnollTrace.bottomAnchor constant:16],
+        [self.CSMTC_vastValePoint.heightAnchor constraintEqualToConstant:16]
     ]];
 }
 
 - (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan:(CSMTCCobaltGrainDataItemModel *)CSMTC_model {
     CSMTCCobaltGrainItemModel *CSMTC_itemModel = CSMTC_model.CSMTC_quotes.firstObject;
     [CSMTCNexaManager CSMTC_freshCoveBluffTrackHavenClimbSpan:CSMTC_model.CSMTC_id completion:^(UIImage * _Nullable image) {
-        self.iconImageView.image = image;
+        self.CSMTC_softCrestLane.image = image;
     }];
-    self.symbolLabel.text = CSMTC_model.CSMTC_symbol;
-    self.priceLabel.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
-    self.trendImageView.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h] ? [UIImage imageNamed:@"CSMTC_gentleValeBridge"] : [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
+    self.CSMTC_clearGlenFold.text = CSMTC_model.CSMTC_symbol;
+    self.CSMTC_mistyDellSpan.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_price]];
+    self.CSMTC_sharpKnollTrace.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h] ? [UIImage imageNamed:@"CSMTC_gentleValeBridge"] : [UIImage imageNamed:@"CSMTC_firmHavenCrest"];
     if ([CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_percentChange1h]) {
-        [self.changeButton setImage:[UIImage imageNamed:@"CSMTC_plainHollowPeak"] forState:UIControlStateNormal];
-        [self.changeButton setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setImage:[UIImage imageNamed:@"CSMTC_plainHollowPeak"] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
     } else {
-        [self.changeButton setImage:[UIImage imageNamed:@"CSMTC_wideRidgeTrail"] forState:UIControlStateNormal];
-        [self.changeButton setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setImage:[UIImage imageNamed:@"CSMTC_wideRidgeTrail"] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_percentChange1h]] forState:UIControlStateNormal];
     }
     
 }

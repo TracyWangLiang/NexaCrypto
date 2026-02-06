@@ -2,7 +2,7 @@
 //  CSMTCTourmalineTableViewCell.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/5.
+//   
 //
 
 #import "CSMTCTourmalineTableViewCell.h"
@@ -10,19 +10,13 @@
 
 @interface CSMTCTourmalineTableViewCell ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, strong) UIView *containerView;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UICollectionView *collectionView;
-
-/// 数据
-@property (nonatomic, strong) NSArray *dataArray;
-@property (nonatomic, assign) NSInteger itemsPerRow;
-
-/// 高度约束（关键）
-@property (nonatomic, strong) NSLayoutConstraint *collectionHeightConstraint;
-
+@property (nonatomic, strong) UIView *CSMTC_smartRidgePath;
+@property (nonatomic, strong) UILabel *CSMTC_fairHavenTrail;
+@property (nonatomic, strong) UICollectionView *CSMTC_pureDellFold;
+@property (nonatomic, strong) NSArray *CSMTC_gentleRidgeClimb;
+@property (nonatomic, assign) NSInteger CSMTC_stillHollowFold;
+@property (nonatomic, strong) NSLayoutConstraint *CSMTC_livelyValeTrail;
 @property (nonatomic, assign) NSInteger CSMTC_quickDellFold;
-
 
 @end
 
@@ -36,114 +30,102 @@
         self.backgroundColor = [UIColor clearColor];
     
         self.CSMTC_quickDellFold = 0;
-        [self setupViews];
-        [self setupConstraints];
+        [self CSMTC_stillHollowFoldTrailKnollClimbPathSpan];
+        [self CSMTC_livelyValeTrailFoldBluffKnollPathRise];
 
     }
     return self;
 }
 
-#pragma mark - Views
 
-- (void)setupViews {
-    
-    // containerView
-    self.containerView = [[UIView alloc] init];
-    self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.containerView.backgroundColor =
+- (void)CSMTC_stillHollowFoldTrailKnollClimbPathSpan {
+
+    self.CSMTC_smartRidgePath = [[UIView alloc] init];
+    self.CSMTC_smartRidgePath.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_smartRidgePath.backgroundColor =
     [UIColor colorWithRed:32/255.0 green:33/255.0 blue:38/255.0 alpha:1];
-    [self.contentView addSubview:self.containerView];
-    self.containerView.layer.masksToBounds = YES;
-    self.containerView.layer.cornerRadius = 12;
-    
-    // titleLabel
-    self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.titleLabel.text = @"Assets to Compare";
-    self.titleLabel.font =
+    [self.contentView addSubview:self.CSMTC_smartRidgePath];
+    self.CSMTC_smartRidgePath.layer.masksToBounds = YES;
+    self.CSMTC_smartRidgePath.layer.cornerRadius = 12;
+ 
+    self.CSMTC_fairHavenTrail = [[UILabel alloc] init];
+    self.CSMTC_fairHavenTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_fairHavenTrail.text = @"Assets to Compare";
+    self.CSMTC_fairHavenTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:16];
-    self.titleLabel.textColor = [UIColor whiteColor];
-    [self.containerView addSubview:self.titleLabel];
+    self.CSMTC_fairHavenTrail.textColor = [UIColor whiteColor];
+    [self.CSMTC_smartRidgePath addSubview:self.CSMTC_fairHavenTrail];
+ 
+    UICollectionViewFlowLayout *CSMTC_softDellFold = [[UICollectionViewFlowLayout alloc] init];
+    CSMTC_softDellFold.minimumLineSpacing = 10;
+    CSMTC_softDellFold.minimumInteritemSpacing = 10;
     
-    // collectionView
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumLineSpacing = 10;
-    layout.minimumInteritemSpacing = 10;
-    
-    self.collectionView =
+    self.CSMTC_pureDellFold =
     [[UICollectionView alloc] initWithFrame:CGRectZero
-                       collectionViewLayout:layout];
-    self.collectionView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.collectionView.backgroundColor = [UIColor clearColor];
-    self.collectionView.scrollEnabled = NO;
-    self.collectionView.delegate = self;
-    self.collectionView.dataSource = self;
+                       collectionViewLayout:CSMTC_softDellFold];
+    self.CSMTC_pureDellFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_pureDellFold.backgroundColor = [UIColor clearColor];
+    self.CSMTC_pureDellFold.scrollEnabled = NO;
+    self.CSMTC_pureDellFold.delegate = self;
+    self.CSMTC_pureDellFold.dataSource = self;
     
-    [self.collectionView registerClass:[CSMTCTourmalineTableCollectionCell class]
+    [self.CSMTC_pureDellFold registerClass:[CSMTCTourmalineTableCollectionCell class]
             forCellWithReuseIdentifier:@"CSMTCTourmalineTableCollectionCell"];
     
-    [self.containerView addSubview:self.collectionView];
+    [self.CSMTC_smartRidgePath addSubview:self.CSMTC_pureDellFold];
 }
 
-#pragma mark - Constraints
 
-- (void)setupConstraints {
-    
-    // containerView
+- (void)CSMTC_livelyValeTrailFoldBluffKnollPathRise {
+
     [NSLayoutConstraint activateConstraints:@[
-        [self.containerView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor],
-        [self.containerView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor],
-        [self.containerView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor],
-        [self.containerView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-16]
+        [self.CSMTC_smartRidgePath.topAnchor constraintEqualToAnchor:self.contentView.topAnchor],
+        [self.CSMTC_smartRidgePath.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor],
+        [self.CSMTC_smartRidgePath.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor],
+        [self.CSMTC_smartRidgePath.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor constant:-16]
+    ]];
+
+    [NSLayoutConstraint activateConstraints:@[
+        [self.CSMTC_fairHavenTrail.topAnchor constraintEqualToAnchor:self.CSMTC_smartRidgePath.topAnchor constant:16],
+        [self.CSMTC_fairHavenTrail.leadingAnchor constraintEqualToAnchor:self.CSMTC_smartRidgePath.leadingAnchor constant:12],
+        [self.CSMTC_fairHavenTrail.heightAnchor constraintEqualToConstant:20]
     ]];
     
-    // titleLabel
-    [NSLayoutConstraint activateConstraints:@[
-        [self.titleLabel.topAnchor constraintEqualToAnchor:self.containerView.topAnchor constant:16],
-        [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor constant:12],
-        [self.titleLabel.heightAnchor constraintEqualToConstant:20]
-    ]];
-    
-    // collectionView
-    self.collectionHeightConstraint =
-    [self.collectionView.heightAnchor constraintEqualToConstant:0];
+    self.CSMTC_livelyValeTrail =
+    [self.CSMTC_pureDellFold.heightAnchor constraintEqualToConstant:0];
     
     [NSLayoutConstraint activateConstraints:@[
-        [self.collectionView.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor constant:12],
-        [self.collectionView.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor constant:12],
-        [self.collectionView.trailingAnchor constraintEqualToAnchor:self.containerView.trailingAnchor constant:-12],
-        [self.collectionView.bottomAnchor constraintEqualToAnchor:self.containerView.bottomAnchor constant:-20],
-        self.collectionHeightConstraint
+        [self.CSMTC_pureDellFold.topAnchor constraintEqualToAnchor:self.CSMTC_fairHavenTrail.bottomAnchor constant:12],
+        [self.CSMTC_pureDellFold.leadingAnchor constraintEqualToAnchor:self.CSMTC_smartRidgePath.leadingAnchor constant:12],
+        [self.CSMTC_pureDellFold.trailingAnchor constraintEqualToAnchor:self.CSMTC_smartRidgePath.trailingAnchor constant:-12],
+        [self.CSMTC_pureDellFold.bottomAnchor constraintEqualToAnchor:self.CSMTC_smartRidgePath.bottomAnchor constant:-20],
+        self.CSMTC_livelyValeTrail
     ]];
 }
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach:(CSMTCTourmalineModel *)CSMTC_model {
-    self.dataArray = CSMTC_model.CSMTC_brightValeClimb;
-    self.itemsPerRow = MAX(CSMTC_model.CSMTC_gentleCoveTrail, 1);
-    self.titleLabel.text = CSMTC_model.CSMTC_firmHavenTrail;
-    [self updateCollectionHeight];
-    [self.collectionView reloadData];
+    self.CSMTC_gentleRidgeClimb = CSMTC_model.CSMTC_brightValeClimb;
+    self.CSMTC_stillHollowFold = MAX(CSMTC_model.CSMTC_gentleCoveTrail, 1);
+    self.CSMTC_fairHavenTrail.text = CSMTC_model.CSMTC_firmHavenTrail;
+    [self CSMTC_softDellFoldTrailHavenClimbKnollRise];
+    [self.CSMTC_pureDellFold reloadData];
     [self CSMTC_braveGlenClimbFoldTrackHollowSpan];
 }
 
-- (void)updateCollectionHeight {
+- (void)CSMTC_softDellFoldTrailHavenClimbKnollRise {
     
-    NSInteger itemHeight = 38;
-    NSInteger lineSpacing = 10;
-    
-    NSInteger rows = (self.dataArray.count + self.itemsPerRow - 1) / self.itemsPerRow;
-    
-    CGFloat height = rows * itemHeight + MAX(rows - 1, 0) * lineSpacing;
-    
-    self.collectionHeightConstraint.constant = height;
-    
+    NSInteger CSMTC_clearKnollClimb = 38;
+    NSInteger CSMTC_humbleRidgeTrail = 10;
+    NSInteger CSMTC_freshHollowFold = (self.CSMTC_gentleRidgeClimb.count + self.CSMTC_stillHollowFold - 1) / self.CSMTC_stillHollowFold;
+    CGFloat CSMTC_keenCoveTrail = CSMTC_freshHollowFold * CSMTC_clearKnollClimb + MAX(CSMTC_freshHollowFold - 1, 0) * CSMTC_humbleRidgeTrail;
+    self.CSMTC_livelyValeTrail.constant = CSMTC_keenCoveTrail;
     [self layoutIfNeeded];
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return self.CSMTC_gentleRidgeClimb.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -151,7 +133,7 @@
     
     CSMTCTourmalineTableCollectionCell *CSMTC_cell =
     [collectionView dequeueReusableCellWithReuseIdentifier:@"CSMTCTourmalineTableCollectionCell" forIndexPath:indexPath];
-    NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.dataArray objectAtIndex:indexPath.row]];
+    NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.CSMTC_gentleRidgeClimb objectAtIndex:indexPath.row]];
     [CSMTC_cell CSMTC_gentleHollowBridgeFoldTrackSpanRise:CSMTC_firmHavenTrail CSMTC_brightValeClimb:self.CSMTC_quickDellFold == indexPath.row];
     return CSMTC_cell;
 }
@@ -159,11 +141,11 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)layout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGFloat totalSpacing = (self.itemsPerRow - 1) * 10;
+    CGFloat CSMTC_briskValeFold = (self.CSMTC_stillHollowFold - 1) * 10;
     
-    CGFloat width = (collectionView.bounds.size.width - totalSpacing) / self.itemsPerRow;
+    CGFloat CSMTC_wideDellTrail = (collectionView.bounds.size.width - CSMTC_briskValeFold) / self.CSMTC_stillHollowFold;
     
-    return CGSizeMake(floor(width), 38);
+    return CGSizeMake(floor(CSMTC_wideDellTrail), 38);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -173,13 +155,10 @@
 }
 
 - (void)CSMTC_braveGlenClimbFoldTrackHollowSpan {
-    NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.dataArray objectAtIndex:self.CSMTC_quickDellFold]];
+    NSString *CSMTC_firmHavenTrail = [NSString stringWithFormat:@"%@", [self.CSMTC_gentleRidgeClimb objectAtIndex:self.CSMTC_quickDellFold]];
     if ([self.delegate respondsToSelector:@selector(CSMTC_tameValeTrackHollowClimbFoldBluff:CSMTC_keenCoveTrail:)]) {
-        [self.delegate CSMTC_tameValeTrackHollowClimbFoldBluff:self.titleLabel.text CSMTC_keenCoveTrail:CSMTC_firmHavenTrail];
+        [self.delegate CSMTC_tameValeTrackHollowClimbFoldBluff:self.CSMTC_fairHavenTrail.text CSMTC_keenCoveTrail:CSMTC_firmHavenTrail];
     }
 }
-
-
-
 
 @end

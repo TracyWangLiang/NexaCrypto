@@ -2,7 +2,7 @@
 //  CSMTCCoralSpireViewController.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCCoralSpireViewController.h"
@@ -11,13 +11,12 @@
 
 @interface CSMTCCoralSpireViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UIButton *topButton;
-@property (nonatomic, strong) UIView *containerView;
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIButton *sureButton;
-
-
-@property (nonatomic, copy) NSArray *array;
+@property (nonatomic, strong) UIButton *CSMTC_briskHarborLoom;
+@property (nonatomic, strong) UIView *CSMTC_silentHarborGlen;
+@property (nonatomic, strong) UILabel *CSMTC_firmHavenCrest;
+@property (nonatomic, strong) UITableView *CSMTC_gentleValeBridge;
+@property (nonatomic, strong) UIButton *CSMTC_quickRidgeHollow;
+@property (nonatomic, copy) NSArray *CSMTC_freshHollowClimb;
 
 @end
 
@@ -25,91 +24,95 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:6/255.0 green:8/255.0 blue:7/255.0 alpha:0.3];
-    self.array = @[];
-    [self setupSubviews];
-    [self setupConstraints];
+    self.view.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.05];
+    self.CSMTC_freshHollowClimb = @[];
+    [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
+    [self CSMTC_quickRidgeTrailPathHavenClimbReach];
     [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
 }
 
-#pragma mark - Setup Subviews
-
-- (void)setupSubviews {
+- (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise {
     
-    self.topButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.topButton.translatesAutoresizingMaskIntoConstraints = NO;
-    self.topButton.backgroundColor = [UIColor systemBackgroundColor];
-    [self.topButton addTarget:self action:@selector(topButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.topButton];
-    
-    self.containerView = [[UIView alloc] init];
-    self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.containerView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:self.containerView];
-    
-    self.containerView.layer.masksToBounds = YES;
-    self.containerView.layer.cornerRadius = 12;
-    self.containerView.layer.maskedCorners = kCALayerMinXMinYCorner | kCALayerMaxXMinYCorner;
+    self.CSMTC_briskHarborLoom = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_briskHarborLoom.backgroundColor = [UIColor clearColor];
+    [self.CSMTC_briskHarborLoom addTarget:self action:@selector(CSMTC_silentValePointFoldKnollBluffPath:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.CSMTC_briskHarborLoom];
     
     
-    // tableView
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.tableView.backgroundColor = [UIColor systemBackgroundColor];
-    //    self.tableView.alwaysBounceVertical = YES;
-    [self.containerView addSubview:self.tableView];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.tableView registerClass:[CSMTCCoralSpireTableCell class] forCellReuseIdentifier:@"CSMTCCoralSpireTableCell"];
     
-    self.sureButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.sureButton setTitle:@"Sure" forState:UIControlStateNormal];
-    [self.sureButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.sureButton.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
-    self.sureButton.backgroundColor = [UIColor whiteColor];
-    self.sureButton.layer.masksToBounds = YES;
-    self.sureButton.layer.cornerRadius = 10;
-    self.sureButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.sureButton];
+    self.CSMTC_silentHarborGlen = [[UIView alloc] init];
+    self.CSMTC_silentHarborGlen.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_silentHarborGlen.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.CSMTC_silentHarborGlen];
+    
+    self.CSMTC_silentHarborGlen.layer.masksToBounds = YES;
+    self.CSMTC_silentHarborGlen.layer.cornerRadius = 12;
+    self.CSMTC_silentHarborGlen.layer.maskedCorners = kCALayerMinXMinYCorner | kCALayerMaxXMinYCorner;
+    
+    self.CSMTC_firmHavenCrest = [[UILabel alloc] init];
+    self.CSMTC_firmHavenCrest.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
+    self.CSMTC_firmHavenCrest.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.CSMTC_silentHarborGlen addSubview:self.CSMTC_firmHavenCrest];
+    
+    self.CSMTC_gentleValeBridge = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.CSMTC_gentleValeBridge.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_gentleValeBridge.backgroundColor = [UIColor clearColor];
+    self.CSMTC_gentleValeBridge.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.CSMTC_silentHarborGlen addSubview:self.CSMTC_gentleValeBridge];
+    self.CSMTC_gentleValeBridge.delegate = self;
+    self.CSMTC_gentleValeBridge.dataSource = self;
+    [self.CSMTC_gentleValeBridge registerClass:[CSMTCCoralSpireTableCell class] forCellReuseIdentifier:@"CSMTCCoralSpireTableCell"];
+    
+    self.CSMTC_quickRidgeHollow = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.CSMTC_quickRidgeHollow setTitle:@"Sure" forState:UIControlStateNormal];
+    [self.CSMTC_quickRidgeHollow setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.CSMTC_quickRidgeHollow.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
+    self.CSMTC_quickRidgeHollow.backgroundColor = [UIColor blackColor];
+    self.CSMTC_quickRidgeHollow.layer.masksToBounds = YES;
+    self.CSMTC_quickRidgeHollow.layer.cornerRadius = 10;
+    self.CSMTC_quickRidgeHollow.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.CSMTC_silentHarborGlen addSubview:self.CSMTC_quickRidgeHollow];
+    [self.CSMTC_quickRidgeHollow addTarget:self action:@selector(CSMTC_briskDellLaneShoreTrackHollowSpan) forControlEvents:UIControlEventTouchUpInside];
 }
 
-#pragma mark - Setup Constraints
-
-- (void)setupConstraints {
-    UILayoutGuide *safeArea = self.view.safeAreaLayoutGuide;
-
+- (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
+    UILayoutGuide *CSMTC_safeArea = self.view.safeAreaLayoutGuide;
+    
     [NSLayoutConstraint activateConstraints:@[
-        // topButton constraints
-        [self.topButton.topAnchor constraintEqualToAnchor:safeArea.topAnchor],
-        [self.topButton.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor],
-        [self.topButton.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor],
-        [self.topButton.heightAnchor constraintEqualToConstant:250],
-        
-        
-        [self.sureButton.bottomAnchor constraintEqualToAnchor:self.containerView.bottomAnchor constant:-5],
-        [self.sureButton.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:12],
-        [self.sureButton.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor constant:-12],
-        [self.sureButton.heightAnchor constraintEqualToAnchor:self.sureButton.widthAnchor multiplier:44.0 / 351.0],
 
-        // containerView constraints
-        [self.containerView.topAnchor constraintEqualToAnchor:self.topButton.bottomAnchor],
-        [self.containerView.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor],
-        [self.containerView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor],
-        [self.containerView.bottomAnchor constraintEqualToAnchor:self.sureButton.topAnchor constant:-5],
+        [self.CSMTC_briskHarborLoom.topAnchor constraintEqualToAnchor:CSMTC_safeArea.topAnchor],
+        [self.CSMTC_briskHarborLoom.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor],
+        [self.CSMTC_briskHarborLoom.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor],
+        [self.CSMTC_briskHarborLoom.heightAnchor constraintEqualToConstant:250],
+    
+        [self.CSMTC_silentHarborGlen.topAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.bottomAnchor],
+        [self.CSMTC_silentHarborGlen.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor],
+        [self.CSMTC_silentHarborGlen.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor],
+        [self.CSMTC_silentHarborGlen.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
+        
+        [self.CSMTC_firmHavenCrest.topAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.topAnchor constant:15],
+        [self.CSMTC_firmHavenCrest.heightAnchor constraintEqualToConstant:2],
+        [self.CSMTC_firmHavenCrest.widthAnchor constraintEqualToConstant:18],
+        [self.CSMTC_firmHavenCrest.centerXAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.centerXAnchor],
+        
+        [self.CSMTC_quickRidgeHollow.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-5],
+        [self.CSMTC_quickRidgeHollow.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:12],
+        [self.CSMTC_quickRidgeHollow.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor constant:-12],
+        [self.CSMTC_quickRidgeHollow.heightAnchor constraintEqualToAnchor:self.CSMTC_quickRidgeHollow.widthAnchor multiplier:44.0 / 351.0],
 
-        // tableView constraints (fill containerView)
-        [self.tableView.topAnchor constraintEqualToAnchor:self.containerView.topAnchor],
-        [self.tableView.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor],
-        [self.tableView.trailingAnchor constraintEqualToAnchor:self.containerView.trailingAnchor],
-        [self.tableView.bottomAnchor constraintEqualToAnchor:self.containerView.bottomAnchor],
+        [self.CSMTC_gentleValeBridge.topAnchor constraintEqualToAnchor:self.CSMTC_firmHavenCrest.bottomAnchor constant:10],
+        [self.CSMTC_gentleValeBridge.leadingAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.leadingAnchor],
+        [self.CSMTC_gentleValeBridge.trailingAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.trailingAnchor],
+        [self.CSMTC_gentleValeBridge.bottomAnchor constraintEqualToAnchor:self.CSMTC_quickRidgeHollow.topAnchor constant:-5],
     ]];
 }
 
-- (void)topButtonTapped:(UIButton *)sender {
+- (void)CSMTC_silentValePointFoldKnollBluffPath:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)aaaa {
+- (void)CSMTC_briskDellLaneShoreTrackHollowSpan {
     [self dismissViewControllerAnimated:YES completion:nil];
     if (self.CSMTCCoralSpireViewBlock) {
         self.CSMTCCoralSpireViewBlock();
@@ -118,31 +121,31 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.array.count;
+    return self.CSMTC_freshHollowClimb.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCCoralSpireTableCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCCoralSpireTableCell"];
-    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_freshHollowClimb objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_fairHavenTrailFoldClimbKnollPathSpan:CSMTC_model];
     return CSMTC_cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
-    if ([self CSMTC_containsDataModel:CSMTC_model inArray:[CSMTCNexaManager CSMTC_loadAllGrainDataModels]]) {
-        [CSMTCNexaManager CSMTC_deleteGrainDataModel:CSMTC_model];
+    CSMTCCobaltGrainDataItemModel *CSMTC_model = [self.CSMTC_freshHollowClimb objectAtIndex:indexPath.row];
+    if ([self CSMTC_calmKnollShorePathRiseFoldTrail:CSMTC_model CSMTC_firmHavenTrail:[CSMTCNexaManager CSMTC_softGlenPathFoldHavenClimbRise]]) {
+        [CSMTCNexaManager CSMTC_clearValeTrailFoldKnollBluffSpan:CSMTC_model];
     } else {
-        [CSMTCNexaManager CSMTC_saveGrainDataModel:CSMTC_model];
+        [CSMTCNexaManager CSMTC_steadyHollowClimbFoldRidgeTrailPath:CSMTC_model];
     }
     [tableView reloadData];
 }
 
 
-- (BOOL)CSMTC_containsDataModel:(CSMTCCobaltGrainDataItemModel *)model inArray:(NSArray *)array {
-    if (!model || !array || array.count == 0) return NO;
-    for (CSMTCCobaltGrainDataItemModel *item in array) {
-        if ([item.CSMTC_id isEqualToString:model.CSMTC_id]) {
+- (BOOL)CSMTC_calmKnollShorePathRiseFoldTrail:(CSMTCCobaltGrainDataItemModel *)CSMTC_brightValeClimb CSMTC_firmHavenTrail:(NSArray *)CSMTC_firmHavenTrail {
+    if (!CSMTC_brightValeClimb || !CSMTC_firmHavenTrail || CSMTC_firmHavenTrail.count == 0) return NO;
+    for (CSMTCCobaltGrainDataItemModel *CSMTC_steadyKnollFold in CSMTC_firmHavenTrail) {
+        if ([CSMTC_steadyKnollFold.CSMTC_id isEqualToString:CSMTC_brightValeClimb.CSMTC_id]) {
             return YES;
         }
     }
@@ -150,11 +153,11 @@
 }
 
 - (void)CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff {
-    [CSMTCNexaManager getRequestWithURL:[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"mO0Xkkxlhydj2SdmOgB69UELFU/ehuZiegIFBqdueXpvn3utuwNJ7MSpl44cejrT7q48Hk1FTfok4l8sLOPbuzI2cqAr3xGcJfEq0HG++8sxyERtnIBalHH9T1Jz"] CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
+    [CSMTCNexaManager CSMTC_firmKnollTrailFoldHavenClimbSpan:[CSMTCNexaCrypto CSMTC_quickCoveTrailPath:@"mO0Xkkxlhydj2SdmOgB69UELFU/ehuZiegIFBqdueXpvn3utuwNJ7MSpl44cejrT7q48Hk1FTfok4l8sLOPbuzI2cqAr3xGcJfEq0HG++8sxyERtnIBalHH9T1Jz"] CSMTC_success:^(NSDictionary * _Nonnull CSMTC_dict) {
         if (CSMTC_dict.count > 0) {
             CSMTCCobaltGrainDataModel *CSMTC_model = [CSMTCCobaltGrainDataModel CSMTC_modelWithDictionary:CSMTC_dict];
-            self.array = [CSMTCNexaManager CSMTC_sortDataModels:CSMTC_model.CSMTC_cryptoCurrencyList byQuoteField:CSMTCQuoteSortFieldPrice];
-            [self.tableView reloadData];
+            self.CSMTC_freshHollowClimb = [CSMTCNexaManager CSMTC_briskRidgeTrailFoldDellKnollSpan:CSMTC_model.CSMTC_cryptoCurrencyList CSMTC_humbleRidgeTrail:CSMTCQuoteSortFieldPrice];
+            [self.CSMTC_gentleValeBridge reloadData];
         }
     } CSMTC_failure:^(NSInteger CSMTC_errorCode, NSString * _Nonnull CSMTC_errorMsg) {
         

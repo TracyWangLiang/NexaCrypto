@@ -2,7 +2,7 @@
 //  CSMTCTourmalineTableView.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/5.
+//   
 //
 
 #import "CSMTCTourmalineTableView.h"
@@ -10,8 +10,8 @@
 #import "CSMTCNexaCryptoModel.h"
 @interface CSMTCTourmalineTableView () <UITableViewDelegate, UITableViewDataSource, CSMTCTourmalineTableViewCellDelegate>
 
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, copy) NSArray *array;
+@property (nonatomic, strong) UITableView *CSMTC_brightHollowFold;
+@property (nonatomic, copy) NSArray *CSMTC_mistyValeClimb;
 
 
 @end
@@ -22,66 +22,60 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        [self setupTableView];
-        [self setupCalculationButton];
-        [self setupConstraints];
-        self.array = [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
+        [self CSMTC_fairHavenTrailFoldClimbKnollPathSpan];
+        [self CSMTC_pureDellFoldTrailHollowClimbKnollRise];
+        [self CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff];
+        self.CSMTC_mistyValeClimb = [self CSMTC_gentleHollowBridgeFoldTrackSpanRise];
        
     }
     return self;
 }
 
-#pragma mark - Subviews
-
-- (void)setupTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero
-                                                  style:UITableViewStylePlain];
-    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.tableView registerClass:[CSMTCTourmalineTableViewCell class] forCellReuseIdentifier:@"CSMTCTourmalineTableViewCell"];
-    [self addSubview:self.tableView];
+- (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan {
+    self.CSMTC_brightHollowFold = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.CSMTC_brightHollowFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_brightHollowFold.backgroundColor = [UIColor clearColor];
+    self.CSMTC_brightHollowFold.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.CSMTC_brightHollowFold.delegate = self;
+    self.CSMTC_brightHollowFold.dataSource = self;
+    [self.CSMTC_brightHollowFold registerClass:[CSMTCTourmalineTableViewCell class] forCellReuseIdentifier:@"CSMTCTourmalineTableViewCell"];
+    [self addSubview:self.CSMTC_brightHollowFold];
 }
 
-- (void)setupCalculationButton {
-    self.calculationButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.calculationButton.translatesAutoresizingMaskIntoConstraints = NO;
-    self.calculationButton.backgroundColor = [UIColor whiteColor];
+- (void)CSMTC_pureDellFoldTrailHollowClimbKnollRise {
+    self.CSMTC_quickCoveTrail = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.CSMTC_quickCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_quickCoveTrail.backgroundColor = [UIColor whiteColor];
     
-    self.calculationButton.titleLabel.font =
+    self.CSMTC_quickCoveTrail.titleLabel.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:15];
     
-    [self.calculationButton setTitle:@"Calculation"
+    [self.CSMTC_quickCoveTrail setTitle:@"Calculation"
                             forState:UIControlStateNormal];
-    [self.calculationButton setTitleColor:[UIColor blackColor]
+    [self.CSMTC_quickCoveTrail setTitleColor:[UIColor blackColor]
                                  forState:UIControlStateNormal];
     
-    self.calculationButton.layer.masksToBounds = YES;
-    self.calculationButton.layer.cornerRadius = 10;
+    self.CSMTC_quickCoveTrail.layer.masksToBounds = YES;
+    self.CSMTC_quickCoveTrail.layer.cornerRadius = 10;
     
-    [self addSubview:self.calculationButton];
+    [self addSubview:self.CSMTC_quickCoveTrail];
 }
 
-#pragma mark - Constraints
 
-- (void)setupConstraints {
-    UILayoutGuide *safeArea = self.safeAreaLayoutGuide;
+- (void)CSMTC_gentleRidgeClimbPathFoldKnollTrailBluff {
+    UILayoutGuide *CSMTC_safeArea = self.safeAreaLayoutGuide;
     
     [NSLayoutConstraint activateConstraints:@[
         
-        // tableView
-        [self.tableView.topAnchor constraintEqualToAnchor:self.topAnchor],
-        [self.tableView.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:12],
-        [self.tableView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor constant:-12],
-        [self.tableView.bottomAnchor constraintEqualToAnchor:self.calculationButton.topAnchor constant:-5],
-        
-        // calculationButton
-        [self.calculationButton.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:12],
-        [self.calculationButton.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor constant:-12],
-        [self.calculationButton.bottomAnchor constraintEqualToAnchor:safeArea.bottomAnchor],
-        [self.calculationButton.heightAnchor constraintEqualToConstant:44]
+        [self.CSMTC_brightHollowFold.topAnchor constraintEqualToAnchor:self.topAnchor],
+        [self.CSMTC_brightHollowFold.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:12],
+        [self.CSMTC_brightHollowFold.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor constant:-12],
+        [self.CSMTC_brightHollowFold.bottomAnchor constraintEqualToAnchor:self.CSMTC_quickCoveTrail.topAnchor constant:-5],
+      
+        [self.CSMTC_quickCoveTrail.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:12],
+        [self.CSMTC_quickCoveTrail.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor constant:-12],
+        [self.CSMTC_quickCoveTrail.bottomAnchor constraintEqualToAnchor:CSMTC_safeArea.bottomAnchor],
+        [self.CSMTC_quickCoveTrail.heightAnchor constraintEqualToConstant:44]
     ]];
 }
 
@@ -124,12 +118,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.array.count;
+    return self.CSMTC_mistyValeClimb.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CSMTCTourmalineTableViewCell *CSMTC_cell = [tableView dequeueReusableCellWithIdentifier:@"CSMTCTourmalineTableViewCell"];
-    CSMTCTourmalineModel *CSMTC_model = [self.array objectAtIndex:indexPath.row];
+    CSMTCTourmalineModel *CSMTC_model = [self.CSMTC_mistyValeClimb objectAtIndex:indexPath.row];
     [CSMTC_cell CSMTC_quickRidgeTrailPathHavenClimbReach:CSMTC_model];
     CSMTC_cell.delegate = self;
     return CSMTC_cell;

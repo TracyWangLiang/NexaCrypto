@@ -2,7 +2,7 @@
 //  CSMTCSearchNavigationBar.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import "CSMTCSearchNavigationBar.h"
@@ -10,10 +10,10 @@
 
 @interface CSMTCSearchNavigationBar ()
 
-@property (nonatomic, strong) UIView *CSMTC_containerView;
-@property (nonatomic, strong) UIImageView *CSMTC_iconImageView;
-@property (nonatomic, strong) UILabel *CSMTC_placeholderLabel;
-@property (nonatomic, strong) UIButton *CSMTC_overlayButton;
+@property (nonatomic, strong) UIView *CSMTC_briskHarborLoom;
+@property (nonatomic, strong) UIImageView *CSMTC_silentHarborGlen;
+@property (nonatomic, strong) UILabel *CSMTC_firmHavenCrest;
+@property (nonatomic, strong) UIButton *CSMTC_gentleValeBridge;
 
 @end
 
@@ -22,64 +22,64 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self CSMTC_setupViews];
+        [self CSMTC_briskDellLaneShoreTrackHollowSpan];
     }
     return self;
 }
 
-- (void)CSMTC_setupViews {
+- (void)CSMTC_briskDellLaneShoreTrackHollowSpan {
     self.backgroundColor = [UIColor clearColor];
-    self.CSMTC_containerView = [[UIView alloc] init];
-    self.CSMTC_containerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_containerView.backgroundColor = [UIColor colorWithRed:24/255.0 green:25/255.0 blue:29/255.0 alpha:1];
-    self.CSMTC_containerView.layer.masksToBounds = YES;
-    self.CSMTC_containerView.layer.cornerRadius = 7;
-    [self addSubview:self.CSMTC_containerView];
+    self.CSMTC_briskHarborLoom = [[UIView alloc] init];
+    self.CSMTC_briskHarborLoom.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_briskHarborLoom.backgroundColor = [UIColor colorWithRed:24/255.0 green:25/255.0 blue:29/255.0 alpha:1];
+    self.CSMTC_briskHarborLoom.layer.masksToBounds = YES;
+    self.CSMTC_briskHarborLoom.layer.cornerRadius = 7;
+    [self addSubview:self.CSMTC_briskHarborLoom];
 
     [NSLayoutConstraint activateConstraints:@[
-        [self.CSMTC_containerView.topAnchor constraintEqualToAnchor:self.topAnchor constant:13],
-        [self.CSMTC_containerView.leadingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.leadingAnchor constant:12],
-        [self.CSMTC_containerView.trailingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.trailingAnchor constant:-12],
-        [self.CSMTC_containerView.heightAnchor constraintEqualToConstant:36]
+        [self.CSMTC_briskHarborLoom.topAnchor constraintEqualToAnchor:self.topAnchor constant:13],
+        [self.CSMTC_briskHarborLoom.leadingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.leadingAnchor constant:12],
+        [self.CSMTC_briskHarborLoom.trailingAnchor constraintEqualToAnchor:self.safeAreaLayoutGuide.trailingAnchor constant:-12],
+        [self.CSMTC_briskHarborLoom.heightAnchor constraintEqualToConstant:36]
     ]];
 
 
-    self.CSMTC_iconImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTC_briskHarborLoom"]];
-    self.CSMTC_iconImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_iconImageView.clipsToBounds = YES;
-    self.CSMTC_iconImageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.CSMTC_containerView addSubview:self.CSMTC_iconImageView];
+    self.CSMTC_silentHarborGlen = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTC_briskHarborLoom"]];
+    self.CSMTC_silentHarborGlen.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_silentHarborGlen.clipsToBounds = YES;
+    self.CSMTC_silentHarborGlen.contentMode = UIViewContentModeScaleAspectFit;
+    [self.CSMTC_briskHarborLoom addSubview:self.CSMTC_silentHarborGlen];
 
     [NSLayoutConstraint activateConstraints:@[
-        [self.CSMTC_iconImageView.leadingAnchor constraintEqualToAnchor:self.CSMTC_containerView.leadingAnchor constant:16],
-        [self.CSMTC_iconImageView.centerYAnchor constraintEqualToAnchor:self.CSMTC_containerView.centerYAnchor],
-        [self.CSMTC_iconImageView.widthAnchor constraintEqualToConstant:20],
-        [self.CSMTC_iconImageView.heightAnchor constraintEqualToConstant:20]
+        [self.CSMTC_silentHarborGlen.leadingAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.leadingAnchor constant:16],
+        [self.CSMTC_silentHarborGlen.centerYAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.centerYAnchor],
+        [self.CSMTC_silentHarborGlen.widthAnchor constraintEqualToConstant:20],
+        [self.CSMTC_silentHarborGlen.heightAnchor constraintEqualToConstant:20]
     ]];
 
-    self.CSMTC_placeholderLabel = [[UILabel alloc] init];
-    self.CSMTC_placeholderLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.CSMTC_placeholderLabel.text = @"Search";
-    self.CSMTC_placeholderLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:13];
-    self.CSMTC_placeholderLabel.textColor = [UIColor colorWithRed:90/255.0 green:93/255.0 blue:100/255.0 alpha:1];
-    self.CSMTC_placeholderLabel.textAlignment = NSTextAlignmentLeft;
-    [self.CSMTC_containerView addSubview:self.CSMTC_placeholderLabel];
+    self.CSMTC_firmHavenCrest = [[UILabel alloc] init];
+    self.CSMTC_firmHavenCrest.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_firmHavenCrest.text = @"Search";
+    self.CSMTC_firmHavenCrest.font = [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:13];
+    self.CSMTC_firmHavenCrest.textColor = [UIColor colorWithRed:90/255.0 green:93/255.0 blue:100/255.0 alpha:1];
+    self.CSMTC_firmHavenCrest.textAlignment = NSTextAlignmentLeft;
+    [self.CSMTC_briskHarborLoom addSubview:self.CSMTC_firmHavenCrest];
 
     [NSLayoutConstraint activateConstraints:@[
-        [self.CSMTC_placeholderLabel.leadingAnchor constraintEqualToAnchor:self.CSMTC_iconImageView.trailingAnchor constant:9],
-        [self.CSMTC_placeholderLabel.centerYAnchor constraintEqualToAnchor:self.CSMTC_containerView.centerYAnchor]
+        [self.CSMTC_firmHavenCrest.leadingAnchor constraintEqualToAnchor:self.CSMTC_silentHarborGlen.trailingAnchor constant:9],
+        [self.CSMTC_firmHavenCrest.centerYAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.centerYAnchor]
     ]];
 
-    self.CSMTC_overlayButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.CSMTC_overlayButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.CSMTC_containerView addSubview:self.CSMTC_overlayButton];
-    [self.CSMTC_overlayButton addTarget:self action:@selector(CSMTC_plainGlenClimbFoldTrackHavenBluff) forControlEvents:UIControlEventTouchUpInside];
+    self.CSMTC_gentleValeBridge = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.CSMTC_gentleValeBridge.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.CSMTC_briskHarborLoom addSubview:self.CSMTC_gentleValeBridge];
+    [self.CSMTC_gentleValeBridge addTarget:self action:@selector(CSMTC_plainGlenClimbFoldTrackHavenBluff) forControlEvents:UIControlEventTouchUpInside];
 
     [NSLayoutConstraint activateConstraints:@[
-        [self.CSMTC_overlayButton.topAnchor constraintEqualToAnchor:self.CSMTC_containerView.topAnchor],
-        [self.CSMTC_overlayButton.bottomAnchor constraintEqualToAnchor:self.CSMTC_containerView.bottomAnchor],
-        [self.CSMTC_overlayButton.leadingAnchor constraintEqualToAnchor:self.CSMTC_containerView.leadingAnchor],
-        [self.CSMTC_overlayButton.trailingAnchor constraintEqualToAnchor:self.CSMTC_containerView.trailingAnchor]
+        [self.CSMTC_gentleValeBridge.topAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.topAnchor],
+        [self.CSMTC_gentleValeBridge.bottomAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.bottomAnchor],
+        [self.CSMTC_gentleValeBridge.leadingAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.leadingAnchor],
+        [self.CSMTC_gentleValeBridge.trailingAnchor constraintEqualToAnchor:self.CSMTC_briskHarborLoom.trailingAnchor]
     ]];
 }
 

@@ -2,7 +2,7 @@
 //  CSMTCCobaltGrainHeaderView.h
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/4.
+//   
 //
 
 #import <UIKit/UIKit.h>
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (void)CSMTC_tameRidgeTrailFoldKnollPathBluffClimb:(NSString *)CSMTC_tameRidgeTrail;
 - (void)CSMTC_keenCoveTrailFoldKnollClimbPathRise:(NSArray *)CSMTC_briskValeFold;
-- (void)CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:(CSMTCCobaltGrainDataItemModel *)CSMT_model;
+- (void)CSMTC_freshHollowFoldTrailKnollRisePathBluff:(CSMTCCobaltGrainDataItemModel *)CSMTC_model;
 - (void)CSMTC_fairHavenTrailFoldClimbKnollPathSpan;
 @end
 

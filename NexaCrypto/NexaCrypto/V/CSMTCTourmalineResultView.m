@@ -2,17 +2,17 @@
 //  CSMTCTourmalineResultView.m
 //  NexaCrypto
 //
-//  Created by 王星 on 2026/2/5.
+//   
 //
 
 #import "CSMTCTourmalineResultView.h"
 
 @interface CSMTCTourmalineResultView ()
 
-@property (nonatomic, strong) UIView *contentContainerView;
-@property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UITextView *resultTextView;
-@property (nonatomic, strong) UILabel *disclaimerLabel;
+@property (nonatomic, strong) UIView *CSMTC_wideDellTrail;
+@property (nonatomic, strong) UILabel *CSMTC_lightHavenClimb;
+@property (nonatomic, strong) UITextView *CSMTC_mellowKnollFold;
+@property (nonatomic, strong) UILabel *CSMTC_tameRidgeTrail;
 
 @end
 
@@ -22,99 +22,93 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        [self setupContentContainerView];
-        [self setupTitleLabel];
-        [self setupResultTextView];
-        [self setupDisclaimerLabel];
-        [self setupConstraints];
+        [self CSMTC_softDellFoldTrailHavenClimbKnollRise];
+        [self CSMTC_clearKnollClimbTrailFoldHollowPathSpan];
+        [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb];
+        [self CSMTC_freshHollowFoldTrailKnollRisePathBluff];
+        [self CSMTC_keenCoveTrailFoldKnollClimbPathRise];
     }
     return self;
 }
 
-#pragma mark - Subviews
-
-- (void)setupContentContainerView {
-    self.contentContainerView = [[UIView alloc] init];
-    self.contentContainerView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.contentContainerView.backgroundColor =
+- (void)CSMTC_softDellFoldTrailHavenClimbKnollRise {
+    self.CSMTC_wideDellTrail = [[UIView alloc] init];
+    self.CSMTC_wideDellTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_wideDellTrail.backgroundColor =
     [UIColor colorWithRed:32/255.0 green:33/255.0 blue:38/255.0 alpha:1];
-    self.contentContainerView.layer.masksToBounds = YES;
-    self.contentContainerView.layer.cornerRadius = 12;
+    self.CSMTC_wideDellTrail.layer.masksToBounds = YES;
+    self.CSMTC_wideDellTrail.layer.cornerRadius = 12;
     
-    [self addSubview:self.contentContainerView];
+    [self addSubview:self.CSMTC_wideDellTrail];
 }
 
-- (void)setupTitleLabel {
-    self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.titleLabel.text = @"Calculation Result";
-    self.titleLabel.font =
+- (void)CSMTC_clearKnollClimbTrailFoldHollowPathSpan {
+    self.CSMTC_lightHavenClimb = [[UILabel alloc] init];
+    self.CSMTC_lightHavenClimb.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_lightHavenClimb.text = @"Calculation Result";
+    self.CSMTC_lightHavenClimb.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:16];
-    self.titleLabel.textColor = [UIColor whiteColor];
+    self.CSMTC_lightHavenClimb.textColor = [UIColor whiteColor];
     
-    [self.contentContainerView addSubview:self.titleLabel];
+    [self.CSMTC_wideDellTrail addSubview:self.CSMTC_lightHavenClimb];
 }
 
-- (void)setupResultTextView {
-    self.resultTextView = [[UITextView alloc] init];
-    self.resultTextView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.resultTextView.editable = NO;
-    self.resultTextView.backgroundColor = [UIColor clearColor];
-    self.resultTextView.font =
+- (void)CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb {
+    self.CSMTC_mellowKnollFold = [[UITextView alloc] init];
+    self.CSMTC_mellowKnollFold.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_mellowKnollFold.editable = NO;
+    self.CSMTC_mellowKnollFold.backgroundColor = [UIColor clearColor];
+    self.CSMTC_mellowKnollFold.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:15];
-    self.resultTextView.textColor = [UIColor whiteColor];
-    self.resultTextView.text =
+    self.CSMTC_mellowKnollFold.textColor = [UIColor whiteColor];
+    self.CSMTC_mellowKnollFold.text =
     @"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
     
-    [self.contentContainerView addSubview:self.resultTextView];
+    [self.CSMTC_wideDellTrail addSubview:self.CSMTC_mellowKnollFold];
 }
 
-- (void)setupDisclaimerLabel {
-    self.disclaimerLabel = [[UILabel alloc] init];
-    self.disclaimerLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    self.disclaimerLabel.numberOfLines = 2;
-    self.disclaimerLabel.text =
+- (void)CSMTC_freshHollowFoldTrailKnollRisePathBluff {
+    self.CSMTC_tameRidgeTrail = [[UILabel alloc] init];
+    self.CSMTC_tameRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;
+    self.CSMTC_tameRidgeTrail.numberOfLines = 2;
+    self.CSMTC_tameRidgeTrail.text =
     @"Results are for structural reference only and do not imply performance or outcomes.";
-    self.disclaimerLabel.font =
+    self.CSMTC_tameRidgeTrail.font =
     [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:12];
-    self.disclaimerLabel.textColor =
+    self.CSMTC_tameRidgeTrail.textColor =
     [UIColor colorWithRed:214/255.0 green:133/255.0 blue:94/255.0 alpha:1];
     
-    [self addSubview:self.disclaimerLabel];
+    [self addSubview:self.CSMTC_tameRidgeTrail];
 }
 
-#pragma mark - Constraints
 
-- (void)setupConstraints {
-    UILayoutGuide *safeArea = self.safeAreaLayoutGuide;
+- (void)CSMTC_keenCoveTrailFoldKnollClimbPathRise {
+    UILayoutGuide *CSMTC_safeArea = self.safeAreaLayoutGuide;
     
     [NSLayoutConstraint activateConstraints:@[
+
+        [self.CSMTC_wideDellTrail.topAnchor constraintEqualToAnchor:self.topAnchor],
+        [self.CSMTC_wideDellTrail.leadingAnchor constraintEqualToAnchor:CSMTC_safeArea.leadingAnchor constant:12],
+        [self.CSMTC_wideDellTrail.trailingAnchor constraintEqualToAnchor:CSMTC_safeArea.trailingAnchor constant:-12],
+        [self.CSMTC_wideDellTrail.bottomAnchor constraintEqualToAnchor:self.CSMTC_tameRidgeTrail.topAnchor constant:-12],
         
-        // contentContainerView
-        [self.contentContainerView.topAnchor constraintEqualToAnchor:self.topAnchor],
-        [self.contentContainerView.leadingAnchor constraintEqualToAnchor:safeArea.leadingAnchor constant:12],
-        [self.contentContainerView.trailingAnchor constraintEqualToAnchor:safeArea.trailingAnchor constant:-12],
-        [self.contentContainerView.bottomAnchor constraintEqualToAnchor:self.disclaimerLabel.topAnchor constant:-12],
-        
-        // titleLabel
-        [self.titleLabel.topAnchor constraintEqualToAnchor:self.contentContainerView.topAnchor constant:16],
-        [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.contentContainerView.leadingAnchor constant:12],
-        
-        // resultTextView
-        [self.resultTextView.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor constant:11],
-        [self.resultTextView.leadingAnchor constraintEqualToAnchor:self.contentContainerView.leadingAnchor constant:12],
-        [self.resultTextView.trailingAnchor constraintEqualToAnchor:self.contentContainerView.trailingAnchor constant:-12],
-        [self.resultTextView.bottomAnchor constraintEqualToAnchor:self.contentContainerView.bottomAnchor],
-        
-        // disclaimerLabel
-        [self.disclaimerLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:20],
-        [self.disclaimerLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-20],
-        [self.disclaimerLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor]
+
+        [self.CSMTC_lightHavenClimb.topAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.topAnchor constant:16],
+        [self.CSMTC_lightHavenClimb.leadingAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.leadingAnchor constant:12],
+
+        [self.CSMTC_mellowKnollFold.topAnchor constraintEqualToAnchor:self.CSMTC_lightHavenClimb.bottomAnchor constant:11],
+        [self.CSMTC_mellowKnollFold.leadingAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.leadingAnchor constant:12],
+        [self.CSMTC_mellowKnollFold.trailingAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.trailingAnchor constant:-12],
+        [self.CSMTC_mellowKnollFold.bottomAnchor constraintEqualToAnchor:self.CSMTC_wideDellTrail.bottomAnchor],
+     
+        [self.CSMTC_tameRidgeTrail.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:20],
+        [self.CSMTC_tameRidgeTrail.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-20],
+        [self.CSMTC_tameRidgeTrail.bottomAnchor constraintEqualToAnchor:self.bottomAnchor]
     ]];
 }
 
 - (void)CSMTC_freshCoveBluffTrackHavenClimbSpan:(NSString *)CSMTC_humbleRidgeTrail {
-    self.resultTextView.text = CSMTC_humbleRidgeTrail;
+    self.CSMTC_mellowKnollFold.text = CSMTC_humbleRidgeTrail;
 }
 
 @end

@@ -1,47 +1,46 @@
 #import "CSMTCLoadingHUD.h"
 
 @interface CSMTCLoadingHUD ()
-@property (nonatomic, strong) UIView *CSMTC_container;
-@property (nonatomic, strong) CAShapeLayer *CSMTC_loadingLayer;
-@property (nonatomic, assign) BOOL CSMTC_cancelable;
+@property (nonatomic, strong) UIView *CSMTC_briskHarborLoom;
+@property (nonatomic, strong) CAShapeLayer *CSMTC_silentHarborGlen;
+@property (nonatomic, assign) BOOL CSMTC_firmHavenCrest;
 
 @end
 
 @implementation CSMTCLoadingHUD
 
 + (instancetype)sharedHUD {
-    static CSMTCLoadingHUD *CSMTC_sharedInstance = nil;
+    static CSMTCLoadingHUD *CSMTC_gentleValeBridge = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        UIWindow *CSMTC_window = [self CSMTC_currentWindow];
-        CSMTC_sharedInstance = [[CSMTCLoadingHUD alloc] initWithFrame:CSMTC_window.bounds];
+        UIWindow *CSMTC_quickRidgeHollow = [self CSMTC_steadyHollowClimbFoldRidgeTrailPath];
+        CSMTC_gentleValeBridge = [[CSMTCLoadingHUD alloc] initWithFrame:CSMTC_quickRidgeHollow.bounds];
     });
-    return CSMTC_sharedInstance;
+    return CSMTC_gentleValeBridge;
 }
 
-#pragma mark - Public
 
-+ (void)CSMTC_showLoading {
++ (void)CSMTC_mellowHavenFoldTrailClimbPathRise {
     dispatch_async(dispatch_get_main_queue(), ^{
         CSMTCLoadingHUD *CSMTC_hud = [CSMTCLoadingHUD sharedHUD];
         [CSMTC_hud removeFromSuperview];
-        CSMTC_hud.CSMTC_cancelable = YES;
-        [CSMTC_hud CSMTC_setupLoading];
-        [[self CSMTC_currentWindow] addSubview:CSMTC_hud];
+        CSMTC_hud.CSMTC_firmHavenCrest = YES;
+        [CSMTC_hud CSMTC_firmKnollTrailFoldHavenClimbSpan];
+        [[self CSMTC_steadyHollowClimbFoldRidgeTrailPath] addSubview:CSMTC_hud];
     });
 }
 
-+ (void)CSMTC_showText:(NSString *)text {
-    [self CSMTC_showText:text CSMTC_duration:1.5];
++ (void)CSMTC_fairKnollFoldTrailCovePathSpan:(NSString *)text {
+    [self CSMTC_fairKnollFoldTrailCovePathSpan:text CSMTC_duration:1.5];
 }
 
-+ (void)CSMTC_showText:(NSString *)text CSMTC_duration:(double)CSMTC_duration {
++ (void)CSMTC_fairKnollFoldTrailCovePathSpan:(NSString *)text CSMTC_duration:(double)CSMTC_duration {
     dispatch_async(dispatch_get_main_queue(), ^{
         CSMTCLoadingHUD *CSMTC_hud = [CSMTCLoadingHUD sharedHUD];
         [CSMTC_hud removeFromSuperview];
-        CSMTC_hud.CSMTC_cancelable = NO;
-        [CSMTC_hud CSMTC_setupText:text];
-        [[self CSMTC_currentWindow] addSubview:CSMTC_hud];
+        CSMTC_hud.CSMTC_firmHavenCrest = NO;
+        [CSMTC_hud CSMTC_quietDellPathFoldRidgeBluffRise:text];
+        [[self CSMTC_steadyHollowClimbFoldRidgeTrailPath] addSubview:CSMTC_hud];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(CSMTC_duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [CSMTC_hud removeFromSuperview];
@@ -49,128 +48,118 @@
     });
 }
 
-
-
-+ (void)CSMTC_dismiss {
++ (void)CSMTC_plainDellTrailFoldRidgeClimbRise {
     dispatch_async(dispatch_get_main_queue(), ^{
         CSMTCLoadingHUD *CSMTC_hud = [CSMTCLoadingHUD sharedHUD];
-        [CSMTC_hud.CSMTC_loadingLayer removeAllAnimations];
+        [CSMTC_hud.CSMTC_silentHarborGlen removeAllAnimations];
         [CSMTC_hud removeFromSuperview];
     });
 }
 
-#pragma mark - Setup Loading
-- (void)CSMTC_setupLoading {
-    [self CSMTC_resetContainer];
+- (void)CSMTC_firmKnollTrailFoldHavenClimbSpan {
+    [self CSMTC_gentleCoveTrailFoldKnollPathSpan];
     
     self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
     
-    CGFloat containerSize = 100;
-    self.CSMTC_container.frame = CGRectMake(0, 0, containerSize, containerSize);
-    self.CSMTC_container.center = self.center;
-    self.CSMTC_container.layer.cornerRadius = 15;
-    self.CSMTC_container.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    CGFloat CSMTC_freshHollowClimb = 100;
+    self.CSMTC_briskHarborLoom.frame = CGRectMake(0, 0, CSMTC_freshHollowClimb, CSMTC_freshHollowClimb);
+    self.CSMTC_briskHarborLoom.center = self.center;
+    self.CSMTC_briskHarborLoom.layer.cornerRadius = 15;
+    self.CSMTC_briskHarborLoom.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     
-    // 圆圈缺口
-    CGFloat CSMTC_radius = 20; // 圆圈半径
-    CGFloat CSMTC_lineWidth = 4.0;
-    CGFloat CSMTC_startAngle = 0;
-    CGFloat CSMTC_endAngle = M_PI * 1.5; // 3/4 圆
+    CGFloat CSMTC_brightDellPath = 20;
+    CGFloat CSMTC_calmKnollShore = 4.0;
+    CGFloat CSMTC_steadyCoveRise = 0;
+    CGFloat CSMTC_softCrestLane = M_PI * 1.5;
+
+    CGFloat CSMTC_clearGlenFold = CSMTC_freshHollowClimb / 2;
+    CGFloat CSMTC_mistyDellSpan = CSMTC_freshHollowClimb / 2;
+    CGPoint CSMTC_sharpKnollTrace = CGPointMake(CSMTC_clearGlenFold, CSMTC_mistyDellSpan);
     
-    // loadingLayer 不在 container 中心，而在偏移点
-    CGFloat CSMTC_offsetX = containerSize / 2; // 偏移中心X
-    CGFloat CSMTC_offsetY = containerSize / 2;      // 偏移中心Y
-    CGPoint CSMTC_circleCenter = CGPointMake(CSMTC_offsetX, CSMTC_offsetY);
-    
-    UIBezierPath *CSMTC_path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CSMTC_radius, CSMTC_radius)
-                                                        radius:CSMTC_radius
-                                                    startAngle:CSMTC_startAngle
-                                                      endAngle:CSMTC_endAngle
+    UIBezierPath *CSMTC_vastValePoint = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CSMTC_brightDellPath, CSMTC_brightDellPath)
+                                                        radius:CSMTC_brightDellPath
+                                                    startAngle:CSMTC_steadyCoveRise
+                                                      endAngle:CSMTC_softCrestLane
                                                      clockwise:YES];
     
-    self.CSMTC_loadingLayer = [CAShapeLayer layer];
-    self.CSMTC_loadingLayer.path = CSMTC_path.CGPath;
-    self.CSMTC_loadingLayer.strokeColor = UIColor.whiteColor.CGColor;
-    self.CSMTC_loadingLayer.fillColor = UIColor.clearColor.CGColor;
-    self.CSMTC_loadingLayer.lineWidth = CSMTC_lineWidth;
-    self.CSMTC_loadingLayer.lineCap = kCALineCapRound;
+    self.CSMTC_silentHarborGlen = [CAShapeLayer layer];
+    self.CSMTC_silentHarborGlen.path = CSMTC_vastValePoint.CGPath;
+    self.CSMTC_silentHarborGlen.strokeColor = UIColor.whiteColor.CGColor;
+    self.CSMTC_silentHarborGlen.fillColor = UIColor.clearColor.CGColor;
+    self.CSMTC_silentHarborGlen.lineWidth = CSMTC_calmKnollShore;
+    self.CSMTC_silentHarborGlen.lineCap = kCALineCapRound;
     
-    // 把 loadingLayer 放到 container 上
-    self.CSMTC_loadingLayer.frame = CGRectMake(CSMTC_circleCenter.x - CSMTC_radius,
-                                         CSMTC_circleCenter.y - CSMTC_radius,
-                                         CSMTC_radius * 2,
-                                         CSMTC_radius * 2);
+    self.CSMTC_silentHarborGlen.frame = CGRectMake(CSMTC_sharpKnollTrace.x - CSMTC_brightDellPath,
+                                         CSMTC_sharpKnollTrace.y - CSMTC_brightDellPath,
+                                         CSMTC_brightDellPath * 2,
+                                         CSMTC_brightDellPath * 2);
     
-    [self.CSMTC_container.layer addSublayer:self.CSMTC_loadingLayer];
-    
-    // 绕自己中心旋转（circleCenter 就是旋转中心）
-    CABasicAnimation *CSMTC_rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-    CSMTC_rotation.fromValue = @(0);
-    CSMTC_rotation.toValue = @(2 * M_PI);
-    CSMTC_rotation.duration = 1.0;
-    CSMTC_rotation.repeatCount = HUGE_VALF;
-    [self.CSMTC_loadingLayer addAnimation:CSMTC_rotation forKey:@"rotate"];
+    [self.CSMTC_briskHarborLoom.layer addSublayer:self.CSMTC_silentHarborGlen];
+
+    CABasicAnimation *CSMTC_plainHollowPeak = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    CSMTC_plainHollowPeak.fromValue = @(0);
+    CSMTC_plainHollowPeak.toValue = @(2 * M_PI);
+    CSMTC_plainHollowPeak.duration = 1.0;
+    CSMTC_plainHollowPeak.repeatCount = HUGE_VALF;
+    [self.CSMTC_silentHarborGlen addAnimation:CSMTC_plainHollowPeak forKey:@"rotate"];
     
 }
-#pragma mark - Setup Text
 
-- (void)CSMTC_setupText:(NSString *)text {
-    [self CSMTC_resetContainer];
+- (void)CSMTC_quietDellPathFoldRidgeBluffRise:(NSString *)text {
+    [self CSMTC_gentleCoveTrailFoldKnollPathSpan];
     
     self.backgroundColor = [UIColor clearColor];
     
-    CGFloat CSMTC_width = 120;
+    CGFloat CSMTC_wideRidgeTrail = 120;
     
-    UILabel *CSMTC_label = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, CSMTC_width - 10, 0)];
-    CSMTC_label.text = text;
-    CSMTC_label.textColor = [UIColor whiteColor];
-    CSMTC_label.font = [UIFont systemFontOfSize:14];
-    CSMTC_label.numberOfLines = 0;
-    CSMTC_label.textAlignment = NSTextAlignmentCenter;
-    [CSMTC_label sizeToFit];
+    UILabel *CSMTC_mellowCoveBluff = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, CSMTC_wideRidgeTrail - 10, 0)];
+    CSMTC_mellowCoveBluff.text = text;
+    CSMTC_mellowCoveBluff.textColor = [UIColor whiteColor];
+    CSMTC_mellowCoveBluff.font = [UIFont systemFontOfSize:14];
+    CSMTC_mellowCoveBluff.numberOfLines = 0;
+    CSMTC_mellowCoveBluff.textAlignment = NSTextAlignmentCenter;
+    [CSMTC_mellowCoveBluff sizeToFit];
     
-    CGFloat CSMTC_height = MAX(CSMTC_label.frame.size.height + 10, 45);
-    self.CSMTC_container.frame = CGRectMake(0, 0, CSMTC_width, CSMTC_height);
-    self.CSMTC_container.center = self.center;
+    CGFloat CSMTC_humbleKnollRise = MAX(CSMTC_mellowCoveBluff.frame.size.height + 10, 45);
+    self.CSMTC_briskHarborLoom.frame = CGRectMake(0, 0, CSMTC_wideRidgeTrail, CSMTC_humbleKnollRise);
+    self.CSMTC_briskHarborLoom.center = self.center;
     
-    CSMTC_label.frame = CGRectMake(5, 5, CSMTC_width - 10, CSMTC_height - 10);
-    [self.CSMTC_container addSubview:CSMTC_label];
+    CSMTC_mellowCoveBluff.frame = CGRectMake(5, 5, CSMTC_wideRidgeTrail - 10, CSMTC_humbleKnollRise - 10);
+    [self.CSMTC_briskHarborLoom addSubview:CSMTC_mellowCoveBluff];
     
-    self.CSMTC_container.layer.cornerRadius = 8;
-    self.CSMTC_container.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.15];
+    self.CSMTC_briskHarborLoom.layer.cornerRadius = 8;
+    self.CSMTC_briskHarborLoom.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.15];
     
 }
 
-#pragma mark - Helpers
-
-- (void)CSMTC_resetContainer {
-    [self.CSMTC_loadingLayer removeAllAnimations];
-    [self.CSMTC_loadingLayer removeFromSuperlayer];
-    self.CSMTC_loadingLayer = nil;
+- (void)CSMTC_gentleCoveTrailFoldKnollPathSpan {
+    [self.CSMTC_silentHarborGlen removeAllAnimations];
+    [self.CSMTC_silentHarborGlen removeFromSuperlayer];
+    self.CSMTC_silentHarborGlen = nil;
     
-    [self.CSMTC_container removeFromSuperview];
-    self.CSMTC_container = [[UIView alloc] init];
-    [self addSubview:self.CSMTC_container];
+    [self.CSMTC_briskHarborLoom removeFromSuperview];
+    self.CSMTC_briskHarborLoom = [[UIView alloc] init];
+    [self addSubview:self.CSMTC_briskHarborLoom];
 }
 
-+ (UIWindow *)CSMTC_currentWindow {
-    UIWindow *CSMTC_window = nil;
++ (UIWindow *)CSMTC_steadyHollowClimbFoldRidgeTrailPath {
+    UIWindow *CSMTC_fairRidgeTrail = nil;
     if (@available(iOS 13.0, *)) {
-        for (UIWindowScene *CSMTC_scene in UIApplication.sharedApplication.connectedScenes) {
-            if (CSMTC_scene.activationState == UISceneActivationStateForegroundActive) {
-                for (UIWindow *CSMTC_win in CSMTC_scene.windows) {
-                    if (CSMTC_win.isKeyWindow) {
-                        CSMTC_window = CSMTC_win;
+        for (UIWindowScene *CSMTC_keenDellFold in UIApplication.sharedApplication.connectedScenes) {
+            if (CSMTC_keenDellFold.activationState == UISceneActivationStateForegroundActive) {
+                for (UIWindow *CSMTC_tameValeTrack in CSMTC_keenDellFold.windows) {
+                    if (CSMTC_tameValeTrack.isKeyWindow) {
+                        CSMTC_fairRidgeTrail = CSMTC_tameValeTrack;
                         break;
                     }
                 }
             }
-            if (CSMTC_window) break;
+            if (CSMTC_fairRidgeTrail) break;
         }
     } else {
-        CSMTC_window = [UIApplication sharedApplication].keyWindow;
+        CSMTC_fairRidgeTrail = [UIApplication sharedApplication].keyWindow;
     }
-    return CSMTC_window;
+    return CSMTC_fairRidgeTrail;
 }
 
 @end
