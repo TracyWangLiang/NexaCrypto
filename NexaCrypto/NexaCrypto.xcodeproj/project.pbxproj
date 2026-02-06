@@ -41,6 +41,9 @@
 		33AE9AF32F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF02F33412800632DB6 /* CSMTCSlateExploreCollectionCell.m */; };
 		33AE9AF82F33489400632DB6 /* CSMTCSlateRidgeReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */; };
 		33FD19832F35905D0086031E /* NSString+CSMTCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD19822F35905D0086031E /* NSString+CSMTCString.m */; };
+		33FD19862F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FD19852F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.m */; };
+		33FD19882F35C5920086031E /* CSMTCNexaCrypto.zip in Resources */ = {isa = PBXBuildFile; fileRef = 33FD19872F35C5920086031E /* CSMTCNexaCrypto.zip */; };
+		F39FA8C92E4EA32F850C66E6 /* Pods_NexaCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4044BB44E4D06D5B6321642 /* Pods_NexaCrypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,12 @@
 		33AE9AF52F33489400632DB6 /* CSMTCSlateRidgeReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMTCSlateRidgeReusableView.m; sourceTree = "<group>"; };
 		33FD19812F35905D0086031E /* NSString+CSMTCString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CSMTCString.h"; sourceTree = "<group>"; };
 		33FD19822F35905D0086031E /* NSString+CSMTCString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CSMTCString.m"; sourceTree = "<group>"; };
+		33FD19842F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CSMTCTurquoiseImage.h"; sourceTree = "<group>"; };
+		33FD19852F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CSMTCTurquoiseImage.m"; sourceTree = "<group>"; };
+		33FD19872F35C5920086031E /* CSMTCNexaCrypto.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CSMTCNexaCrypto.zip; sourceTree = "<group>"; };
+		4F7574557BE1EDE7268166B4 /* Pods-NexaCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexaCrypto.release.xcconfig"; path = "Target Support Files/Pods-NexaCrypto/Pods-NexaCrypto.release.xcconfig"; sourceTree = "<group>"; };
+		A4044BB44E4D06D5B6321642 /* Pods_NexaCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NexaCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FD20AF7B857AE8920FE185 /* Pods-NexaCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexaCrypto.debug.xcconfig"; path = "Target Support Files/Pods-NexaCrypto/Pods-NexaCrypto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39FA8C92E4EA32F850C66E6 /* Pods_NexaCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +138,8 @@
 			children = (
 				33AE9AA52F32F9A200632DB6 /* NexaCrypto */,
 				33AE9A672F32F97B00632DB6 /* Products */,
+				A96F25CB37AFD205A079661B /* Pods */,
+				CF2B66D8646E0E1D6C3D3688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +154,9 @@
 		33AE9AA52F32F9A200632DB6 /* NexaCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				33FD19872F35C5920086031E /* CSMTCNexaCrypto.zip */,
+				33FD19842F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.h */,
+				33FD19852F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.m */,
 				33FD19812F35905D0086031E /* NSString+CSMTCString.h */,
 				33FD19822F35905D0086031E /* NSString+CSMTCString.m */,
 				33AE9AB02F3315D000632DB6 /* C */,
@@ -235,6 +250,23 @@
 			path = C;
 			sourceTree = "<group>";
 		};
+		A96F25CB37AFD205A079661B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0FD20AF7B857AE8920FE185 /* Pods-NexaCrypto.debug.xcconfig */,
+				4F7574557BE1EDE7268166B4 /* Pods-NexaCrypto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF2B66D8646E0E1D6C3D3688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4044BB44E4D06D5B6321642 /* Pods_NexaCrypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,17 +274,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33AE9A7E2F32F97C00632DB6 /* Build configuration list for PBXNativeTarget "NexaCrypto" */;
 			buildPhases = (
+				C61A705A6F1123BE98EE20D0 /* [CP] Check Pods Manifest.lock */,
 				33AE9A622F32F97B00632DB6 /* Sources */,
 				33AE9A632F32F97B00632DB6 /* Frameworks */,
 				33AE9A642F32F97B00632DB6 /* Resources */,
+				B3DB830AC9CAE93D4D52DDC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NexaCrypto;
-			packageProductDependencies = (
-			);
 			productName = NexaCrypto;
 			productReference = 33AE9A662F32F97B00632DB6 /* NexaCrypto.app */;
 			productType = "com.apple.product-type.application";
@@ -298,10 +330,57 @@
 				33AE9AA62F32F9A200632DB6 /* Assets.xcassets in Resources */,
 				33AE9AA82F32F9A200632DB6 /* LaunchScreen.storyboard in Resources */,
 				33AE9AA92F32F9A200632DB6 /* Main.storyboard in Resources */,
+				33FD19882F35C5920086031E /* CSMTCNexaCrypto.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3DB830AC9CAE93D4D52DDC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexaCrypto/Pods-NexaCrypto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NexaCrypto/Pods-NexaCrypto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NexaCrypto/Pods-NexaCrypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C61A705A6F1123BE98EE20D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NexaCrypto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33AE9A622F32F97B00632DB6 /* Sources */ = {
@@ -326,6 +405,7 @@
 				33978BA22F3435C800E22A03 /* CSMTCTourmalineResultView.m in Sources */,
 				3329030F2F34923300EF984E /* CSMTCMicaShoreModel.m in Sources */,
 				33AE9AEE2F33410E00632DB6 /* CSMTCSlateRidgeCollectionCell.m in Sources */,
+				33FD19862F35C2A50086031E /* UIImage+CSMTCTurquoiseImage.m in Sources */,
 				33AE9ADC2F332E0800632DB6 /* CSMTCCobaltGrainCollectionCell.m in Sources */,
 				33AE9AC72F3316A500632DB6 /* CSMTCCoralSpireViewController.m in Sources */,
 				33AE9AAB2F32F9A200632DB6 /* main.m in Sources */,
@@ -366,11 +446,13 @@
 /* Begin XCBuildConfiguration section */
 		33AE9A7F2F32F97C00632DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FD20AF7B857AE8920FE185 /* Pods-NexaCrypto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NexaCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -397,11 +479,13 @@
 		};
 		33AE9A802F32F97C00632DB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7574557BE1EDE7268166B4 /* Pods-NexaCrypto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NexaCrypto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

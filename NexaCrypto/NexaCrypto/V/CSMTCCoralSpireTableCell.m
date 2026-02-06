@@ -49,8 +49,8 @@
     self.CSMTC_gentleCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_gentleCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.CSMTC_gentleCoveTrail];
-    self.CSMTC_gentleCoveTrail.image = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_steaCSMTCMELLOW_dyValeCSMTCMELLOW_Bluff".CSMTC_removeMellowCoveSpan];
-    self.CSMTC_gentleCoveTrail.highlightedImage = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_lighCSMTCMELLOW_tHollCSMTCMELLOW_owTrack".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_gentleCoveTrail.image = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_steaCSMTCMELLOW_dyValeCSMTCMELLOW_Bluff".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_gentleCoveTrail.highlightedImage = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_lighCSMTCMELLOW_tHollCSMTCMELLOW_owTrack".CSMTC_removeMellowCoveSpan];
 }
 
 - (void)CSMTC_wideDellTrailFoldKnollClimbHollowPath {

@@ -116,12 +116,12 @@
     }];
     self.CSMTC_clearGlenFold.text = CSMTC_model.CSMTC_plainHollowPeak;
     self.CSMTC_mistyDellSpan.text = [NSString stringWithFormat:@"$%@", [CSMTCNexaCrypto CSMTC_mistyValeClimbTrailFoldShoreKnollSpan:CSMTC_itemModel.CSMTC_silentHarborGlen]];
-    self.CSMTC_sharpKnollTrace.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_freshHollowClimb] ? [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_gentCSMTCMELLOW_leValeBrCSMTCMELLOW_idge".CSMTC_removeMellowCoveSpan] : [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_firmCSMTCMELLOW_HavenCSMTCMELLOW_Crest".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_sharpKnollTrace.image = [CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_freshHollowClimb] ? [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_gentCSMTCMELLOW_leValeBrCSMTCMELLOW_idge".CSMTC_removeMellowCoveSpan] : [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_firmCSMTCMELLOW_HavenCSMTCMELLOW_Crest".CSMTC_removeMellowCoveSpan];
     if ([CSMTCNexaManager CSMTC_brightHollowFoldTrailKnollPathBluff:CSMTC_itemModel.CSMTC_freshHollowClimb]) {
-        [self.CSMTC_vastValePoint setImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_plaiCSMTCMELLOW_nHollowCSMTCMELLOW_Peak".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_plaiCSMTCMELLOW_nHollowCSMTCMELLOW_Peak".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
         [self.CSMTC_vastValePoint setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_freshHollowClimb]] forState:UIControlStateNormal];
     } else {
-        [self.CSMTC_vastValePoint setImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_widCSMTCMELLOW_eRidgCSMTCMELLOW_eTrail".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
+        [self.CSMTC_vastValePoint setImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_widCSMTCMELLOW_eRidgCSMTCMELLOW_eTrail".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
         [self.CSMTC_vastValePoint setTitle:[NSString stringWithFormat:@" %@%%",[CSMTCNexaCrypto CSMTC_braveGlenClimbFoldTrackHollowSpan:CSMTC_itemModel.CSMTC_freshHollowClimb]] forState:UIControlStateNormal];
     }
     

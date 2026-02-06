@@ -30,11 +30,11 @@
 
 - (NSArray *)CSMTC_softDellFoldTrailHavenClimbKnollRise {
     CSMTCCobaltGrainViewController *CSMTC_CobaltGrain = [[CSMTCCobaltGrainViewController alloc] init];
-    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_CobaltGrain CSMTC_brightValeClimb:@"Home"];
+    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_CobaltGrain CSMTC_brightValeClimb:@"CSMTCMELLOW_HoCSMTCMELLOW_me".CSMTC_removeMellowCoveSpan];
     CSMTCSlateRidgeViewController *CSMTC_SlateRidge = [[CSMTCSlateRidgeViewController alloc] init];
-    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_SlateRidge CSMTC_brightValeClimb:@"Market"];
+    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_SlateRidge CSMTC_brightValeClimb:@"CSMTCMELLOW_MaCSMTCMELLOW_rket".CSMTC_removeMellowCoveSpan];
     CSMTCMicaShoreViewController *CSMTC_MicaShore = [[CSMTCMicaShoreViewController alloc] init];
-    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_MicaShore CSMTC_brightValeClimb:@"News"];
+    [self CSMTC_humbleRidgeTrailFoldKnollPathBluffClimb:CSMTC_MicaShore CSMTC_brightValeClimb:@"CSMTCMELLOW_NCSMTCMELLOW_ewCSMTCMELLOW_s".CSMTC_removeMellowCoveSpan];
     return @[CSMTC_CobaltGrain, CSMTC_SlateRidge, CSMTC_MicaShore];
 }
 
@@ -73,7 +73,7 @@
         CSMTC_gentleCoveTrail = @"CSMTCMELLOW_CSMTC_deeCSMTCMELLOW_pGlenCSMTCMELLOW_Track".CSMTC_removeMellowCoveSpan;
     }
     
-    CSMTC_firmHavenTrail.tabBarItem = [[UITabBarItem alloc] initWithTitle:CSMTC_brightValeClimb image:[[UIImage imageNamed:CSMTC_steadyKnollFold] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:CSMTC_gentleCoveTrail] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    CSMTC_firmHavenTrail.tabBarItem = [[UITabBarItem alloc] initWithTitle:CSMTC_brightValeClimb image:[[UIImage CSMTC_garnetImage:CSMTC_steadyKnollFold] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage CSMTC_garnetImage:CSMTC_gentleCoveTrail] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
 }
 

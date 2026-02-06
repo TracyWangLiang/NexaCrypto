@@ -29,7 +29,7 @@
 
 - (void)CSMTC_mistyValeClimbTrailFoldShoreKnollSpan {
 
-    self.CSMTC_mellowCoveBluff = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_mellCSMTCMELLOW_owCoveBCSMTCMELLOW_luff".CSMTC_removeMellowCoveSpan]];
+    self.CSMTC_mellowCoveBluff = [[UIImageView alloc] initWithImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_mellCSMTCMELLOW_owCoveBCSMTCMELLOW_luff".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_mellowCoveBluff.contentMode = UIViewContentModeScaleAspectFit;
     self.CSMTC_mellowCoveBluff.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.CSMTC_mellowCoveBluff];

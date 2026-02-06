@@ -44,7 +44,7 @@
     ]];
 
 
-    self.CSMTC_silentHarborGlen = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_briskCSMTCMELLOW_HarborLCSMTCMELLOW_oom".CSMTC_removeMellowCoveSpan]];
+    self.CSMTC_silentHarborGlen = [[UIImageView alloc] initWithImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_briskCSMTCMELLOW_HarborLCSMTCMELLOW_oom".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_silentHarborGlen.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_silentHarborGlen.clipsToBounds = YES;
     self.CSMTC_silentHarborGlen.contentMode = UIViewContentModeScaleAspectFit;

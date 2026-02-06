@@ -48,7 +48,7 @@
     self.CSMTC_silentHarborGlen.contentMode = UIViewContentModeScaleAspectFill;
     self.CSMTC_silentHarborGlen.clipsToBounds = YES;
     self.CSMTC_silentHarborGlen.layer.cornerRadius = 15;
-    self.CSMTC_silentHarborGlen.backgroundColor = [UIColor redColor];
+//    self.CSMTC_silentHarborGlen.backgroundColor = [UIColor redColor];
     [self.contentView addSubview:self.CSMTC_silentHarborGlen];
     self.CSMTC_briskHarborLoom.text = @"CSMTCMELLOW_1CSMTCMELLOW_".CSMTC_removeMellowCoveSpan;
 
@@ -88,8 +88,8 @@
     self.CSMTC_brightDellPath.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_brightDellPath.contentMode = UIViewContentModeScaleAspectFit;
     [self.CSMTC_freshHollowClimb addSubview:self.CSMTC_brightDellPath];
-    self.CSMTC_brightDellPath.image = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_widCSMTCMELLOW_eRidgCSMTCMELLOW_eTrail".CSMTC_removeMellowCoveSpan];
-    self.CSMTC_brightDellPath.highlightedImage = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_plaiCSMTCMELLOW_nHollowCSMTCMELLOW_Peak".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_brightDellPath.image = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_widCSMTCMELLOW_eRidgCSMTCMELLOW_eTrail".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_brightDellPath.highlightedImage = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_plaiCSMTCMELLOW_nHollowCSMTCMELLOW_Peak".CSMTC_removeMellowCoveSpan];
 
     self.CSMTC_calmKnollShore = [[UILabel alloc] init];
     self.CSMTC_calmKnollShore.translatesAutoresizingMaskIntoConstraints = NO;

@@ -59,7 +59,7 @@
 - (void)CSMTC_gentleHollowBridgeFoldTrackSpanRise {
     self.CSMTC_clearKnollClimb = [UIButton buttonWithType:UIButtonTypeCustom];
     self.CSMTC_clearKnollClimb.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.CSMTC_clearKnollClimb setImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_lightCSMTCMELLOW_HaveCSMTCMELLOW_nFold".CSMTC_removeMellowCoveSpan]
+    [self.CSMTC_clearKnollClimb setImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_lightCSMTCMELLOW_HaveCSMTCMELLOW_nFold".CSMTC_removeMellowCoveSpan]
                      forState:UIControlStateNormal];
     [self.CSMTC_clearKnollClimb addTarget:self
                         action:@selector(CSMTC_clearDellSpanTrailKnollPathBluff)
@@ -70,7 +70,7 @@
 
 - (void)CSMTC_quickRidgeTrailPathHavenClimbReach {
     self.CSMTC_keenCoveTrail = [[UIImageView alloc] initWithImage:
-                          [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_quietKCSMTCMELLOW_nollRCSMTCMELLOW_ise".CSMTC_removeMellowCoveSpan]];
+                          [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_quietKCSMTCMELLOW_nollRCSMTCMELLOW_ise".CSMTC_removeMellowCoveSpan]];
     self.CSMTC_keenCoveTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_keenCoveTrail.contentMode = UIViewContentModeScaleAspectFit;
     

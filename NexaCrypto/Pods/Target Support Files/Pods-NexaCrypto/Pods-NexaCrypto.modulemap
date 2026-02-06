@@ -1,0 +1,6 @@
+framework module Pods_NexaCrypto {
+  umbrella header "Pods-NexaCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}

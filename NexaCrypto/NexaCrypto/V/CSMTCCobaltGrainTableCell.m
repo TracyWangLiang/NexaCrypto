@@ -40,7 +40,7 @@
     self.CSMTC_tameRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_tameRidgeTrail.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.CSMTC_tameRidgeTrail];
-    self.CSMTC_tameRidgeTrail.backgroundColor = [UIColor redColor];
+//    self.CSMTC_tameRidgeTrail.backgroundColor = [UIColor redColor];
     self.CSMTC_tameRidgeTrail.layer.masksToBounds = YES;
     self.CSMTC_tameRidgeTrail.layer.cornerRadius = 15;
 
@@ -73,8 +73,8 @@
     self.CSMTC_steadyKnollFold.translatesAutoresizingMaskIntoConstraints = NO;
     self.CSMTC_steadyKnollFold.contentMode = UIViewContentModeScaleAspectFit;
     [self.contentView addSubview:self.CSMTC_steadyKnollFold];
-    self.CSMTC_steadyKnollFold.image = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_calmKCSMTCMELLOW_nollSCSMTCMELLOW_hore".CSMTC_removeMellowCoveSpan];
-    self.CSMTC_steadyKnollFold.highlightedImage = [UIImage imageNamed:@"CSMTCMELLOW_CSMTC_steCSMTCMELLOW_adyCovCSMTCMELLOW_eRise".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_steadyKnollFold.image = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_calmKCSMTCMELLOW_nollSCSMTCMELLOW_hore".CSMTC_removeMellowCoveSpan];
+    self.CSMTC_steadyKnollFold.highlightedImage = [UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_steCSMTCMELLOW_adyCovCSMTCMELLOW_eRise".CSMTC_removeMellowCoveSpan];
 
     self.CSMTC_brightValeClimb = [[UILabel alloc] init];
     self.CSMTC_brightValeClimb.translatesAutoresizingMaskIntoConstraints = NO;

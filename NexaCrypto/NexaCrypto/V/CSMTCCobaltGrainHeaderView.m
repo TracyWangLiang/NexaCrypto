@@ -78,7 +78,7 @@
     self.CSMTC_quickRidgeHollow.titleLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:14];
     [self.CSMTC_quickRidgeHollow setTitle:@" Add" forState:UIControlStateNormal];
     [self.CSMTC_quickRidgeHollow setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
-    [self.CSMTC_quickRidgeHollow setImage:[UIImage imageNamed:@"CSMTCMELLOW_CSMTC_silenCSMTCMELLOW_tHarboCSMTCMELLOW_rGlen".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
+    [self.CSMTC_quickRidgeHollow setImage:[UIImage CSMTC_garnetImage:@"CSMTCMELLOW_CSMTC_silenCSMTCMELLOW_tHarboCSMTCMELLOW_rGlen".CSMTC_removeMellowCoveSpan] forState:UIControlStateNormal];
     self.CSMTC_quickRidgeHollow.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.CSMTC_quickRidgeHollow];
     self.CSMTC_quickRidgeHollow.layer.masksToBounds = YES;
@@ -142,7 +142,7 @@
     UIView *CSMTC_clearKnollClimb = [[UIView alloc] init];
     CSMTC_clearKnollClimb.translatesAutoresizingMaskIntoConstraints = NO;
 
-    UIImageView *CSMTC_humbleRidgeTrail = [[UIImageView alloc] initWithImage:[UIImage imageNamed:CSMTC_briskValeFold]];
+    UIImageView *CSMTC_humbleRidgeTrail = [[UIImageView alloc] initWithImage:[UIImage CSMTC_garnetImage:CSMTC_briskValeFold]];
     CSMTC_humbleRidgeTrail.contentMode = UIViewContentModeScaleAspectFit;
     CSMTC_humbleRidgeTrail.translatesAutoresizingMaskIntoConstraints = NO;
     [CSMTC_clearKnollClimb addSubview:CSMTC_humbleRidgeTrail];
